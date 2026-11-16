@@ -1,0 +1,53 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Godot: Run",
+      "type": "shell",
+      "command": ".\\tools\\godot.cmd",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "Godot: Editor",
+      "type": "shell",
+      "command": ".\\tools\\godot.cmd -Editor",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "Godot: Check",
+      "type": "shell",
+      "command": ".\\tools\\check.cmd",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "Art: Generate demo",
+      "type": "shell",
+      "command": "python tools\\gen_image.py --prompt-file docs\\prompts\\image-demo-test.md",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "MCP: Probe Godot",
+      "type": "shell",
+      "command": "python tools\\mcp_probe.py --name godot --call get_godot_version -- cmd /c npx -y @coding-solo/godot-mcp",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "MCP: Probe Blender",
+      "type": "shell",
+      "command": "python tools\\mcp_probe.py --name blender \"C:\\Users\\Dima\\AppData\\Local\\Microsoft\\WinGet\\Packages\\astral-sh.uv_Microsoft.Winget.Source_8wekyb3d8bbwe\\uvx.exe\" --python 3.11 mcp-for-blender",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    }
+  ]
+}

@@ -21,5 +21,15 @@ mono_crash.*.json
 
 # Export outputs
 *.exe
+
+# AI workspace
+.env
+.env.*
+.kilo/worktrees/
+__pycache__/
+*.pyc
+
+# Черновые генерации концепт-арта (в git храним только отобранное в docs/art/approved)
+docs/art/raw/
 # Uncomment if your project does not version PCK files as runtime dependencies.
 # *.pck

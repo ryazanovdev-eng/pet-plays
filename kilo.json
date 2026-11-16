@@ -1,0 +1,51 @@
+{
+  "$schema": "https://app.kilo.ai/config.json",
+  "mcp": {
+    "blender": {
+      "type": "local",
+      "command": [
+        "C:\\Users\\Dima\\AppData\\Local\\Microsoft\\WinGet\\Packages\\astral-sh.uv_Microsoft.Winget.Source_8wekyb3d8bbwe\\uvx.exe",
+        "--python",
+        "3.11",
+        "mcp-for-blender"
+      ],
+      "environment": {
+        "UV_PYTHON_PREFERENCE": "only-managed",
+        "BLENDER_HOST": "localhost",
+        "BLENDER_PORT": "9876",
+        "BLENDER_MCP_SAFE_MODE": "1",
+        "DISABLE_TELEMETRY": "true"
+      },
+      "enabled": true,
+      "timeout": 600000
+    },
+    "godot": {
+      "type": "local",
+      "command": ["cmd", "/c", "npx", "-y", "@coding-solo/godot-mcp"],
+      "environment": {
+        "GODOT_PATH": "D:\\godot\\Godot_v4.7.2-stable_win64.exe",
+        "DEBUG": "true"
+      },
+      "enabled": true,
+      "timeout": 120000
+    }
+  },
+  "permission": {
+    "bash": {
+      "git status*": "allow",
+      "git diff*": "allow",
+      "git log*": "allow",
+      "git show*": "allow",
+      "git branch*": "allow",
+      "python tools/*": "allow",
+      "python .\\tools\\*": "allow",
+      ".\\tools\\*": "allow",
+      "./tools/*": "allow",
+      "*": "ask"
+    },
+    "edit": "allow",
+    "webfetch": "allow",
+    "blender_*": "ask",
+    "godot_*": "ask"
+  }
+}
