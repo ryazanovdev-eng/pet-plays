@@ -1,0 +1,592 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/environment/props/angel_statue.png" id="r1"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/bare_bush.png" id="r2"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/bone_pile.png" id="r3"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/brazier.png" id="r4"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/candle_cluster.png" id="r5"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/coffin.png" id="r6"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/crypt_small_closed.png" id="r7"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/crypt_small_glowing.png" id="r8"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/grave_celtic.png" id="r9"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/grave_cracked.png" id="r10"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/grave_round.png" id="r11"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/hanging_lantern.png" id="r12"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/iron_fence_section.png" id="r13"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/iron_gate.png" id="r14"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/obelisk.png" id="r15"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/open_grave.png" id="r16"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/poison_puddle.png" id="r17"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/red_mushrooms.png" id="r18"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/ruined_stone_wall.png" id="r19"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/signpost.png" id="r20"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/skull_pile.png" id="r21"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/stone_altar.png" id="r22"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/stone_cluster.png" id="r23"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/stump.png" id="r24"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/thorn_brambles.png" id="r25"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/twisted_tree.png" id="r26"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/wagon.png" id="r27"]
+
+[node name="Cabinet" type="Node2D"]
+texture_filter = 2
+
+[node name="Paper" type="ColorRect" parent="."]
+offset_right = 1280
+offset_bottom = 720
+color = Color(0.085, 0.055, 0.105, 1)
+
+[node name="Number" type="Label" parent="."]
+offset_left = 32
+offset_top = 15
+offset_right = 382
+offset_bottom = 45
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.88, 0.68, 0.34, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 17
+text = "FROG KNIGHT    /    АТЛАС"
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Title" type="Label" parent="."]
+offset_left = 32
+offset_top = 43
+offset_right = 982
+offset_bottom = 88
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.91, 0.72, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 32
+text = "Реликвии и постройки"
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Index" type="Label" parent="."]
+offset_left = 1060
+offset_top = 33
+offset_right = 1235
+offset_bottom = 73
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.91, 0.72, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 22
+text = "01  /  15"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Sprite1" type="Sprite2D" parent="."]
+position = Vector2(118.857, 158.250)
+scale = Vector2(0.3829431, 0.3829431)
+texture = ExtResource("r1")
+
+[node name="Item0" type="Label" parent="."]
+offset_left = 32.000
+offset_top = 219.500
+offset_right = 205.714
+offset_bottom = 245.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "angel statue"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite2" type="Sprite2D" parent="."]
+position = Vector2(292.571, 158.250)
+scale = Vector2(0.7435065, 0.7435065)
+texture = ExtResource("r2")
+
+[node name="Item1" type="Label" parent="."]
+offset_left = 205.714
+offset_top = 219.500
+offset_right = 379.429
+offset_bottom = 245.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "bare bush"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite3" type="Sprite2D" parent="."]
+position = Vector2(466.286, 158.250)
+scale = Vector2(0.6468571, 0.6468571)
+texture = ExtResource("r3")
+
+[node name="Item2" type="Label" parent="."]
+offset_left = 379.429
+offset_top = 219.500
+offset_right = 553.143
+offset_bottom = 245.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "bone pile"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite4" type="Sprite2D" parent="."]
+position = Vector2(640.000, 158.250)
+scale = Vector2(0.4060284, 0.4060284)
+texture = ExtResource("r4")
+
+[node name="Item3" type="Label" parent="."]
+offset_left = 553.143
+offset_top = 219.500
+offset_right = 726.857
+offset_bottom = 245.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "brazier"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite5" type="Sprite2D" parent="."]
+position = Vector2(813.714, 158.250)
+scale = Vector2(0.5841837, 0.5841837)
+texture = ExtResource("r5")
+
+[node name="Item4" type="Label" parent="."]
+offset_left = 726.857
+offset_top = 219.500
+offset_right = 900.571
+offset_bottom = 245.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "candle cluster"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite6" type="Sprite2D" parent="."]
+position = Vector2(987.429, 158.250)
+scale = Vector2(0.4893162, 0.4893162)
+texture = ExtResource("r6")
+
+[node name="Item5" type="Label" parent="."]
+offset_left = 900.571
+offset_top = 219.500
+offset_right = 1074.286
+offset_bottom = 245.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "coffin"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite7" type="Sprite2D" parent="."]
+position = Vector2(1161.143, 158.250)
+scale = Vector2(0.4017544, 0.4017544)
+texture = ExtResource("r7")
+
+[node name="Item6" type="Label" parent="."]
+offset_left = 1074.286
+offset_top = 219.500
+offset_right = 1248.000
+offset_bottom = 245.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "crypt small closed"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite8" type="Sprite2D" parent="."]
+position = Vector2(118.857, 305.750)
+scale = Vector2(0.4194139, 0.4194139)
+texture = ExtResource("r8")
+
+[node name="Item7" type="Label" parent="."]
+offset_left = 32.000
+offset_top = 367.000
+offset_right = 205.714
+offset_bottom = 393.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "crypt small glowing"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite9" type="Sprite2D" parent="."]
+position = Vector2(292.571, 305.750)
+scale = Vector2(0.4731405, 0.4731405)
+texture = ExtResource("r9")
+
+[node name="Item8" type="Label" parent="."]
+offset_left = 205.714
+offset_top = 367.000
+offset_right = 379.429
+offset_bottom = 393.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "grave celtic"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite10" type="Sprite2D" parent="."]
+position = Vector2(466.286, 305.750)
+scale = Vector2(0.5400943, 0.5400943)
+texture = ExtResource("r10")
+
+[node name="Item9" type="Label" parent="."]
+offset_left = 379.429
+offset_top = 367.000
+offset_right = 553.143
+offset_bottom = 393.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "grave cracked"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite11" type="Sprite2D" parent="."]
+position = Vector2(640.000, 305.750)
+scale = Vector2(0.5558252, 0.5558252)
+texture = ExtResource("r11")
+
+[node name="Item10" type="Label" parent="."]
+offset_left = 553.143
+offset_top = 367.000
+offset_right = 726.857
+offset_bottom = 393.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "grave round"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite12" type="Sprite2D" parent="."]
+position = Vector2(813.714, 305.750)
+scale = Vector2(0.4580000, 0.4580000)
+texture = ExtResource("r12")
+
+[node name="Item11" type="Label" parent="."]
+offset_left = 726.857
+offset_top = 367.000
+offset_right = 900.571
+offset_bottom = 393.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "hanging lantern"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite13" type="Sprite2D" parent="."]
+position = Vector2(987.429, 305.750)
+scale = Vector2(0.5668317, 0.5668317)
+texture = ExtResource("r13")
+
+[node name="Item12" type="Label" parent="."]
+offset_left = 900.571
+offset_top = 367.000
+offset_right = 1074.286
+offset_bottom = 393.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "iron fence section"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite14" type="Sprite2D" parent="."]
+position = Vector2(1161.143, 305.750)
+scale = Vector2(0.3609694, 0.3609694)
+texture = ExtResource("r14")
+
+[node name="Item13" type="Label" parent="."]
+offset_left = 1074.286
+offset_top = 367.000
+offset_right = 1248.000
+offset_bottom = 393.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "iron gate"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite15" type="Sprite2D" parent="."]
+position = Vector2(118.857, 453.250)
+scale = Vector2(0.3961938, 0.3961938)
+texture = ExtResource("r15")
+
+[node name="Item14" type="Label" parent="."]
+offset_left = 32.000
+offset_top = 514.500
+offset_right = 205.714
+offset_bottom = 540.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "obelisk"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite16" type="Sprite2D" parent="."]
+position = Vector2(292.571, 453.250)
+scale = Vector2(0.4935345, 0.4935345)
+texture = ExtResource("r16")
+
+[node name="Item15" type="Label" parent="."]
+offset_left = 205.714
+offset_top = 514.500
+offset_right = 379.429
+offset_bottom = 540.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "open grave"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite17" type="Sprite2D" parent="."]
+position = Vector2(466.286, 453.250)
+scale = Vector2(0.5199816, 0.5199816)
+texture = ExtResource("r17")
+
+[node name="Item16" type="Label" parent="."]
+offset_left = 379.429
+offset_top = 514.500
+offset_right = 553.143
+offset_bottom = 540.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "poison puddle"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite18" type="Sprite2D" parent="."]
+position = Vector2(640.000, 453.250)
+scale = Vector2(0.7633333, 0.7633333)
+texture = ExtResource("r18")
+
+[node name="Item17" type="Label" parent="."]
+offset_left = 553.143
+offset_top = 514.500
+offset_right = 726.857
+offset_bottom = 540.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "red mushrooms"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite19" type="Sprite2D" parent="."]
+position = Vector2(813.714, 453.250)
+scale = Vector2(0.4442700, 0.4442700)
+texture = ExtResource("r19")
+
+[node name="Item18" type="Label" parent="."]
+offset_left = 726.857
+offset_top = 514.500
+offset_right = 900.571
+offset_bottom = 540.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "ruined stone wall"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite20" type="Sprite2D" parent="."]
+position = Vector2(987.429, 453.250)
+scale = Vector2(0.5300926, 0.5300926)
+texture = ExtResource("r20")
+
+[node name="Item19" type="Label" parent="."]
+offset_left = 900.571
+offset_top = 514.500
+offset_right = 1074.286
+offset_bottom = 540.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "signpost"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite21" type="Sprite2D" parent="."]
+position = Vector2(1161.143, 453.250)
+scale = Vector2(0.7339744, 0.7339744)
+texture = ExtResource("r21")
+
+[node name="Item20" type="Label" parent="."]
+offset_left = 1074.286
+offset_top = 514.500
+offset_right = 1248.000
+offset_bottom = 540.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "skull pile"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite22" type="Sprite2D" parent="."]
+position = Vector2(118.857, 600.750)
+scale = Vector2(0.5375587, 0.5375587)
+texture = ExtResource("r22")
+
+[node name="Item21" type="Label" parent="."]
+offset_left = 32.000
+offset_top = 662.000
+offset_right = 205.714
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "stone altar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite23" type="Sprite2D" parent="."]
+position = Vector2(292.571, 600.750)
+scale = Vector2(0.7532895, 0.7532895)
+texture = ExtResource("r23")
+
+[node name="Item22" type="Label" parent="."]
+offset_left = 205.714
+offset_top = 662.000
+offset_right = 379.429
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "stone cluster"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite24" type="Sprite2D" parent="."]
+position = Vector2(466.286, 600.750)
+scale = Vector2(0.5426540, 0.5426540)
+texture = ExtResource("r24")
+
+[node name="Item23" type="Label" parent="."]
+offset_left = 379.429
+offset_top = 662.000
+offset_right = 553.143
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "stump"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite25" type="Sprite2D" parent="."]
+position = Vector2(640.000, 600.750)
+scale = Vector2(0.6034115, 0.6034115)
+texture = ExtResource("r25")
+
+[node name="Item24" type="Label" parent="."]
+offset_left = 553.143
+offset_top = 662.000
+offset_right = 726.857
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "thorn brambles"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite26" type="Sprite2D" parent="."]
+position = Vector2(813.714, 600.750)
+scale = Vector2(0.3829431, 0.3829431)
+texture = ExtResource("r26")
+
+[node name="Item25" type="Label" parent="."]
+offset_left = 726.857
+offset_top = 662.000
+offset_right = 900.571
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "twisted tree"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite27" type="Sprite2D" parent="."]
+position = Vector2(987.429, 600.750)
+scale = Vector2(0.4893162, 0.4893162)
+texture = ExtResource("r27")
+
+[node name="Item26" type="Label" parent="."]
+offset_left = 900.571
+offset_top = 662.000
+offset_right = 1074.286
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "wagon"
+horizontal_alignment = 1
+vertical_alignment = 1

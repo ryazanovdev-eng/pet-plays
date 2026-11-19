@@ -1,0 +1,12 @@
+[gd_scene format=3]
+
+[ext_resource type="SpriteFrames" path="res://assets/cast/frog_knight.tres" id="frames"]
+
+[node name="frog_knight" type="AnimatedSprite2D"]
+scale = Vector2(0.1020733652, 0.1020733652)
+texture_filter = 2
+sprite_frames = ExtResource("frames")
+animation = &"idle"
+autoplay = "idle"
+centered = false
+offset = Vector2(-313, -539)

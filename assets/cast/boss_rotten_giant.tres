@@ -1,0 +1,77 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/idle/01.png" id="idle_01"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/idle/02.png" id="idle_02"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/idle/03.png" id="idle_03"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/idle/04.png" id="idle_04"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/walk/01.png" id="walk_01"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/walk/02.png" id="walk_02"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/walk/03.png" id="walk_03"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/walk/04.png" id="walk_04"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/attack1/01.png" id="attack1_01"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/attack1/02.png" id="attack1_02"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/attack1/03.png" id="attack1_03"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/attack1/04.png" id="attack1_04"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/attack2/01.png" id="attack2_01"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/attack2/02.png" id="attack2_02"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/attack2/03.png" id="attack2_03"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/attack2/04.png" id="attack2_04"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/hurt/01.png" id="hurt_01"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/hurt/02.png" id="hurt_02"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/hurt/03.png" id="hurt_03"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/hurt/04.png" id="hurt_04"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/death/01.png" id="death_01"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/death/02.png" id="death_02"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/death/03.png" id="death_03"]
+[ext_resource type="Texture2D" path="res://assets/cast/boss_rotten_giant/death/04.png" id="death_04"]
+
+[resource]
+animations = [{
+"frames": [{"duration": 1.0, "texture": ExtResource("idle_01")},
+{"duration": 1.0, "texture": ExtResource("idle_02")},
+{"duration": 1.0, "texture": ExtResource("idle_03")},
+{"duration": 1.0, "texture": ExtResource("idle_04")}],
+"loop": true,
+"name": &"idle",
+"speed": 4.25
+}, {
+"frames": [{"duration": 1.0, "texture": ExtResource("walk_01")},
+{"duration": 1.0, "texture": ExtResource("walk_02")},
+{"duration": 1.0, "texture": ExtResource("walk_03")},
+{"duration": 1.0, "texture": ExtResource("walk_04")}],
+"loop": true,
+"name": &"walk",
+"speed": 6.75
+}, {
+"frames": [{"duration": 1.0, "texture": ExtResource("attack1_01")},
+{"duration": 1.0, "texture": ExtResource("attack1_02")},
+{"duration": 1.0, "texture": ExtResource("attack1_03")},
+{"duration": 1.0, "texture": ExtResource("attack1_04")}],
+"loop": false,
+"name": &"attack1",
+"speed": 8.75
+}, {
+"frames": [{"duration": 1.0, "texture": ExtResource("attack2_01")},
+{"duration": 1.0, "texture": ExtResource("attack2_02")},
+{"duration": 1.0, "texture": ExtResource("attack2_03")},
+{"duration": 1.0, "texture": ExtResource("attack2_04")}],
+"loop": false,
+"name": &"attack2",
+"speed": 8.0
+}, {
+"frames": [{"duration": 1.0, "texture": ExtResource("hurt_01")},
+{"duration": 1.0, "texture": ExtResource("hurt_02")},
+{"duration": 1.0, "texture": ExtResource("hurt_03")},
+{"duration": 1.0, "texture": ExtResource("hurt_04")}],
+"loop": false,
+"name": &"hurt",
+"speed": 6.0
+}, {
+"frames": [{"duration": 1.0, "texture": ExtResource("death_01")},
+{"duration": 1.0, "texture": ExtResource("death_02")},
+{"duration": 1.0, "texture": ExtResource("death_03")},
+{"duration": 1.0, "texture": ExtResource("death_04")}],
+"loop": false,
+"name": &"death",
+"speed": 5.25
+}]

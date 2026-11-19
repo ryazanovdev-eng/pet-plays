@@ -1,0 +1,1332 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r01_c01.png" id="r1"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r01_c02.png" id="r2"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r01_c03.png" id="r3"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r01_c04.png" id="r4"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r01_c05.png" id="r5"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r01_c06.png" id="r6"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r01_c07.png" id="r7"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r01_c08.png" id="r8"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r02_c01.png" id="r9"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r02_c02.png" id="r10"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r02_c03.png" id="r11"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r02_c04.png" id="r12"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r02_c05.png" id="r13"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r02_c06.png" id="r14"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r02_c07.png" id="r15"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r02_c08.png" id="r16"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r03_c01.png" id="r17"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r03_c02.png" id="r18"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r03_c03.png" id="r19"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r03_c04.png" id="r20"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r03_c05.png" id="r21"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r03_c06.png" id="r22"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r03_c07.png" id="r23"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r03_c08.png" id="r24"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_single_thorn_arc.png" id="r25"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r04_c02.png" id="r26"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r04_c03.png" id="r27"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_autumn_thorn_patch.png" id="r28"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r04_c05.png" id="r29"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_small_stone_puddle.png" id="r30"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r04_c07.png" id="r31"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r04_c08.png" id="r32"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r04_c01.png" id="r33"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_poison_bubbles.png" id="r34"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_poison_pool.png" id="r35"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r04_c04.png" id="r36"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_ritual_candles.png" id="r37"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r04_c06.png" id="r38"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_blood_pool.png" id="r39"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_blood_spatter.png" id="r40"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r05_c01.png" id="r41"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r05_c02.png" id="r42"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r05_c03.png" id="r43"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r05_c04.png" id="r44"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r05_c05.png" id="r45"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r05_c06.png" id="r46"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r05_c07.png" id="r47"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r05_c08.png" id="r48"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r06_c01.png" id="r49"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r06_c02.png" id="r50"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r06_c03.png" id="r51"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r06_c04.png" id="r52"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r06_c05.png" id="r53"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r06_c06.png" id="r54"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r06_c07.png" id="r55"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r06_c08.png" id="r56"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r07_c01.png" id="r57"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r07_c02.png" id="r58"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r07_c03.png" id="r59"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r07_c04.png" id="r60"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r07_c05.png" id="r61"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r07_c06.png" id="r62"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r07_c07.png" id="r63"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r07_c08.png" id="r64"]
+
+[node name="Cabinet" type="Node2D"]
+texture_filter = 2
+
+[node name="Paper" type="ColorRect" parent="."]
+offset_right = 1280
+offset_bottom = 720
+color = Color(0.085, 0.055, 0.105, 1)
+
+[node name="Number" type="Label" parent="."]
+offset_left = 32
+offset_top = 15
+offset_right = 382
+offset_bottom = 45
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.88, 0.68, 0.34, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 17
+text = "FROG KNIGHT    /    АТЛАС"
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Title" type="Label" parent="."]
+offset_left = 32
+offset_top = 43
+offset_right = 982
+offset_bottom = 88
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.91, 0.72, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 32
+text = "Детали земли"
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Index" type="Label" parent="."]
+offset_left = 1060
+offset_top = 33
+offset_right = 1235
+offset_bottom = 73
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.91, 0.72, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 22
+text = "05  /  15"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Sprite1" type="Sprite2D" parent="."]
+position = Vector2(108.000, 123.875)
+scale = Vector2(0.3812500, 0.3812500)
+texture = ExtResource("r1")
+
+[node name="Item0" type="Label" parent="."]
+offset_left = 32.000
+offset_top = 150.750
+offset_right = 184.000
+offset_bottom = 171.750
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r01 c01"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite2" type="Sprite2D" parent="."]
+position = Vector2(260.000, 123.875)
+scale = Vector2(0.3660000, 0.3660000)
+texture = ExtResource("r2")
+
+[node name="Item1" type="Label" parent="."]
+offset_left = 184.000
+offset_top = 150.750
+offset_right = 336.000
+offset_bottom = 171.750
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r01 c02"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite3" type="Sprite2D" parent="."]
+position = Vector2(412.000, 123.875)
+scale = Vector2(0.3812500, 0.3812500)
+texture = ExtResource("r3")
+
+[node name="Item2" type="Label" parent="."]
+offset_left = 336.000
+offset_top = 150.750
+offset_right = 488.000
+offset_bottom = 171.750
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r01 c03"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite4" type="Sprite2D" parent="."]
+position = Vector2(564.000, 123.875)
+scale = Vector2(0.3689516, 0.3689516)
+texture = ExtResource("r4")
+
+[node name="Item3" type="Label" parent="."]
+offset_left = 488.000
+offset_top = 150.750
+offset_right = 640.000
+offset_bottom = 171.750
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r01 c04"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite5" type="Sprite2D" parent="."]
+position = Vector2(716.000, 123.875)
+scale = Vector2(0.4197248, 0.4197248)
+texture = ExtResource("r5")
+
+[node name="Item4" type="Label" parent="."]
+offset_left = 640.000
+offset_top = 150.750
+offset_right = 792.000
+offset_bottom = 171.750
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r01 c05"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite6" type="Sprite2D" parent="."]
+position = Vector2(868.000, 123.875)
+scale = Vector2(0.3660000, 0.3660000)
+texture = ExtResource("r6")
+
+[node name="Item5" type="Label" parent="."]
+offset_left = 792.000
+offset_top = 150.750
+offset_right = 944.000
+offset_bottom = 171.750
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r01 c06"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite7" type="Sprite2D" parent="."]
+position = Vector2(1020.000, 123.875)
+scale = Vector2(0.4668367, 0.4668367)
+texture = ExtResource("r7")
+
+[node name="Item6" type="Label" parent="."]
+offset_left = 944.000
+offset_top = 150.750
+offset_right = 1096.000
+offset_bottom = 171.750
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r01 c07"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite8" type="Sprite2D" parent="."]
+position = Vector2(1172.000, 123.875)
+scale = Vector2(0.4529703, 0.4529703)
+texture = ExtResource("r8")
+
+[node name="Item7" type="Label" parent="."]
+offset_left = 1096.000
+offset_top = 150.750
+offset_right = 1248.000
+offset_bottom = 171.750
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r01 c08"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite9" type="Sprite2D" parent="."]
+position = Vector2(108.000, 197.625)
+scale = Vector2(0.5791139, 0.5791139)
+texture = ExtResource("r9")
+
+[node name="Item8" type="Label" parent="."]
+offset_left = 32.000
+offset_top = 224.500
+offset_right = 184.000
+offset_bottom = 245.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r02 c01"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite10" type="Sprite2D" parent="."]
+position = Vector2(260.000, 197.625)
+scale = Vector2(0.4399038, 0.4399038)
+texture = ExtResource("r10")
+
+[node name="Item9" type="Label" parent="."]
+offset_left = 184.000
+offset_top = 224.500
+offset_right = 336.000
+offset_bottom = 245.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r02 c02"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite11" type="Sprite2D" parent="."]
+position = Vector2(412.000, 197.625)
+scale = Vector2(0.5258621, 0.5258621)
+texture = ExtResource("r11")
+
+[node name="Item10" type="Label" parent="."]
+offset_left = 336.000
+offset_top = 224.500
+offset_right = 488.000
+offset_bottom = 245.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r02 c03"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite12" type="Sprite2D" parent="."]
+position = Vector2(564.000, 197.625)
+scale = Vector2(0.4716495, 0.4716495)
+texture = ExtResource("r12")
+
+[node name="Item11" type="Label" parent="."]
+offset_left = 488.000
+offset_top = 224.500
+offset_right = 640.000
+offset_bottom = 245.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r02 c04"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite13" type="Sprite2D" parent="."]
+position = Vector2(716.000, 197.625)
+scale = Vector2(0.4716495, 0.4716495)
+texture = ExtResource("r13")
+
+[node name="Item12" type="Label" parent="."]
+offset_left = 640.000
+offset_top = 224.500
+offset_right = 792.000
+offset_bottom = 245.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r02 c05"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite14" type="Sprite2D" parent="."]
+position = Vector2(868.000, 197.625)
+scale = Vector2(0.4399038, 0.4399038)
+texture = ExtResource("r14")
+
+[node name="Item13" type="Label" parent="."]
+offset_left = 792.000
+offset_top = 224.500
+offset_right = 944.000
+offset_bottom = 245.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r02 c06"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite15" type="Sprite2D" parent="."]
+position = Vector2(1020.000, 197.625)
+scale = Vector2(0.5027473, 0.5027473)
+texture = ExtResource("r15")
+
+[node name="Item14" type="Label" parent="."]
+offset_left = 944.000
+offset_top = 224.500
+offset_right = 1096.000
+offset_bottom = 245.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r02 c07"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite16" type="Sprite2D" parent="."]
+position = Vector2(1172.000, 197.625)
+scale = Vector2(0.4357143, 0.4357143)
+texture = ExtResource("r16")
+
+[node name="Item15" type="Label" parent="."]
+offset_left = 1096.000
+offset_top = 224.500
+offset_right = 1248.000
+offset_bottom = 245.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r02 c08"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite17" type="Sprite2D" parent="."]
+position = Vector2(108.000, 271.375)
+scale = Vector2(0.5579268, 0.5579268)
+texture = ExtResource("r17")
+
+[node name="Item16" type="Label" parent="."]
+offset_left = 32.000
+offset_top = 298.250
+offset_right = 184.000
+offset_bottom = 319.250
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r03 c01"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite18" type="Sprite2D" parent="."]
+position = Vector2(260.000, 271.375)
+scale = Vector2(0.5718750, 0.5718750)
+texture = ExtResource("r18")
+
+[node name="Item17" type="Label" parent="."]
+offset_left = 184.000
+offset_top = 298.250
+offset_right = 336.000
+offset_bottom = 319.250
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r03 c02"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite19" type="Sprite2D" parent="."]
+position = Vector2(412.000, 271.375)
+scale = Vector2(0.4716495, 0.4716495)
+texture = ExtResource("r19")
+
+[node name="Item18" type="Label" parent="."]
+offset_left = 336.000
+offset_top = 298.250
+offset_right = 488.000
+offset_bottom = 319.250
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r03 c03"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite20" type="Sprite2D" parent="."]
+position = Vector2(564.000, 271.375)
+scale = Vector2(0.4867021, 0.4867021)
+texture = ExtResource("r20")
+
+[node name="Item19" type="Label" parent="."]
+offset_left = 488.000
+offset_top = 298.250
+offset_right = 640.000
+offset_bottom = 319.250
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r03 c04"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite21" type="Sprite2D" parent="."]
+position = Vector2(716.000, 271.375)
+scale = Vector2(0.5579268, 0.5579268)
+texture = ExtResource("r21")
+
+[node name="Item20" type="Label" parent="."]
+offset_left = 640.000
+offset_top = 298.250
+offset_right = 792.000
+offset_bottom = 319.250
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r03 c05"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite22" type="Sprite2D" parent="."]
+position = Vector2(868.000, 271.375)
+scale = Vector2(0.4485294, 0.4485294)
+texture = ExtResource("r22")
+
+[node name="Item21" type="Label" parent="."]
+offset_left = 792.000
+offset_top = 298.250
+offset_right = 944.000
+offset_bottom = 319.250
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r03 c06"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite23" type="Sprite2D" parent="."]
+position = Vector2(1020.000, 271.375)
+scale = Vector2(0.4621212, 0.4621212)
+texture = ExtResource("r23")
+
+[node name="Item22" type="Label" parent="."]
+offset_left = 944.000
+offset_top = 298.250
+offset_right = 1096.000
+offset_bottom = 319.250
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r03 c07"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite24" type="Sprite2D" parent="."]
+position = Vector2(1172.000, 271.375)
+scale = Vector2(0.4716495, 0.4716495)
+texture = ExtResource("r24")
+
+[node name="Item23" type="Label" parent="."]
+offset_left = 1096.000
+offset_top = 298.250
+offset_right = 1248.000
+offset_bottom = 319.250
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r03 c08"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite25" type="Sprite2D" parent="."]
+position = Vector2(108.000, 345.125)
+scale = Vector2(0.4668367, 0.4668367)
+texture = ExtResource("r25")
+
+[node name="Item24" type="Label" parent="."]
+offset_left = 32.000
+offset_top = 372.000
+offset_right = 184.000
+offset_bottom = 393.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r04 c01"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite26" type="Sprite2D" parent="."]
+position = Vector2(260.000, 345.125)
+scale = Vector2(0.3519231, 0.3519231)
+texture = ExtResource("r26")
+
+[node name="Item25" type="Label" parent="."]
+offset_left = 184.000
+offset_top = 372.000
+offset_right = 336.000
+offset_bottom = 393.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r04 c02"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite27" type="Sprite2D" parent="."]
+position = Vector2(412.000, 345.125)
+scale = Vector2(0.3719512, 0.3719512)
+texture = ExtResource("r27")
+
+[node name="Item26" type="Label" parent="."]
+offset_left = 336.000
+offset_top = 372.000
+offset_right = 488.000
+offset_bottom = 393.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r04 c03"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite28" type="Sprite2D" parent="."]
+position = Vector2(564.000, 345.125)
+scale = Vector2(0.3750000, 0.3750000)
+texture = ExtResource("r28")
+
+[node name="Item27" type="Label" parent="."]
+offset_left = 488.000
+offset_top = 372.000
+offset_right = 640.000
+offset_bottom = 393.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r04 c04"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite29" type="Sprite2D" parent="."]
+position = Vector2(716.000, 345.125)
+scale = Vector2(0.4013158, 0.4013158)
+texture = ExtResource("r29")
+
+[node name="Item28" type="Label" parent="."]
+offset_left = 640.000
+offset_top = 372.000
+offset_right = 792.000
+offset_bottom = 393.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r04 c05"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite30" type="Sprite2D" parent="."]
+position = Vector2(868.000, 345.125)
+scale = Vector2(0.5319767, 0.5319767)
+texture = ExtResource("r30")
+
+[node name="Item29" type="Label" parent="."]
+offset_left = 792.000
+offset_top = 372.000
+offset_right = 944.000
+offset_bottom = 393.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r04 c06"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite31" type="Sprite2D" parent="."]
+position = Vector2(1020.000, 345.125)
+scale = Vector2(0.4485294, 0.4485294)
+texture = ExtResource("r31")
+
+[node name="Item30" type="Label" parent="."]
+offset_left = 944.000
+offset_top = 372.000
+offset_right = 1096.000
+offset_bottom = 393.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r04 c07"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite32" type="Sprite2D" parent="."]
+position = Vector2(1172.000, 345.125)
+scale = Vector2(0.4197248, 0.4197248)
+texture = ExtResource("r32")
+
+[node name="Item31" type="Label" parent="."]
+offset_left = 1096.000
+offset_top = 372.000
+offset_right = 1248.000
+offset_bottom = 393.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r04 c08"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite33" type="Sprite2D" parent="."]
+position = Vector2(108.000, 418.875)
+scale = Vector2(0.5648148, 0.5648148)
+texture = ExtResource("r33")
+
+[node name="Item32" type="Label" parent="."]
+offset_left = 32.000
+offset_top = 445.750
+offset_right = 184.000
+offset_bottom = 466.750
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r05 c01"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite34" type="Sprite2D" parent="."]
+position = Vector2(260.000, 418.875)
+scale = Vector2(0.4316038, 0.4316038)
+texture = ExtResource("r34")
+
+[node name="Item33" type="Label" parent="."]
+offset_left = 184.000
+offset_top = 445.750
+offset_right = 336.000
+offset_bottom = 466.750
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r05 c02"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite35" type="Sprite2D" parent="."]
+position = Vector2(412.000, 418.875)
+scale = Vector2(0.4867021, 0.4867021)
+texture = ExtResource("r35")
+
+[node name="Item34" type="Label" parent="."]
+offset_left = 336.000
+offset_top = 445.750
+offset_right = 488.000
+offset_bottom = 466.750
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r05 c03"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite36" type="Sprite2D" parent="."]
+position = Vector2(564.000, 418.875)
+scale = Vector2(0.3267857, 0.3267857)
+texture = ExtResource("r36")
+
+[node name="Item35" type="Label" parent="."]
+offset_left = 488.000
+offset_top = 445.750
+offset_right = 640.000
+offset_bottom = 466.750
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r05 c04"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite37" type="Sprite2D" parent="."]
+position = Vector2(716.000, 418.875)
+scale = Vector2(0.3363971, 0.3363971)
+texture = ExtResource("r37")
+
+[node name="Item36" type="Label" parent="."]
+offset_left = 640.000
+offset_top = 445.750
+offset_right = 792.000
+offset_bottom = 466.750
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r05 c05"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite38" type="Sprite2D" parent="."]
+position = Vector2(868.000, 418.875)
+scale = Vector2(0.3844538, 0.3844538)
+texture = ExtResource("r38")
+
+[node name="Item37" type="Label" parent="."]
+offset_left = 792.000
+offset_top = 445.750
+offset_right = 944.000
+offset_bottom = 466.750
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r05 c06"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite39" type="Sprite2D" parent="."]
+position = Vector2(1020.000, 418.875)
+scale = Vector2(0.6100000, 0.6100000)
+texture = ExtResource("r39")
+
+[node name="Item38" type="Label" parent="."]
+offset_left = 944.000
+offset_top = 445.750
+offset_right = 1096.000
+offset_bottom = 466.750
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r05 c07"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite40" type="Sprite2D" parent="."]
+position = Vector2(1172.000, 418.875)
+scale = Vector2(0.6727941, 0.6727941)
+texture = ExtResource("r40")
+
+[node name="Item39" type="Label" parent="."]
+offset_left = 1096.000
+offset_top = 445.750
+offset_right = 1248.000
+offset_bottom = 466.750
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r05 c08"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite41" type="Sprite2D" parent="."]
+position = Vector2(108.000, 492.625)
+scale = Vector2(0.4716495, 0.4716495)
+texture = ExtResource("r41")
+
+[node name="Item40" type="Label" parent="."]
+offset_left = 32.000
+offset_top = 519.500
+offset_right = 184.000
+offset_bottom = 540.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r06 c01"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite42" type="Sprite2D" parent="."]
+position = Vector2(260.000, 492.625)
+scale = Vector2(0.4275701, 0.4275701)
+texture = ExtResource("r42")
+
+[node name="Item41" type="Label" parent="."]
+offset_left = 184.000
+offset_top = 519.500
+offset_right = 336.000
+offset_bottom = 540.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r06 c02"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite43" type="Sprite2D" parent="."]
+position = Vector2(412.000, 492.625)
+scale = Vector2(0.4441748, 0.4441748)
+texture = ExtResource("r43")
+
+[node name="Item42" type="Label" parent="."]
+offset_left = 336.000
+offset_top = 519.500
+offset_right = 488.000
+offset_bottom = 540.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r06 c03"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite44" type="Sprite2D" parent="."]
+position = Vector2(564.000, 492.625)
+scale = Vector2(0.4357143, 0.4357143)
+texture = ExtResource("r44")
+
+[node name="Item43" type="Label" parent="."]
+offset_left = 488.000
+offset_top = 519.500
+offset_right = 640.000
+offset_bottom = 540.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r06 c04"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite45" type="Sprite2D" parent="."]
+position = Vector2(716.000, 492.625)
+scale = Vector2(0.4716495, 0.4716495)
+texture = ExtResource("r45")
+
+[node name="Item44" type="Label" parent="."]
+offset_left = 640.000
+offset_top = 519.500
+offset_right = 792.000
+offset_bottom = 540.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r06 c05"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite46" type="Sprite2D" parent="."]
+position = Vector2(868.000, 492.625)
+scale = Vector2(0.4485294, 0.4485294)
+texture = ExtResource("r46")
+
+[node name="Item45" type="Label" parent="."]
+offset_left = 792.000
+offset_top = 519.500
+offset_right = 944.000
+offset_bottom = 540.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r06 c06"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite47" type="Sprite2D" parent="."]
+position = Vector2(1020.000, 492.625)
+scale = Vector2(0.4316038, 0.4316038)
+texture = ExtResource("r47")
+
+[node name="Item46" type="Label" parent="."]
+offset_left = 944.000
+offset_top = 519.500
+offset_right = 1096.000
+offset_bottom = 540.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r06 c07"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite48" type="Sprite2D" parent="."]
+position = Vector2(1172.000, 492.625)
+scale = Vector2(0.4621212, 0.4621212)
+texture = ExtResource("r48")
+
+[node name="Item47" type="Label" parent="."]
+offset_left = 1096.000
+offset_top = 519.500
+offset_right = 1248.000
+offset_bottom = 540.500
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r06 c08"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite49" type="Sprite2D" parent="."]
+position = Vector2(108.000, 566.375)
+scale = Vector2(0.6443662, 0.6443662)
+texture = ExtResource("r49")
+
+[node name="Item48" type="Label" parent="."]
+offset_left = 32.000
+offset_top = 593.250
+offset_right = 184.000
+offset_bottom = 614.250
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r07 c01"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite50" type="Sprite2D" parent="."]
+position = Vector2(260.000, 566.375)
+scale = Vector2(0.4529703, 0.4529703)
+texture = ExtResource("r50")
+
+[node name="Item49" type="Label" parent="."]
+offset_left = 184.000
+offset_top = 593.250
+offset_right = 336.000
+offset_bottom = 614.250
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r07 c02"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite51" type="Sprite2D" parent="."]
+position = Vector2(412.000, 566.375)
+scale = Vector2(0.4867021, 0.4867021)
+texture = ExtResource("r51")
+
+[node name="Item50" type="Label" parent="."]
+offset_left = 336.000
+offset_top = 593.250
+offset_right = 488.000
+offset_bottom = 614.250
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r07 c03"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite52" type="Sprite2D" parent="."]
+position = Vector2(564.000, 566.375)
+scale = Vector2(0.4765625, 0.4765625)
+texture = ExtResource("r52")
+
+[node name="Item51" type="Label" parent="."]
+offset_left = 488.000
+offset_top = 593.250
+offset_right = 640.000
+offset_bottom = 614.250
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r07 c04"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite53" type="Sprite2D" parent="."]
+position = Vector2(716.000, 566.375)
+scale = Vector2(0.4972826, 0.4972826)
+texture = ExtResource("r53")
+
+[node name="Item52" type="Label" parent="."]
+offset_left = 640.000
+offset_top = 593.250
+offset_right = 792.000
+offset_bottom = 614.250
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r07 c05"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite54" type="Sprite2D" parent="."]
+position = Vector2(868.000, 566.375)
+scale = Vector2(0.4575000, 0.4575000)
+texture = ExtResource("r54")
+
+[node name="Item53" type="Label" parent="."]
+offset_left = 792.000
+offset_top = 593.250
+offset_right = 944.000
+offset_bottom = 614.250
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r07 c06"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite55" type="Sprite2D" parent="."]
+position = Vector2(1020.000, 566.375)
+scale = Vector2(0.4716495, 0.4716495)
+texture = ExtResource("r55")
+
+[node name="Item54" type="Label" parent="."]
+offset_left = 944.000
+offset_top = 593.250
+offset_right = 1096.000
+offset_bottom = 614.250
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r07 c07"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite56" type="Sprite2D" parent="."]
+position = Vector2(1172.000, 566.375)
+scale = Vector2(0.4668367, 0.4668367)
+texture = ExtResource("r56")
+
+[node name="Item55" type="Label" parent="."]
+offset_left = 1096.000
+offset_top = 593.250
+offset_right = 1248.000
+offset_bottom = 614.250
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r07 c08"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite57" type="Sprite2D" parent="."]
+position = Vector2(108.000, 640.125)
+scale = Vector2(0.4441748, 0.4441748)
+texture = ExtResource("r57")
+
+[node name="Item56" type="Label" parent="."]
+offset_left = 32.000
+offset_top = 667.000
+offset_right = 184.000
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r08 c01"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite58" type="Sprite2D" parent="."]
+position = Vector2(260.000, 640.125)
+scale = Vector2(0.4485294, 0.4485294)
+texture = ExtResource("r58")
+
+[node name="Item57" type="Label" parent="."]
+offset_left = 184.000
+offset_top = 667.000
+offset_right = 336.000
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r08 c02"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite59" type="Sprite2D" parent="."]
+position = Vector2(412.000, 640.125)
+scale = Vector2(0.3574219, 0.3574219)
+texture = ExtResource("r59")
+
+[node name="Item58" type="Label" parent="."]
+offset_left = 336.000
+offset_top = 667.000
+offset_right = 488.000
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r08 c03"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite60" type="Sprite2D" parent="."]
+position = Vector2(564.000, 640.125)
+scale = Vector2(0.3315217, 0.3315217)
+texture = ExtResource("r60")
+
+[node name="Item59" type="Label" parent="."]
+offset_left = 488.000
+offset_top = 667.000
+offset_right = 640.000
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r08 c04"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite61" type="Sprite2D" parent="."]
+position = Vector2(716.000, 640.125)
+scale = Vector2(0.3465909, 0.3465909)
+texture = ExtResource("r61")
+
+[node name="Item60" type="Label" parent="."]
+offset_left = 640.000
+offset_top = 667.000
+offset_right = 792.000
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r08 c05"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite62" type="Sprite2D" parent="."]
+position = Vector2(868.000, 640.125)
+scale = Vector2(0.3630952, 0.3630952)
+texture = ExtResource("r62")
+
+[node name="Item61" type="Label" parent="."]
+offset_left = 792.000
+offset_top = 667.000
+offset_right = 944.000
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r08 c06"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite63" type="Sprite2D" parent="."]
+position = Vector2(1020.000, 640.125)
+scale = Vector2(0.4765625, 0.4765625)
+texture = ExtResource("r63")
+
+[node name="Item62" type="Label" parent="."]
+offset_left = 944.000
+offset_top = 667.000
+offset_right = 1096.000
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r08 c07"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite64" type="Sprite2D" parent="."]
+position = Vector2(1172.000, 640.125)
+scale = Vector2(0.4919355, 0.4919355)
+texture = ExtResource("r64")
+
+[node name="Item63" type="Label" parent="."]
+offset_left = 1096.000
+offset_top = 667.000
+offset_right = 1248.000
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 13
+text = "r08 c08"
+horizontal_alignment = 1
+vertical_alignment = 1

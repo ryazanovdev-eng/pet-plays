@@ -1,0 +1,385 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://game/cast/frog_knight.tscn" id="frog_knight"]
+
+[ext_resource type="PackedScene" path="res://game/cast/skeleton_bone.tscn" id="skeleton_bone"]
+
+[ext_resource type="PackedScene" path="res://game/cast/skeleton_lavender.tscn" id="skeleton_lavender"]
+
+[ext_resource type="PackedScene" path="res://game/cast/skeleton_turquoise.tscn" id="skeleton_turquoise"]
+
+[ext_resource type="PackedScene" path="res://game/cast/zombie_green.tscn" id="zombie_green"]
+
+[ext_resource type="PackedScene" path="res://game/cast/zombie_blue.tscn" id="zombie_blue"]
+
+[ext_resource type="PackedScene" path="res://game/cast/zombie_pink.tscn" id="zombie_pink"]
+
+[ext_resource type="PackedScene" path="res://game/cast/ghost_blue.tscn" id="ghost_blue"]
+
+[ext_resource type="PackedScene" path="res://game/cast/ghost_purple.tscn" id="ghost_purple"]
+
+[ext_resource type="PackedScene" path="res://game/cast/ghost_green.tscn" id="ghost_green"]
+
+[ext_resource type="PackedScene" path="res://game/cast/boss_bone_king.tscn" id="boss_bone_king"]
+
+[ext_resource type="PackedScene" path="res://game/cast/boss_rotten_giant.tscn" id="boss_rotten_giant"]
+
+[node name="Gallery" type="Node2D"]
+
+[node name="Night" type="ColorRect" parent="."]
+offset_left = 0
+offset_top = 0
+offset_right = 1280
+offset_bottom = 720
+mouse_filter = 2
+color = Color(0.063,0.103,0.12,1)
+
+[node name="Title" type="Label" parent="."]
+offset_left = 36
+offset_top = 15
+text = "Лунное кладбище"
+theme_override_font_sizes/font_size = 32
+theme_override_colors/font_color = Color(0.93,0.90,0.82,1)
+
+[node name="Kicker" type="Label" parent="."]
+offset_left = 39
+offset_top = 60
+text = "АТЛАС ПЕРСОНАЖЕЙ    /    ГЕРОЙ И РЯДОВЫЕ ВРАГИ"
+theme_override_font_sizes/font_size = 15
+theme_override_colors/font_color = Color(0.62,0.73,0.71,1)
+
+[node name="Counter" type="Label" parent="."]
+offset_left = 1008
+offset_top = 33
+text = "12 фигур    /    62 клипа"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.96,0.68,0.31,1)
+
+[node name="Plate0" type="ColorRect" parent="."]
+offset_left = 36
+offset_top = 98
+offset_right = 268
+offset_bottom = 241
+mouse_filter = 2
+color = Color(0.13,0.20,0.22,1)
+
+[node name="No0" type="Label" parent="."]
+offset_left = 48
+offset_top = 106
+text = "01"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.96,0.68,0.31,1)
+
+[node name="frog_knight" parent="." instance=ExtResource("frog_knight")]
+position = Vector2(152, 184)
+
+[node name="Id0" type="Label" parent="."]
+offset_left = 48
+offset_top = 205
+text = "frog_knight"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.93,0.90,0.82,1)
+
+[node name="Plate1" type="ColorRect" parent="."]
+offset_left = 280
+offset_top = 98
+offset_right = 512
+offset_bottom = 241
+mouse_filter = 2
+color = Color(0.13,0.20,0.22,1)
+
+[node name="No1" type="Label" parent="."]
+offset_left = 292
+offset_top = 106
+text = "02"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.96,0.68,0.31,1)
+
+[node name="skeleton_bone" parent="." instance=ExtResource("skeleton_bone")]
+position = Vector2(396, 184)
+
+[node name="Id1" type="Label" parent="."]
+offset_left = 292
+offset_top = 205
+text = "skeleton_bone"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.93,0.90,0.82,1)
+
+[node name="Plate2" type="ColorRect" parent="."]
+offset_left = 524
+offset_top = 98
+offset_right = 756
+offset_bottom = 241
+mouse_filter = 2
+color = Color(0.13,0.20,0.22,1)
+
+[node name="No2" type="Label" parent="."]
+offset_left = 536
+offset_top = 106
+text = "03"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.96,0.68,0.31,1)
+
+[node name="skeleton_lavender" parent="." instance=ExtResource("skeleton_lavender")]
+position = Vector2(640, 184)
+animation = &"walk"
+autoplay = "walk"
+
+[node name="Id2" type="Label" parent="."]
+offset_left = 536
+offset_top = 205
+text = "skeleton_lavender"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.93,0.90,0.82,1)
+
+[node name="Plate3" type="ColorRect" parent="."]
+offset_left = 768
+offset_top = 98
+offset_right = 1000
+offset_bottom = 241
+mouse_filter = 2
+color = Color(0.13,0.20,0.22,1)
+
+[node name="No3" type="Label" parent="."]
+offset_left = 780
+offset_top = 106
+text = "04"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.96,0.68,0.31,1)
+
+[node name="skeleton_turquoise" parent="." instance=ExtResource("skeleton_turquoise")]
+position = Vector2(884, 184)
+
+[node name="Id3" type="Label" parent="."]
+offset_left = 780
+offset_top = 205
+text = "skeleton_turquoise"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.93,0.90,0.82,1)
+
+[node name="Plate4" type="ColorRect" parent="."]
+offset_left = 1012
+offset_top = 98
+offset_right = 1244
+offset_bottom = 241
+mouse_filter = 2
+color = Color(0.13,0.20,0.22,1)
+
+[node name="No4" type="Label" parent="."]
+offset_left = 1024
+offset_top = 106
+text = "05"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.96,0.68,0.31,1)
+
+[node name="zombie_green" parent="." instance=ExtResource("zombie_green")]
+position = Vector2(1128, 184)
+
+[node name="Id4" type="Label" parent="."]
+offset_left = 1024
+offset_top = 205
+text = "zombie_green"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.93,0.90,0.82,1)
+
+[node name="Plate5" type="ColorRect" parent="."]
+offset_left = 36
+offset_top = 253
+offset_right = 268
+offset_bottom = 396
+mouse_filter = 2
+color = Color(0.13,0.20,0.22,1)
+
+[node name="No5" type="Label" parent="."]
+offset_left = 48
+offset_top = 261
+text = "06"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.96,0.68,0.31,1)
+
+[node name="zombie_blue" parent="." instance=ExtResource("zombie_blue")]
+position = Vector2(152, 339)
+animation = &"walk"
+autoplay = "walk"
+
+[node name="Id5" type="Label" parent="."]
+offset_left = 48
+offset_top = 360
+text = "zombie_blue"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.93,0.90,0.82,1)
+
+[node name="Plate6" type="ColorRect" parent="."]
+offset_left = 280
+offset_top = 253
+offset_right = 512
+offset_bottom = 396
+mouse_filter = 2
+color = Color(0.13,0.20,0.22,1)
+
+[node name="No6" type="Label" parent="."]
+offset_left = 292
+offset_top = 261
+text = "07"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.96,0.68,0.31,1)
+
+[node name="zombie_pink" parent="." instance=ExtResource("zombie_pink")]
+position = Vector2(396, 339)
+
+[node name="Id6" type="Label" parent="."]
+offset_left = 292
+offset_top = 360
+text = "zombie_pink"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.93,0.90,0.82,1)
+
+[node name="Plate7" type="ColorRect" parent="."]
+offset_left = 524
+offset_top = 253
+offset_right = 756
+offset_bottom = 396
+mouse_filter = 2
+color = Color(0.13,0.20,0.22,1)
+
+[node name="No7" type="Label" parent="."]
+offset_left = 536
+offset_top = 261
+text = "08"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.96,0.68,0.31,1)
+
+[node name="ghost_blue" parent="." instance=ExtResource("ghost_blue")]
+position = Vector2(640, 339)
+
+[node name="Id7" type="Label" parent="."]
+offset_left = 536
+offset_top = 360
+text = "ghost_blue"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.93,0.90,0.82,1)
+
+[node name="Plate8" type="ColorRect" parent="."]
+offset_left = 768
+offset_top = 253
+offset_right = 1000
+offset_bottom = 396
+mouse_filter = 2
+color = Color(0.13,0.20,0.22,1)
+
+[node name="No8" type="Label" parent="."]
+offset_left = 780
+offset_top = 261
+text = "09"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.96,0.68,0.31,1)
+
+[node name="ghost_purple" parent="." instance=ExtResource("ghost_purple")]
+position = Vector2(884, 339)
+animation = &"walk"
+autoplay = "walk"
+
+[node name="Id8" type="Label" parent="."]
+offset_left = 780
+offset_top = 360
+text = "ghost_purple"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.93,0.90,0.82,1)
+
+[node name="Plate9" type="ColorRect" parent="."]
+offset_left = 1012
+offset_top = 253
+offset_right = 1244
+offset_bottom = 396
+mouse_filter = 2
+color = Color(0.13,0.20,0.22,1)
+
+[node name="No9" type="Label" parent="."]
+offset_left = 1024
+offset_top = 261
+text = "10"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.96,0.68,0.31,1)
+
+[node name="ghost_green" parent="." instance=ExtResource("ghost_green")]
+position = Vector2(1128, 339)
+
+[node name="Id9" type="Label" parent="."]
+offset_left = 1024
+offset_top = 360
+text = "ghost_green"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.93,0.90,0.82,1)
+
+[node name="Plate10" type="ColorRect" parent="."]
+offset_left = 36
+offset_top = 453
+offset_right = 634
+offset_bottom = 686
+mouse_filter = 2
+color = Color(0.13,0.20,0.22,1)
+
+[node name="No10" type="Label" parent="."]
+offset_left = 48
+offset_top = 461
+text = "11"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.96,0.68,0.31,1)
+
+[node name="boss_bone_king" parent="." instance=ExtResource("boss_bone_king")]
+position = Vector2(197, 655)
+
+[node name="Id10" type="Label" parent="."]
+offset_left = 341
+offset_top = 547
+text = "boss_bone_king"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.93,0.90,0.82,1)
+
+[node name="ClipCount10" type="Label" parent="."]
+offset_left = 341
+offset_top = 581
+text = "6 клипов   ·   2 атаки"
+theme_override_font_sizes/font_size = 15
+theme_override_colors/font_color = Color(0.62,0.73,0.71,1)
+
+[node name="Plate11" type="ColorRect" parent="."]
+offset_left = 646
+offset_top = 453
+offset_right = 1244
+offset_bottom = 686
+mouse_filter = 2
+color = Color(0.13,0.20,0.22,1)
+
+[node name="No11" type="Label" parent="."]
+offset_left = 658
+offset_top = 461
+text = "12"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.96,0.68,0.31,1)
+
+[node name="boss_rotten_giant" parent="." instance=ExtResource("boss_rotten_giant")]
+position = Vector2(807, 655)
+animation = &"walk"
+autoplay = "walk"
+
+[node name="Id11" type="Label" parent="."]
+offset_left = 951
+offset_top = 547
+text = "boss_rotten_giant"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.93,0.90,0.82,1)
+
+[node name="ClipCount11" type="Label" parent="."]
+offset_left = 951
+offset_top = 581
+text = "6 клипов   ·   2 атаки"
+theme_override_font_sizes/font_size = 15
+theme_override_colors/font_color = Color(0.62,0.73,0.71,1)
+
+[node name="BossSection" type="Label" parent="."]
+offset_left = 38
+offset_top = 415
+text = "БОССЫ    /    ДВА ТИПА АТАК"
+theme_override_font_sizes/font_size = 15
+theme_override_colors/font_color = Color(0.62,0.73,0.71,1)

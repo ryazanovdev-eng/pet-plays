@@ -1,0 +1,23 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://game/arena_parts/world.tscn" id="r1"]
+[ext_resource type="PackedScene" path="res://game/arena_parts/hero_mark.tscn" id="r2"]
+[ext_resource type="PackedScene" path="res://game/arena_parts/hud.tscn" id="r3"]
+
+[node name="MeridianView" type="Node2D"]
+
+[node name="World" parent="." instance=ExtResource("r1")]
+
+[node name="Hero" parent="." instance=ExtResource("r2")]
+position = Vector2(2320, 1768)
+
+[node name="FixedCamera" type="Camera2D" parent="."]
+position = Vector2(2390, 1700)
+position_smoothing_enabled = false
+
+[node name="HUD" parent="." instance=ExtResource("r3")]
+
+[node name="PlayerPointer" type="Polygon2D" parent="HUD"]
+position = Vector2(1193.8, 637.276)
+color = Color(1, 0.85, 0.28, 1)
+polygon = PackedVector2Array(-3, -4, 5, 0, -3, 4, -1, 0)

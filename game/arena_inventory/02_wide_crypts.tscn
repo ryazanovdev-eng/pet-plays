@@ -1,0 +1,132 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/environment/wide_crypts/wide_domed_mausoleum.png" id="r1"]
+[ext_resource type="Texture2D" path="res://assets/environment/wide_crypts/wide_skull_mausoleum.png" id="r2"]
+[ext_resource type="Texture2D" path="res://assets/environment/wide_crypts/wide_stained_glass_mausoleum.png" id="r3"]
+[ext_resource type="Texture2D" path="res://assets/environment/wide_crypts/wide_statue_mausoleum.png" id="r4"]
+
+[node name="Cabinet" type="Node2D"]
+texture_filter = 2
+
+[node name="Paper" type="ColorRect" parent="."]
+offset_right = 1280
+offset_bottom = 720
+color = Color(0.085, 0.055, 0.105, 1)
+
+[node name="Number" type="Label" parent="."]
+offset_left = 32
+offset_top = 15
+offset_right = 382
+offset_bottom = 45
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.88, 0.68, 0.34, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 17
+text = "FROG KNIGHT    /    АТЛАС"
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Title" type="Label" parent="."]
+offset_left = 32
+offset_top = 43
+offset_right = 982
+offset_bottom = 88
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.91, 0.72, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 32
+text = "Мавзолеи"
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Index" type="Label" parent="."]
+offset_left = 1060
+offset_top = 33
+offset_right = 1235
+offset_bottom = 73
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.91, 0.72, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 22
+text = "02  /  15"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Sprite1" type="Sprite2D" parent="."]
+position = Vector2(336.000, 232.000)
+scale = Vector2(1.0000000, 1.0000000)
+texture = ExtResource("r1")
+
+[node name="Item0" type="Label" parent="."]
+offset_left = 32.000
+offset_top = 367.000
+offset_right = 640.000
+offset_bottom = 393.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "wide domed mausoleum"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite2" type="Sprite2D" parent="."]
+position = Vector2(944.500, 231.500)
+scale = Vector2(1.0000000, 1.0000000)
+texture = ExtResource("r2")
+
+[node name="Item1" type="Label" parent="."]
+offset_left = 640.000
+offset_top = 367.000
+offset_right = 1248.000
+offset_bottom = 393.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "wide skull mausoleum"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite3" type="Sprite2D" parent="."]
+position = Vector2(336.000, 526.500)
+scale = Vector2(1.0000000, 1.0000000)
+texture = ExtResource("r3")
+
+[node name="Item2" type="Label" parent="."]
+offset_left = 32.000
+offset_top = 662.000
+offset_right = 640.000
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "wide stained glass mausoleum"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite4" type="Sprite2D" parent="."]
+position = Vector2(944.500, 527.000)
+scale = Vector2(1.0000000, 1.0000000)
+texture = ExtResource("r4")
+
+[node name="Item3" type="Label" parent="."]
+offset_left = 640.000
+offset_top = 662.000
+offset_right = 1248.000
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "wide statue mausoleum"
+horizontal_alignment = 1
+vertical_alignment = 1

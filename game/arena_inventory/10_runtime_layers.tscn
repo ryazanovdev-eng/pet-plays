@@ -1,0 +1,232 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/ui/health/runtime_layers/bone_king_empty_frame.png" id="r1"]
+[ext_resource type="Texture2D" path="res://assets/ui/health/runtime_layers/bone_king_full_red_overlay.png" id="r2"]
+[ext_resource type="Texture2D" path="res://assets/ui/health/runtime_layers/bone_king_rounded_right_cap.png" id="r3"]
+[ext_resource type="Texture2D" path="res://assets/ui/health/runtime_layers/hero_empty_frame.png" id="r4"]
+[ext_resource type="Texture2D" path="res://assets/ui/health/runtime_layers/hero_full_red_overlay.png" id="r5"]
+[ext_resource type="Texture2D" path="res://assets/ui/health/runtime_layers/hero_rounded_right_cap.png" id="r6"]
+[ext_resource type="Texture2D" path="res://assets/ui/health/runtime_layers/rotten_giant_empty_frame.png" id="r7"]
+[ext_resource type="Texture2D" path="res://assets/ui/health/runtime_layers/rotten_giant_full_red_overlay.png" id="r8"]
+[ext_resource type="Texture2D" path="res://assets/ui/health/runtime_layers/rotten_giant_rounded_right_cap.png" id="r9"]
+
+[node name="Cabinet" type="Node2D"]
+texture_filter = 2
+
+[node name="Paper" type="ColorRect" parent="."]
+offset_right = 1280
+offset_bottom = 720
+color = Color(0.085, 0.055, 0.105, 1)
+
+[node name="Number" type="Label" parent="."]
+offset_left = 32
+offset_top = 15
+offset_right = 382
+offset_bottom = 45
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.88, 0.68, 0.34, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 17
+text = "FROG KNIGHT    /    АТЛАС"
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Title" type="Label" parent="."]
+offset_left = 32
+offset_top = 43
+offset_right = 982
+offset_bottom = 88
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.91, 0.72, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 32
+text = "Слои здоровья"
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Index" type="Label" parent="."]
+offset_left = 1060
+offset_top = 33
+offset_right = 1235
+offset_bottom = 73
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.91, 0.72, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 22
+text = "10  /  15"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Sprite1" type="Sprite2D" parent="."]
+position = Vector2(234.667, 182.833)
+scale = Vector2(0.4526275, 0.4526275)
+texture = ExtResource("r1")
+
+[node name="Item0" type="Label" parent="."]
+offset_left = 32.000
+offset_top = 268.667
+offset_right = 437.333
+offset_bottom = 294.667
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "bone king empty frame"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite2" type="Sprite2D" parent="."]
+position = Vector2(640.000, 182.833)
+scale = Vector2(0.4526275, 0.4526275)
+texture = ExtResource("r2")
+
+[node name="Item1" type="Label" parent="."]
+offset_left = 437.333
+offset_top = 268.667
+offset_right = 842.667
+offset_bottom = 294.667
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "bone king full red overlay"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite3" type="Sprite2D" parent="."]
+position = Vector2(1045.000, 182.500)
+scale = Vector2(1.0000000, 1.0000000)
+texture = ExtResource("r3")
+
+[node name="Item2" type="Label" parent="."]
+offset_left = 842.667
+offset_top = 268.667
+offset_right = 1248.000
+offset_bottom = 294.667
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "bone king rounded right cap"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite4" type="Sprite2D" parent="."]
+position = Vector2(234.667, 379.500)
+scale = Vector2(0.4526275, 0.4526275)
+texture = ExtResource("r4")
+
+[node name="Item3" type="Label" parent="."]
+offset_left = 32.000
+offset_top = 465.333
+offset_right = 437.333
+offset_bottom = 491.333
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "hero empty frame"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite5" type="Sprite2D" parent="."]
+position = Vector2(640.000, 379.500)
+scale = Vector2(0.4526275, 0.4526275)
+texture = ExtResource("r5")
+
+[node name="Item4" type="Label" parent="."]
+offset_left = 437.333
+offset_top = 465.333
+offset_right = 842.667
+offset_bottom = 491.333
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "hero full red overlay"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite6" type="Sprite2D" parent="."]
+position = Vector2(1045.000, 379.500)
+scale = Vector2(1.0000000, 1.0000000)
+texture = ExtResource("r6")
+
+[node name="Item5" type="Label" parent="."]
+offset_left = 842.667
+offset_top = 465.333
+offset_right = 1248.000
+offset_bottom = 491.333
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "hero rounded right cap"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite7" type="Sprite2D" parent="."]
+position = Vector2(234.667, 576.167)
+scale = Vector2(0.4526275, 0.4526275)
+texture = ExtResource("r7")
+
+[node name="Item6" type="Label" parent="."]
+offset_left = 32.000
+offset_top = 662.000
+offset_right = 437.333
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "rotten giant empty frame"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite8" type="Sprite2D" parent="."]
+position = Vector2(640.000, 576.167)
+scale = Vector2(0.4526275, 0.4526275)
+texture = ExtResource("r8")
+
+[node name="Item7" type="Label" parent="."]
+offset_left = 437.333
+offset_top = 662.000
+offset_right = 842.667
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "rotten giant full red overlay"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite9" type="Sprite2D" parent="."]
+position = Vector2(1045.000, 576.000)
+scale = Vector2(1.0000000, 1.0000000)
+texture = ExtResource("r9")
+
+[node name="Item8" type="Label" parent="."]
+offset_left = 842.667
+offset_top = 662.000
+offset_right = 1248.000
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "rotten giant rounded right cap"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,27 +1,5 @@
-# Style anchor
+# Описание текущего стиля
 
-- **Статус:** не заполнен
-- **Заполняется на этапе:** `/art-style`
+> Colorful cartoon gothic cemetery, three-quarter overhead view, chibi frog knight, clean dark outlines, expressive silhouettes, jewel-toned costumes, warm lanterns against violet stone, open combat lanes, ornate gold HUD frames. No lettering or watermark.
 
-## Зачем
-
-Style anchor — это один и тот же блок текста, который добавляется в начало каждого промта. Он держит стиль одинаковым, пока меняются сюжет, поза и композиция.
-
-## Шаблон
-
-```
-STYLE ANCHOR:
-<2D or 3D game concept art>, <technique>, <shape language>, <palette of 3-5 colors>,
-<lighting>, <level of detail>, <camera>, clean readable silhouette, no text, no watermark
-```
-
-## Правила
-
-- Не больше 40 слов.
-- Только то, что должно повторяться в каждом кадре.
-- Не добавляй сюда сюжет и конкретных персонажей.
-- При смене стиля обнови этот файл и зафиксируй решение в `docs/decisions/`.
-
-## Текущий anchor
-
-_Пока не выбран._
+При описании нового элемента сверять пропорции и цвета с [каст-листом и общим концептом](../art/README.md). Описание не заменяет предоставленные кадры. A/B/C/C2 — исторические стилевые тесты, не варианты для повторного выбора.

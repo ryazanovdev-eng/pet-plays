@@ -1,0 +1,3601 @@
+{
+  "schema_version": 2,
+  "source": "res://raw/FrogKnight_Animations/manifest.json",
+  "format": "native straight-alpha RGBA PNG; no filtering or resampling of artwork",
+  "bbox_convention": "xyxy, exclusive maximum",
+  "characters": {
+    "frog_knight": {
+      "sprite_frames": "res://assets/cast/frog_knight.tres",
+      "scene": "res://game/cast/frog_knight.tscn",
+      "source_directory": "raw/FrogKnight_Animations/characters/hero/frog_knight",
+      "source_frame_size_px": [
+        627,
+        627
+      ],
+      "frame_size_px": [
+        627,
+        627
+      ],
+      "source_padding_xy": [
+        0,
+        0
+      ],
+      "pivot_px": [
+        313,
+        539
+      ],
+      "game_scale": 0.10207336523125997,
+      "animations": {
+        "idle": {
+          "fps": 4.5,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/frog_knight/idle/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                45,
+                627,
+                623
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/frog_knight/idle/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                19,
+                621,
+                626
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/frog_knight/idle/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                9,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/frog_knight/idle/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                9,
+                611,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "walk": {
+          "fps": 8,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/frog_knight/walk/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                38,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/frog_knight/walk/02.png",
+              "alpha_bbox_xyxy": [
+                1,
+                46,
+                597,
+                617
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/frog_knight/walk/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                7,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/frog_knight/walk/04.png",
+              "alpha_bbox_xyxy": [
+                1,
+                3,
+                605,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "attack": {
+          "fps": 10.5,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/frog_knight/attack/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                41,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/frog_knight/attack/02.png",
+              "alpha_bbox_xyxy": [
+                1,
+                19,
+                621,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/frog_knight/attack/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/frog_knight/attack/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                589,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "hurt": {
+          "fps": 7,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/frog_knight/hurt/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                25,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/frog_knight/hurt/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                35,
+                613,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/frog_knight/hurt/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/frog_knight/hurt/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                621,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "death": {
+          "fps": 5.5,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/frog_knight/death/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                23,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/frog_knight/death/02.png",
+              "alpha_bbox_xyxy": [
+                1,
+                9,
+                617,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/frog_knight/death/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/frog_knight/death/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                621,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        }
+      }
+    },
+    "skeleton_bone": {
+      "sprite_frames": "res://assets/cast/skeleton_bone.tres",
+      "scene": "res://game/cast/skeleton_bone.tscn",
+      "source_directory": "raw/FrogKnight_Animations/characters/enemies/skeleton_bone",
+      "source_frame_size_px": [
+        627,
+        627
+      ],
+      "frame_size_px": [
+        627,
+        627
+      ],
+      "source_padding_xy": [
+        0,
+        0
+      ],
+      "pivot_px": [
+        313,
+        545
+      ],
+      "game_scale": 0.14035087719298245,
+      "animations": {
+        "idle": {
+          "fps": 5,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/skeleton_bone/idle/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_bone/idle/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                15,
+                626,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_bone/idle/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_bone/idle/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                613,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "walk": {
+          "fps": 8,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/skeleton_bone/walk/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                17,
+                627,
+                626
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_bone/walk/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                9,
+                613,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_bone/walk/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_bone/walk/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                626,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "attack": {
+          "fps": 10,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/skeleton_bone/attack/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                20,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_bone/attack/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                19,
+                607,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_bone/attack/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                1,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_bone/attack/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                621,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "hurt": {
+          "fps": 6.5,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/skeleton_bone/hurt/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                4,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_bone/hurt/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                23,
+                613,
+                583
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_bone/hurt/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                5,
+                627,
+                565
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_bone/hurt/04.png",
+              "alpha_bbox_xyxy": [
+                1,
+                23,
+                611,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "death": {
+          "fps": 5,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/skeleton_bone/death/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                25,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_bone/death/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                9,
+                617,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_bone/death/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                8,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_bone/death/04.png",
+              "alpha_bbox_xyxy": [
+                1,
+                0,
+                621,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        }
+      }
+    },
+    "skeleton_lavender": {
+      "sprite_frames": "res://assets/cast/skeleton_lavender.tres",
+      "scene": "res://game/cast/skeleton_lavender.tscn",
+      "source_directory": "raw/FrogKnight_Animations/characters/enemies/skeleton_lavender",
+      "source_frame_size_px": [
+        627,
+        627
+      ],
+      "frame_size_px": [
+        627,
+        627
+      ],
+      "source_padding_xy": [
+        0,
+        0
+      ],
+      "pivot_px": [
+        313,
+        545
+      ],
+      "game_scale": 0.14035087719298245,
+      "animations": {
+        "idle": {
+          "fps": 5,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/skeleton_lavender/idle/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_lavender/idle/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                15,
+                626,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_lavender/idle/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_lavender/idle/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                613,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "walk": {
+          "fps": 8,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/skeleton_lavender/walk/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                17,
+                627,
+                626
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_lavender/walk/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                9,
+                613,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_lavender/walk/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_lavender/walk/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                626,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "attack": {
+          "fps": 10,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/skeleton_lavender/attack/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                20,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_lavender/attack/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                19,
+                607,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_lavender/attack/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                1,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_lavender/attack/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                621,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "hurt": {
+          "fps": 6.5,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/skeleton_lavender/hurt/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                4,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_lavender/hurt/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                23,
+                613,
+                583
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_lavender/hurt/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                5,
+                627,
+                565
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_lavender/hurt/04.png",
+              "alpha_bbox_xyxy": [
+                1,
+                23,
+                611,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "death": {
+          "fps": 5,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/skeleton_lavender/death/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                25,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_lavender/death/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                9,
+                617,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_lavender/death/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                8,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_lavender/death/04.png",
+              "alpha_bbox_xyxy": [
+                1,
+                0,
+                621,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        }
+      }
+    },
+    "skeleton_turquoise": {
+      "sprite_frames": "res://assets/cast/skeleton_turquoise.tres",
+      "scene": "res://game/cast/skeleton_turquoise.tscn",
+      "source_directory": "raw/FrogKnight_Animations/characters/enemies/skeleton_turquoise",
+      "source_frame_size_px": [
+        627,
+        627
+      ],
+      "frame_size_px": [
+        627,
+        627
+      ],
+      "source_padding_xy": [
+        0,
+        0
+      ],
+      "pivot_px": [
+        313,
+        545
+      ],
+      "game_scale": 0.14035087719298245,
+      "animations": {
+        "idle": {
+          "fps": 5,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/skeleton_turquoise/idle/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_turquoise/idle/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                15,
+                626,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_turquoise/idle/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_turquoise/idle/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                613,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "walk": {
+          "fps": 8,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/skeleton_turquoise/walk/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                17,
+                627,
+                626
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_turquoise/walk/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                9,
+                613,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_turquoise/walk/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_turquoise/walk/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                626,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "attack": {
+          "fps": 10,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/skeleton_turquoise/attack/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                20,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_turquoise/attack/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                19,
+                607,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_turquoise/attack/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                1,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_turquoise/attack/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                621,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "hurt": {
+          "fps": 6.5,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/skeleton_turquoise/hurt/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                4,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_turquoise/hurt/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                23,
+                613,
+                583
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_turquoise/hurt/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                5,
+                627,
+                565
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_turquoise/hurt/04.png",
+              "alpha_bbox_xyxy": [
+                1,
+                23,
+                611,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "death": {
+          "fps": 5,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/skeleton_turquoise/death/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                25,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_turquoise/death/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                9,
+                617,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_turquoise/death/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                8,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/skeleton_turquoise/death/04.png",
+              "alpha_bbox_xyxy": [
+                1,
+                0,
+                621,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        }
+      }
+    },
+    "zombie_green": {
+      "sprite_frames": "res://assets/cast/zombie_green.tres",
+      "scene": "res://game/cast/zombie_green.tscn",
+      "source_directory": "raw/FrogKnight_Animations/characters/enemies/zombie_green",
+      "source_frame_size_px": [
+        627,
+        627
+      ],
+      "frame_size_px": [
+        627,
+        627
+      ],
+      "source_padding_xy": [
+        0,
+        0
+      ],
+      "pivot_px": [
+        313,
+        576
+      ],
+      "game_scale": 0.14035087719298245,
+      "animations": {
+        "idle": {
+          "fps": 4.5,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/zombie_green/idle/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                29,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_green/idle/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                9,
+                615,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_green/idle/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                7,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_green/idle/04.png",
+              "alpha_bbox_xyxy": [
+                3,
+                7,
+                613,
+                606
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "walk": {
+          "fps": 7,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/zombie_green/walk/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                16,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_green/walk/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                14,
+                609,
+                619
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_green/walk/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_green/walk/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                1,
+                624,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "attack": {
+          "fps": 9,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/zombie_green/attack/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                9,
+                625,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_green/attack/02.png",
+              "alpha_bbox_xyxy": [
+                5,
+                19,
+                603,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_green/attack/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_green/attack/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                615,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "hurt": {
+          "fps": 6.25,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/zombie_green/hurt/01.png",
+              "alpha_bbox_xyxy": [
+                25,
+                23,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_green/hurt/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                23,
+                603,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_green/hurt/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                1,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_green/hurt/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                613,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "death": {
+          "fps": 4.75,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/zombie_green/death/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                13,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_green/death/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                13,
+                617,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_green/death/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_green/death/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                1,
+                610,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        }
+      }
+    },
+    "zombie_blue": {
+      "sprite_frames": "res://assets/cast/zombie_blue.tres",
+      "scene": "res://game/cast/zombie_blue.tscn",
+      "source_directory": "raw/FrogKnight_Animations/characters/enemies/zombie_blue",
+      "source_frame_size_px": [
+        627,
+        627
+      ],
+      "frame_size_px": [
+        627,
+        627
+      ],
+      "source_padding_xy": [
+        0,
+        0
+      ],
+      "pivot_px": [
+        313,
+        576
+      ],
+      "game_scale": 0.14035087719298245,
+      "animations": {
+        "idle": {
+          "fps": 4.5,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/zombie_blue/idle/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                29,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_blue/idle/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                9,
+                615,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_blue/idle/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                7,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_blue/idle/04.png",
+              "alpha_bbox_xyxy": [
+                3,
+                7,
+                613,
+                606
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "walk": {
+          "fps": 7,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/zombie_blue/walk/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                16,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_blue/walk/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                14,
+                609,
+                619
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_blue/walk/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_blue/walk/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                1,
+                624,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "attack": {
+          "fps": 9,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/zombie_blue/attack/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                9,
+                625,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_blue/attack/02.png",
+              "alpha_bbox_xyxy": [
+                5,
+                19,
+                603,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_blue/attack/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_blue/attack/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                615,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "hurt": {
+          "fps": 6.25,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/zombie_blue/hurt/01.png",
+              "alpha_bbox_xyxy": [
+                25,
+                23,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_blue/hurt/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                23,
+                603,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_blue/hurt/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                1,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_blue/hurt/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                613,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "death": {
+          "fps": 4.75,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/zombie_blue/death/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                13,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_blue/death/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                13,
+                617,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_blue/death/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_blue/death/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                1,
+                610,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        }
+      }
+    },
+    "zombie_pink": {
+      "sprite_frames": "res://assets/cast/zombie_pink.tres",
+      "scene": "res://game/cast/zombie_pink.tscn",
+      "source_directory": "raw/FrogKnight_Animations/characters/enemies/zombie_pink",
+      "source_frame_size_px": [
+        627,
+        627
+      ],
+      "frame_size_px": [
+        627,
+        627
+      ],
+      "source_padding_xy": [
+        0,
+        0
+      ],
+      "pivot_px": [
+        313,
+        576
+      ],
+      "game_scale": 0.14035087719298245,
+      "animations": {
+        "idle": {
+          "fps": 4.5,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/zombie_pink/idle/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                29,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_pink/idle/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                9,
+                615,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_pink/idle/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                7,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_pink/idle/04.png",
+              "alpha_bbox_xyxy": [
+                3,
+                7,
+                613,
+                606
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "walk": {
+          "fps": 7,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/zombie_pink/walk/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                16,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_pink/walk/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                14,
+                609,
+                619
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_pink/walk/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_pink/walk/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                1,
+                624,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "attack": {
+          "fps": 9,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/zombie_pink/attack/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                9,
+                625,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_pink/attack/02.png",
+              "alpha_bbox_xyxy": [
+                5,
+                19,
+                603,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_pink/attack/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_pink/attack/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                615,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "hurt": {
+          "fps": 6.25,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/zombie_pink/hurt/01.png",
+              "alpha_bbox_xyxy": [
+                25,
+                23,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_pink/hurt/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                23,
+                603,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_pink/hurt/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                1,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_pink/hurt/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                613,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "death": {
+          "fps": 4.75,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/zombie_pink/death/01.png",
+              "alpha_bbox_xyxy": [
+                0,
+                13,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_pink/death/02.png",
+              "alpha_bbox_xyxy": [
+                0,
+                13,
+                617,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_pink/death/03.png",
+              "alpha_bbox_xyxy": [
+                0,
+                0,
+                627,
+                627
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/zombie_pink/death/04.png",
+              "alpha_bbox_xyxy": [
+                0,
+                1,
+                610,
+                627
+              ],
+              "alpha_max": 255
+            }
+          ]
+        }
+      }
+    },
+    "ghost_blue": {
+      "sprite_frames": "res://assets/cast/ghost_blue.tres",
+      "scene": "res://game/cast/ghost_blue.tscn",
+      "source_directory": "raw/FrogKnight_Animations/characters/enemies/ghost_blue",
+      "source_frame_size_px": [
+        400,
+        400
+      ],
+      "frame_size_px": [
+        640,
+        432
+      ],
+      "source_padding_xy": [
+        120,
+        16
+      ],
+      "pivot_px": [
+        320,
+        380
+      ],
+      "game_scale": 0.22,
+      "animations": {
+        "idle": {
+          "fps": 4.25,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/ghost_blue/idle/01.png",
+              "alpha_bbox_xyxy": [
+                202,
+                61,
+                432,
+                323
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_blue/idle/02.png",
+              "alpha_bbox_xyxy": [
+                204,
+                54,
+                434,
+                316
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_blue/idle/03.png",
+              "alpha_bbox_xyxy": [
+                207,
+                39,
+                433,
+                311
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_blue/idle/04.png",
+              "alpha_bbox_xyxy": [
+                206,
+                61,
+                431,
+                323
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "walk": {
+          "fps": 7.5,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/ghost_blue/walk/01.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_walk_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                -139,
+                -35
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                181,
+                59,
+                458,
+                376
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_blue/walk/02.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_walk_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                223,
+                -35
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                145,
+                69,
+                485,
+                367
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_blue/walk/03.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_walk_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                585,
+                -35
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                112,
+                71,
+                527,
+                352
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_blue/walk/04.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_walk_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                947,
+                -35
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                178,
+                71,
+                489,
+                365
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "attack": {
+          "fps": 9.5,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/ghost_blue/attack/01.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_attack_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                -139,
+                -35
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                172,
+                94,
+                428,
+                361
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_blue/attack/02.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_attack_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                223,
+                -35
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                90,
+                98,
+                392,
+                362
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_blue/attack/03.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_attack_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                585,
+                -35
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                9,
+                48,
+                531,
+                351
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_blue/attack/04.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_attack_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                947,
+                -35
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                187,
+                93,
+                474,
+                356
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "hurt": {
+          "fps": 6.75,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/ghost_blue/hurt/01.png",
+              "alpha_bbox_xyxy": [
+                201,
+                75,
+                474,
+                381
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_blue/hurt/02.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_hurt_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                223,
+                -35
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                169,
+                51,
+                461,
+                368
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_blue/hurt/03.png",
+              "alpha_bbox_xyxy": [
+                177,
+                70,
+                450,
+                374
+              ],
+              "alpha_max": 108
+            },
+            {
+              "path": "res://assets/cast/ghost_blue/hurt/04.png",
+              "alpha_bbox_xyxy": [
+                174,
+                74,
+                439,
+                379
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "death": {
+          "fps": 4.75,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/ghost_blue/death/01.png",
+              "alpha_bbox_xyxy": [
+                205,
+                64,
+                433,
+                326
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_blue/death/02.png",
+              "alpha_bbox_xyxy": [
+                219,
+                74,
+                436,
+                290
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_blue/death/03.png",
+              "alpha_bbox_xyxy": [
+                246,
+                165,
+                412,
+                317
+              ],
+              "alpha_max": 213
+            },
+            {
+              "path": "res://assets/cast/ghost_blue/death/04.png",
+              "alpha_bbox_xyxy": [
+                240,
+                156,
+                392,
+                357
+              ],
+              "alpha_max": 181
+            }
+          ]
+        }
+      }
+    },
+    "ghost_purple": {
+      "sprite_frames": "res://assets/cast/ghost_purple.tres",
+      "scene": "res://game/cast/ghost_purple.tscn",
+      "source_directory": "raw/FrogKnight_Animations/characters/enemies/ghost_purple",
+      "source_frame_size_px": [
+        400,
+        400
+      ],
+      "frame_size_px": [
+        640,
+        432
+      ],
+      "source_padding_xy": [
+        120,
+        16
+      ],
+      "pivot_px": [
+        320,
+        380
+      ],
+      "game_scale": 0.22,
+      "animations": {
+        "idle": {
+          "fps": 4.25,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/ghost_purple/idle/01.png",
+              "alpha_bbox_xyxy": [
+                202,
+                63,
+                432,
+                323
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_purple/idle/02.png",
+              "alpha_bbox_xyxy": [
+                204,
+                56,
+                436,
+                316
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_purple/idle/03.png",
+              "alpha_bbox_xyxy": [
+                207,
+                40,
+                434,
+                311
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_purple/idle/04.png",
+              "alpha_bbox_xyxy": [
+                205,
+                63,
+                431,
+                323
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "walk": {
+          "fps": 7.5,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/ghost_purple/walk/01.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_walk_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                -139,
+                327
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                182,
+                54,
+                460,
+                371
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_purple/walk/02.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_walk_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                223,
+                327
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                143,
+                64,
+                486,
+                360
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_purple/walk/03.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_walk_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                585,
+                327
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                112,
+                65,
+                527,
+                345
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_purple/walk/04.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_walk_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                947,
+                327
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                180,
+                65,
+                489,
+                358
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "attack": {
+          "fps": 9.5,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/ghost_purple/attack/01.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_attack_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                -139,
+                327
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                170,
+                71,
+                430,
+                343
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_purple/attack/02.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_attack_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                223,
+                327
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                88,
+                75,
+                392,
+                342
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_purple/attack/03.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_attack_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                585,
+                327
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                10,
+                31,
+                531,
+                328
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_purple/attack/04.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_attack_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                947,
+                327
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                185,
+                70,
+                474,
+                337
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "hurt": {
+          "fps": 6.75,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/ghost_purple/hurt/01.png",
+              "alpha_bbox_xyxy": [
+                201,
+                74,
+                475,
+                382
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_purple/hurt/02.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_hurt_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                223,
+                327
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                168,
+                47,
+                461,
+                368
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_purple/hurt/03.png",
+              "alpha_bbox_xyxy": [
+                180,
+                69,
+                451,
+                369
+              ],
+              "alpha_max": 106
+            },
+            {
+              "path": "res://assets/cast/ghost_purple/hurt/04.png",
+              "alpha_bbox_xyxy": [
+                175,
+                72,
+                438,
+                381
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "death": {
+          "fps": 4.75,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/ghost_purple/death/01.png",
+              "alpha_bbox_xyxy": [
+                205,
+                66,
+                434,
+                326
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_purple/death/02.png",
+              "alpha_bbox_xyxy": [
+                219,
+                75,
+                436,
+                290
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_purple/death/03.png",
+              "alpha_bbox_xyxy": [
+                246,
+                165,
+                413,
+                318
+              ],
+              "alpha_max": 213
+            },
+            {
+              "path": "res://assets/cast/ghost_purple/death/04.png",
+              "alpha_bbox_xyxy": [
+                240,
+                156,
+                392,
+                357
+              ],
+              "alpha_max": 181
+            }
+          ]
+        }
+      }
+    },
+    "ghost_green": {
+      "sprite_frames": "res://assets/cast/ghost_green.tres",
+      "scene": "res://game/cast/ghost_green.tscn",
+      "source_directory": "raw/FrogKnight_Animations/characters/enemies/ghost_green",
+      "source_frame_size_px": [
+        400,
+        400
+      ],
+      "frame_size_px": [
+        640,
+        432
+      ],
+      "source_padding_xy": [
+        120,
+        16
+      ],
+      "pivot_px": [
+        320,
+        380
+      ],
+      "game_scale": 0.22,
+      "animations": {
+        "idle": {
+          "fps": 4.25,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/ghost_green/idle/01.png",
+              "alpha_bbox_xyxy": [
+                203,
+                63,
+                433,
+                323
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_green/idle/02.png",
+              "alpha_bbox_xyxy": [
+                204,
+                56,
+                437,
+                316
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_green/idle/03.png",
+              "alpha_bbox_xyxy": [
+                207,
+                40,
+                434,
+                311
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_green/idle/04.png",
+              "alpha_bbox_xyxy": [
+                207,
+                63,
+                433,
+                323
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "walk": {
+          "fps": 7.5,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/ghost_green/walk/01.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_walk_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                -139,
+                689
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                181,
+                54,
+                460,
+                376
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_green/walk/02.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_walk_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                223,
+                689
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                144,
+                65,
+                486,
+                364
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_green/walk/03.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_walk_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                585,
+                689
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                112,
+                60,
+                525,
+                350
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_green/walk/04.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_walk_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                947,
+                689
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                181,
+                66,
+                490,
+                362
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "attack": {
+          "fps": 9.5,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/ghost_green/attack/01.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_attack_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                -139,
+                689
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                170,
+                56,
+                431,
+                328
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_green/attack/02.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_attack_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                223,
+                689
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                90,
+                63,
+                392,
+                330
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_green/attack/03.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_attack_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                585,
+                689
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                15,
+                11,
+                538,
+                319
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_green/attack/04.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_attack_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                947,
+                689
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                186,
+                60,
+                475,
+                326
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "hurt": {
+          "fps": 6.75,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/ghost_green/hurt/01.png",
+              "alpha_bbox_xyxy": [
+                203,
+                73,
+                474,
+                383
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_green/hurt/02.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/ghost_hurt_approved_reference.png",
+              "canvas_origin_on_master_xy": [
+                223,
+                689
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                170,
+                47,
+                461,
+                367
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_green/hurt/03.png",
+              "alpha_bbox_xyxy": [
+                182,
+                69,
+                450,
+                372
+              ],
+              "alpha_max": 103
+            },
+            {
+              "path": "res://assets/cast/ghost_green/hurt/04.png",
+              "alpha_bbox_xyxy": [
+                176,
+                72,
+                442,
+                379
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "death": {
+          "fps": 4.75,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/ghost_green/death/01.png",
+              "alpha_bbox_xyxy": [
+                205,
+                65,
+                434,
+                326
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_green/death/02.png",
+              "alpha_bbox_xyxy": [
+                219,
+                74,
+                437,
+                290
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/ghost_green/death/03.png",
+              "alpha_bbox_xyxy": [
+                246,
+                165,
+                414,
+                317
+              ],
+              "alpha_max": 213
+            },
+            {
+              "path": "res://assets/cast/ghost_green/death/04.png",
+              "alpha_bbox_xyxy": [
+                240,
+                156,
+                392,
+                357
+              ],
+              "alpha_max": 181
+            }
+          ]
+        }
+      }
+    },
+    "boss_bone_king": {
+      "sprite_frames": "res://assets/cast/boss_bone_king.tres",
+      "scene": "res://game/cast/boss_bone_king.tscn",
+      "source_directory": "raw/FrogKnight_Animations/characters/bosses/boss_bone_king",
+      "source_frame_size_px": [
+        264,
+        310
+      ],
+      "frame_size_px": [
+        376,
+        342
+      ],
+      "source_padding_xy": [
+        56,
+        16
+      ],
+      "pivot_px": [
+        188,
+        318
+      ],
+      "game_scale": 0.6818181818181818,
+      "animations": {
+        "idle": {
+          "fps": 4.5,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/boss_bone_king/idle/01.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                -56,
+                -81
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                65,
+                91,
+                298,
+                324
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_bone_king/idle/02.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                208,
+                -81
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                58,
+                81,
+                297,
+                323
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_bone_king/idle/03.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                472,
+                -81
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                54,
+                81,
+                301,
+                323
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_bone_king/idle/04.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                735,
+                -81
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                63,
+                88,
+                284,
+                323
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "walk": {
+          "fps": 7,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/boss_bone_king/walk/01.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                -56,
+                139
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                66,
+                114,
+                300,
+                321
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_bone_king/walk/02.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                208,
+                139
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                67,
+                114,
+                299,
+                317
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_bone_king/walk/03.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                472,
+                139
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                61,
+                121,
+                304,
+                318
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_bone_king/walk/04.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                735,
+                139
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                69,
+                111,
+                303,
+                320
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "attack1": {
+          "fps": 9,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/boss_bone_king/attack1/01.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                -56,
+                371
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                62,
+                114,
+                287,
+                331
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_bone_king/attack1/02.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                208,
+                371
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                50,
+                94,
+                285,
+                329
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_bone_king/attack1/03.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                472,
+                371
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                40,
+                99,
+                320,
+                327
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_bone_king/attack1/04.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                735,
+                371
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                53,
+                125,
+                318,
+                325
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "attack2": {
+          "fps": 8.5,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/boss_bone_king/attack2/01.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                -56,
+                609
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                60,
+                109,
+                285,
+                319
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_bone_king/attack2/02.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                208,
+                609
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                34,
+                87,
+                279,
+                320
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_bone_king/attack2/03.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                472,
+                609
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                5,
+                95,
+                326,
+                319
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_bone_king/attack2/04.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                735,
+                609
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                45,
+                108,
+                307,
+                320
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "hurt": {
+          "fps": 6.25,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/boss_bone_king/hurt/01.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                -56,
+                857
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                61,
+                77,
+                293,
+                319
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_bone_king/hurt/02.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                208,
+                857
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                57,
+                77,
+                304,
+                317
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_bone_king/hurt/03.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                472,
+                857
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                48,
+                81,
+                303,
+                314
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_bone_king/hurt/04.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                735,
+                857
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                50,
+                100,
+                291,
+                317
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "death": {
+          "fps": 5.5,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/boss_bone_king/death/01.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                -56,
+                1165
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                62,
+                19,
+                296,
+                291
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_bone_king/death/02.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                208,
+                1165
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                37,
+                53,
+                285,
+                292
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_bone_king/death/03.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                472,
+                1165
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                21,
+                100,
+                295,
+                292
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_bone_king/death/04.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_bone_king_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                735,
+                1165
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                34,
+                151,
+                320,
+                294
+              ],
+              "alpha_max": 255
+            }
+          ]
+        }
+      }
+    },
+    "boss_rotten_giant": {
+      "sprite_frames": "res://assets/cast/boss_rotten_giant.tres",
+      "scene": "res://game/cast/boss_rotten_giant.tscn",
+      "source_directory": "raw/FrogKnight_Animations/characters/bosses/boss_rotten_giant",
+      "source_frame_size_px": [
+        264,
+        310
+      ],
+      "frame_size_px": [
+        376,
+        342
+      ],
+      "source_padding_xy": [
+        56,
+        16
+      ],
+      "pivot_px": [
+        188,
+        316
+      ],
+      "game_scale": 0.6818181818181818,
+      "animations": {
+        "idle": {
+          "fps": 4.25,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/boss_rotten_giant/idle/01.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                -56,
+                -83
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                65,
+                92,
+                317,
+                320
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_rotten_giant/idle/02.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                208,
+                -83
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                67,
+                87,
+                318,
+                316
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_rotten_giant/idle/03.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                472,
+                -83
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                63,
+                106,
+                307,
+                318
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_rotten_giant/idle/04.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                735,
+                -83
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                62,
+                96,
+                309,
+                320
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "walk": {
+          "fps": 6.75,
+          "loop": true,
+          "frames": [
+            {
+              "path": "res://assets/cast/boss_rotten_giant/walk/01.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                -56,
+                156
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                65,
+                97,
+                317,
+                318
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_rotten_giant/walk/02.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                208,
+                156
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                64,
+                91,
+                320,
+                315
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_rotten_giant/walk/03.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                472,
+                156
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                59,
+                97,
+                319,
+                324
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_rotten_giant/walk/04.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                735,
+                156
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                61,
+                95,
+                319,
+                322
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "attack1": {
+          "fps": 8.75,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/boss_rotten_giant/attack1/01.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                -56,
+                417
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                68,
+                89,
+                308,
+                308
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_rotten_giant/attack1/02.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                208,
+                417
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                51,
+                73,
+                315,
+                297
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_rotten_giant/attack1/03.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                472,
+                417
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                36,
+                91,
+                326,
+                323
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_rotten_giant/attack1/04.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                735,
+                417
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                60,
+                82,
+                313,
+                311
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "attack2": {
+          "fps": 8,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/boss_rotten_giant/attack2/01.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                -56,
+                645
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                64,
+                107,
+                310,
+                326
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_rotten_giant/attack2/02.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                208,
+                645
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                53,
+                101,
+                306,
+                325
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_rotten_giant/attack2/03.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                472,
+                645
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                48,
+                107,
+                318,
+                323
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_rotten_giant/attack2/04.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                735,
+                645
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                63,
+                101,
+                315,
+                325
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "hurt": {
+          "fps": 6,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/boss_rotten_giant/hurt/01.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                -56,
+                894
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                66,
+                103,
+                305,
+                322
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_rotten_giant/hurt/02.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                208,
+                894
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                57,
+                99,
+                306,
+                321
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_rotten_giant/hurt/03.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                472,
+                894
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                56,
+                98,
+                319,
+                323
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_rotten_giant/hurt/04.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                735,
+                894
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                68,
+                109,
+                313,
+                322
+              ],
+              "alpha_max": 255
+            }
+          ]
+        },
+        "death": {
+          "fps": 5.25,
+          "loop": false,
+          "frames": [
+            {
+              "path": "res://assets/cast/boss_rotten_giant/death/01.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                -56,
+                1165
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                64,
+                70,
+                308,
+                304
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_rotten_giant/death/02.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                208,
+                1165
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                53,
+                85,
+                311,
+                300
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_rotten_giant/death/03.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                472,
+                1165
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                46,
+                107,
+                312,
+                305
+              ],
+              "alpha_max": 255
+            },
+            {
+              "path": "res://assets/cast/boss_rotten_giant/death/04.png",
+              "master": "raw/FrogKnight_Animations/reference_sources/boss_rotten_giant_approved_sheet_4x6.png",
+              "canvas_origin_on_master_xy": [
+                735,
+                1165
+              ],
+              "export_repair": "whole native pose and associated FX isolated from approved master",
+              "alpha_bbox_xyxy": [
+                48,
+                138,
+                314,
+                305
+              ],
+              "alpha_max": 255
+            }
+          ]
+        }
+      }
+    }
+  },
+  "characters_total": 12,
+  "animations_total": 62,
+  "frames_total": 248
+}

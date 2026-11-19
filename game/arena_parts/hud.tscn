@@ -1,0 +1,212 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/arena/court/controls.png" id="r1"]
+[ext_resource type="Texture2D" path="res://assets/ui/health/runtime_layers/hero_empty_frame.png" id="r2"]
+[ext_resource type="Texture2D" path="res://assets/ui/health/runtime_layers/hero_full_red_overlay.png" id="r3"]
+[ext_resource type="Texture2D" path="res://assets/ui/health/runtime_layers/hero_rounded_right_cap.png" id="r4"]
+[ext_resource type="Texture2D" path="res://assets/ui/hud/wave_panel_blank.png" id="r5"]
+[ext_resource type="Texture2D" path="res://assets/ui/hud/currency_bones_panel.png" id="r6"]
+[ext_resource type="Texture2D" path="res://assets/ui/health/standalone_sprites/empty_frame.png" id="r7"]
+[ext_resource type="Texture2D" path="res://assets/ui/health/standalone_sprites/red_fill.png" id="r8"]
+[ext_resource type="Texture2D" path="res://assets/ui/hud/minimap_empty_frame.png" id="r9"]
+
+[sub_resource type="AtlasTexture" id="HeroHealthCrop"]
+atlas = ExtResource("r3")
+region = Rect2(282, 125, 538, 61)
+
+[node name="BattleHUD" type="CanvasLayer"]
+
+[node name="Controls" type="Sprite2D" parent="."]
+position = Vector2(17, 585)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("r1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="HeroPortraitAndFrame" type="Sprite2D" parent="."]
+position = Vector2(16, 4)
+scale = Vector2(0.37, 0.37)
+texture = ExtResource("r2")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="HeroHealth" type="TextureProgressBar" parent="."]
+offset_left = 120.34
+offset_top = 50.25
+offset_right = 658.34
+offset_bottom = 111.25
+scale = Vector2(0.37, 0.37)
+mouse_filter = 2
+value = 78
+texture_progress = SubResource("HeroHealthCrop")
+
+[node name="RoundedFillEnd" type="Sprite2D" parent="."]
+position = Vector2(275.2368, 50.25)
+scale = Vector2(0.37, 0.37)
+texture = ExtResource("r4")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="HitPoints" type="Label" parent="."]
+offset_left = 138
+offset_top = 45.48
+offset_right = 301
+offset_bottom = 76.48
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.935, 0.79, 1)
+theme_override_colors/font_outline_color = Color(0.12, 0.055, 0.12, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 19
+text = "78 / 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Level" type="Label" parent="."]
+offset_left = 92.13
+offset_top = 74.97
+offset_right = 124.13
+offset_bottom = 103.97
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.935, 0.79, 1)
+theme_override_colors/font_outline_color = Color(0.12, 0.055, 0.12, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 19
+text = "6"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ExperienceTrack" type="Line2D" parent="."]
+points = PackedVector2Array(138, 91, 318, 91)
+width = 5
+default_color = Color(0.18,0.095,0.19,1)
+antialiased = true
+
+[node name="ExperienceFill" type="Line2D" parent="."]
+points = PackedVector2Array(138, 91, 237, 91)
+width = 3
+default_color = Color(0.98,0.69,0.24,1)
+antialiased = true
+
+[node name="WavePlate" type="Sprite2D" parent="."]
+position = Vector2(640, 55)
+scale = Vector2(0.443, 0.443)
+texture = ExtResource("r5")
+
+[node name="Wave" type="Label" parent="."]
+offset_left = 556
+offset_top = 42.5
+offset_right = 724
+offset_bottom = 79.5
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.935, 0.79, 1)
+theme_override_colors/font_outline_color = Color(0.12, 0.055, 0.12, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 24
+text = "Волна 3/5"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BonePlate" type="Sprite2D" parent="."]
+position = Vector2(817, 61)
+scale = Vector2(0.237, 0.237)
+texture = ExtResource("r6")
+
+[node name="Currency" type="Label" parent="."]
+offset_left = 806.5
+offset_top = 46.5
+offset_right = 855.5
+offset_bottom = 75.5
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.935, 0.79, 1)
+theme_override_colors/font_outline_color = Color(0.12, 0.055, 0.12, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 18
+text = "24"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BossFrame" type="Sprite2D" parent="."]
+position = Vector2(1116, 61)
+scale = Vector2(0.56, 0.38)
+texture = ExtResource("r7")
+
+[node name="BossHealth" type="TextureProgressBar" parent="."]
+offset_left = 992
+offset_top = 49.2
+offset_right = 1461
+offset_bottom = 119.2
+scale = Vector2(0.532, 0.326)
+mouse_filter = 2
+value = 68
+texture_progress = ExtResource("r8")
+
+[node name="Cartouche" type="Sprite2D" parent="."]
+position = Vector2(1196, 631)
+scale = Vector2(0.39, 0.39)
+texture = ExtResource("r9")
+
+[node name="MinimapWall" type="Line2D" parent="."]
+points = PackedVector2Array(1167.18, 608.94, 1224.82, 608.94, 1243.52, 636, 1224.82, 663.94, 1167.18, 663.94, 1148.48, 636, 1167.18, 608.94)
+width = 1.8
+default_color = Color(0.68,0.46,0.31,0.95)
+antialiased = true
+
+[node name="MapWalk0" type="Line2D" parent="."]
+points = PackedVector2Array(1156.83772, 636.31481, 1158.44761, 635.72594, 1159.88624, 635.04102, 1161.22605, 634.32002, 1162.53949, 633.62289, 1163.89901, 633.00959, 1165.37705, 632.54007, 1166.86789, 632.2585, 1168.42355, 632.07524, 1170.03668, 631.96849, 1171.67322, 631.92389, 1173.2991, 631.92712, 1174.88025, 631.96381, 1176.38261, 632.01962, 1177.99839, 632.09923, 1179.64239, 632.22472, 1181.21897, 632.40009, 1182.7381, 632.63198, 1184.20976, 632.92704, 1185.64392, 633.29193, 1187.15147, 633.82314, 1188.59722, 634.53127, 1189.99013, 635.31087, 1191.3667, 636.06157, 1192.76341, 636.68305, 1194.25933, 637.13062, 1195.80018, 637.49799, 1197.34951, 637.75799, 1198.91843, 637.87732, 1200.51805, 637.82265, 1202.01599, 637.58035, 1203.4839, 637.151, 1204.97639, 636.58464, 1206.47532, 635.94291, 1207.96257, 635.28747, 1209.42, 634.68, 1210.87247, 634.04147, 1212.26312, 633.34527, 1213.65007, 632.65368, 1215.09147, 632.02899, 1216.64545, 631.53351, 1218.11881, 631.22139, 1219.39751, 630.94071, 1220.67778, 630.69329, 1222.04418, 630.53064, 1223.58126, 630.50426, 1225.37358, 630.66566, 1227.50568, 631.06634, 1228.88405, 631.42192, 1230.22706, 631.82839, 1231.71768, 632.32085, 1233.32489, 632.88388, 1235.01767, 633.50204)
+width = 1.25
+default_color = Color(0.59,0.44,0.51,0.73)
+antialiased = true
+
+[node name="MapWalk1" type="Line2D" parent="."]
+points = PackedVector2Array(1173.60125, 663.23875, 1174.21162, 661.47424, 1174.85766, 659.76172, 1175.52518, 658.20303, 1176.2, 656.9, 1177.17833, 655.43108, 1178.22927, 654.16988, 1179.33895, 653.07127, 1180.49346, 652.09012, 1181.67893, 651.1813, 1182.91158, 650.29009, 1184.34546, 649.49447, 1185.87312, 648.83529, 1187.39015, 648.22989, 1188.79212, 647.59561, 1189.97464, 646.84978, 1191.14092, 645.66594, 1192.0313, 644.32378, 1192.72059, 642.9395, 1193.31191, 641.60593, 1193.782, 640.19084, 1194.0013, 638.84354, 1194.41766, 637.28154, 1195.06389, 635.85984, 1195.77872, 634.45487, 1196.60715, 632.92244, 1197.48934, 631.39555, 1198.36544, 630.0072, 1199.17559, 628.8904, 1200.36408, 627.6881, 1201.52719, 627.09299, 1203.09373, 626.59762, 1204.47304, 626.21538, 1206.05979, 625.92265, 1207.76324, 625.6242, 1209.42071, 625.24826, 1210.86948, 624.72304, 1212.21225, 623.85701, 1213.41806, 622.71783, 1214.429, 621.44252, 1215.24505, 620.13425, 1215.86435, 618.73502, 1216.07413, 617.10553, 1216.12813, 615.49876, 1216.41362, 614.10118, 1217.43009, 612.74888, 1218.7794, 611.65452, 1219.76, 610.92)
+width = 1.25
+default_color = Color(0.59,0.44,0.51,0.73)
+antialiased = true
+
+[node name="MapWalk2" type="Line2D" parent="."]
+points = PackedVector2Array(1156.50235, 647.29313, 1157.86232, 647.68773, 1159.475, 648.15833, 1161.21549, 648.67951, 1162.95887, 649.2258, 1164.58023, 649.77178, 1166.08395, 650.34085, 1167.65929, 651.00875, 1169.1846, 651.7113, 1170.62954, 652.41817, 1171.96378, 653.09902, 1173.15698, 653.72353, 1174.44337, 654.62139, 1175.2223, 655.48249, 1176.66287, 656.23391, 1178.25996, 656.61679, 1179.58918, 656.86849, 1181.12666, 657.12742, 1182.8107, 657.37941, 1184.57959, 657.61026, 1186.37163, 657.80582, 1188.12509, 657.95189, 1189.77828, 658.03431, 1191.26948, 658.0389, 1192.83526, 657.9102, 1194.53229, 657.50601, 1196.00563, 656.91045, 1197.34836, 656.21662, 1198.6536, 655.51761, 1200.01444, 654.90653, 1201.50476, 654.43286, 1203.03333, 653.98682, 1204.57086, 653.57377, 1206.11042, 653.21452, 1207.64506, 652.92991, 1209.16784, 652.74078, 1210.71272, 652.64173, 1212.22296, 652.61407, 1213.72594, 652.67369, 1215.26131, 652.83644, 1216.86875, 653.11821, 1218.45474, 653.50275, 1219.96655, 653.99085, 1221.62298, 654.61159, 1223.3253, 655.30435, 1224.9748, 656.00851, 1226.47275, 656.66346, 1227.72045, 657.20857)
+width = 1.25
+default_color = Color(0.59,0.44,0.51,0.73)
+antialiased = true
+
+[node name="MapWalk3" type="Line2D" parent="."]
+points = PackedVector2Array(1165.42, 632.26, 1165.8187, 631.25155, 1166.35558, 629.80512, 1167.01556, 628.14682, 1167.78357, 626.50276, 1168.64453, 625.09904, 1169.69178, 623.9049, 1170.91622, 622.79987, 1172.22688, 621.81677, 1173.53607, 620.98484, 1174.79612, 620.31602, 1176.34518, 619.93017, 1177.83035, 619.89321, 1179.38401, 619.69215, 1180.77281, 619.06296, 1182.07091, 618.14481, 1183.41674, 617.10863, 1184.79798, 616.17611, 1186.20232, 615.56896, 1187.73689, 615.31218, 1189.35239, 615.27727, 1190.9703, 615.49345, 1192.5182, 615.98968, 1193.83175, 616.74192, 1194.93475, 617.77897, 1195.99015, 619.06793, 1196.99001, 620.45804, 1197.9264, 621.79856, 1198.79139, 622.93875, 1200.03929, 624.37633, 1201.18484, 625.65774, 1202.07067, 626.63577)
+width = 1.25
+default_color = Color(0.59,0.44,0.51,0.73)
+antialiased = true
+
+[node name="MapWalk4" type="Line2D" parent="."]
+points = PackedVector2Array(1209.2, 652.94, 1209.52204, 651.8405, 1209.99548, 650.25975, 1210.49056, 648.48973, 1210.87749, 646.82246, 1211.09728, 645.21712, 1211.16625, 643.68625, 1211.08672, 642.16528, 1210.8844, 640.56806, 1210.52752, 638.87766, 1210.07483, 637.10666, 1209.65408, 635.56528)
+width = 1.25
+default_color = Color(0.59,0.44,0.51,0.73)
+antialiased = true
+
+[node name="Hostile0" type="Polygon2D" parent="."]
+position = Vector2(1189.62, 633.536)
+color = Color(0.98,0.36,0.34,1)
+polygon = PackedVector2Array(0, -2.5, 2.5, 0, 0, 2.5, -2.5, 0)
+
+[node name="Hostile1" type="Polygon2D" parent="."]
+position = Vector2(1200.664, 637.43)
+color = Color(0.98,0.36,0.34,1)
+polygon = PackedVector2Array(0, -2.5, 2.5, 0, 0, 2.5, -2.5, 0)
+
+[node name="Hostile2" type="Polygon2D" parent="."]
+position = Vector2(1205.02, 639.674)
+color = Color(0.98,0.36,0.34,1)
+polygon = PackedVector2Array(0, -2.5, 2.5, 0, 0, 2.5, -2.5, 0)
+
+[node name="Hostile3" type="Polygon2D" parent="."]
+position = Vector2(1214.37, 613.054)
+color = Color(0.98,0.36,0.34,1)
+polygon = PackedVector2Array(0, -2.5, 2.5, 0, 0, 2.5, -2.5, 0)
+
+[node name="Hostile4" type="Polygon2D" parent="."]
+position = Vector2(1222.048, 614.99)
+color = Color(0.98,0.36,0.34,1)
+polygon = PackedVector2Array(0, -2.5, 2.5, 0, 0, 2.5, -2.5, 0)
+
+[node name="Hostile5" type="Polygon2D" parent="."]
+position = Vector2(1216.46, 619.17)
+color = Color(0.98,0.36,0.34,1)
+polygon = PackedVector2Array(0, -2.5, 2.5, 0, 0, 2.5, -2.5, 0)

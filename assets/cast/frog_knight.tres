@@ -1,0 +1,65 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/cast/frog_knight/idle/01.png" id="idle_01"]
+[ext_resource type="Texture2D" path="res://assets/cast/frog_knight/idle/02.png" id="idle_02"]
+[ext_resource type="Texture2D" path="res://assets/cast/frog_knight/idle/03.png" id="idle_03"]
+[ext_resource type="Texture2D" path="res://assets/cast/frog_knight/idle/04.png" id="idle_04"]
+[ext_resource type="Texture2D" path="res://assets/cast/frog_knight/walk/01.png" id="walk_01"]
+[ext_resource type="Texture2D" path="res://assets/cast/frog_knight/walk/02.png" id="walk_02"]
+[ext_resource type="Texture2D" path="res://assets/cast/frog_knight/walk/03.png" id="walk_03"]
+[ext_resource type="Texture2D" path="res://assets/cast/frog_knight/walk/04.png" id="walk_04"]
+[ext_resource type="Texture2D" path="res://assets/cast/frog_knight/attack/01.png" id="attack_01"]
+[ext_resource type="Texture2D" path="res://assets/cast/frog_knight/attack/02.png" id="attack_02"]
+[ext_resource type="Texture2D" path="res://assets/cast/frog_knight/attack/03.png" id="attack_03"]
+[ext_resource type="Texture2D" path="res://assets/cast/frog_knight/attack/04.png" id="attack_04"]
+[ext_resource type="Texture2D" path="res://assets/cast/frog_knight/hurt/01.png" id="hurt_01"]
+[ext_resource type="Texture2D" path="res://assets/cast/frog_knight/hurt/02.png" id="hurt_02"]
+[ext_resource type="Texture2D" path="res://assets/cast/frog_knight/hurt/03.png" id="hurt_03"]
+[ext_resource type="Texture2D" path="res://assets/cast/frog_knight/hurt/04.png" id="hurt_04"]
+[ext_resource type="Texture2D" path="res://assets/cast/frog_knight/death/01.png" id="death_01"]
+[ext_resource type="Texture2D" path="res://assets/cast/frog_knight/death/02.png" id="death_02"]
+[ext_resource type="Texture2D" path="res://assets/cast/frog_knight/death/03.png" id="death_03"]
+[ext_resource type="Texture2D" path="res://assets/cast/frog_knight/death/04.png" id="death_04"]
+
+[resource]
+animations = [{
+"frames": [{"duration": 1.0, "texture": ExtResource("idle_01")},
+{"duration": 1.0, "texture": ExtResource("idle_02")},
+{"duration": 1.0, "texture": ExtResource("idle_03")},
+{"duration": 1.0, "texture": ExtResource("idle_04")}],
+"loop": true,
+"name": &"idle",
+"speed": 4.5
+}, {
+"frames": [{"duration": 1.0, "texture": ExtResource("walk_01")},
+{"duration": 1.0, "texture": ExtResource("walk_02")},
+{"duration": 1.0, "texture": ExtResource("walk_03")},
+{"duration": 1.0, "texture": ExtResource("walk_04")}],
+"loop": true,
+"name": &"walk",
+"speed": 8.0
+}, {
+"frames": [{"duration": 1.0, "texture": ExtResource("attack_01")},
+{"duration": 1.0, "texture": ExtResource("attack_02")},
+{"duration": 1.0, "texture": ExtResource("attack_03")},
+{"duration": 1.0, "texture": ExtResource("attack_04")}],
+"loop": false,
+"name": &"attack",
+"speed": 10.5
+}, {
+"frames": [{"duration": 1.0, "texture": ExtResource("hurt_01")},
+{"duration": 1.0, "texture": ExtResource("hurt_02")},
+{"duration": 1.0, "texture": ExtResource("hurt_03")},
+{"duration": 1.0, "texture": ExtResource("hurt_04")}],
+"loop": false,
+"name": &"hurt",
+"speed": 7.0
+}, {
+"frames": [{"duration": 1.0, "texture": ExtResource("death_01")},
+{"duration": 1.0, "texture": ExtResource("death_02")},
+{"duration": 1.0, "texture": ExtResource("death_03")},
+{"duration": 1.0, "texture": ExtResource("death_04")}],
+"loop": false,
+"name": &"death",
+"speed": 5.5
+}]

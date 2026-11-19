@@ -1,0 +1,292 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/ui/shop/button_close_x.png" id="r1"]
+[ext_resource type="Texture2D" path="res://assets/ui/shop/button_shop_next_blank.png" id="r2"]
+[ext_resource type="Texture2D" path="res://assets/ui/shop/card_shop_normal_blank.png" id="r3"]
+[ext_resource type="Texture2D" path="res://assets/ui/shop/card_shop_selected_blank.png" id="r4"]
+[ext_resource type="Texture2D" path="res://assets/ui/shop/card_shop_skull_blank.png" id="r5"]
+[ext_resource type="Texture2D" path="res://assets/ui/shop/currency_bones_blank.png" id="r6"]
+[ext_resource type="Texture2D" path="res://assets/ui/shop/panel_shop_medium_blank.png" id="r7"]
+[ext_resource type="Texture2D" path="res://assets/ui/shop/panel_shop_small_blank.png" id="r8"]
+[ext_resource type="Texture2D" path="res://assets/ui/shop/panel_shop_wide_blank.png" id="r9"]
+[ext_resource type="Texture2D" path="res://assets/ui/shop/shop_stall_decoration.png" id="r10"]
+[ext_resource type="Texture2D" path="res://assets/ui/shop/shop_title_banner.png" id="r11"]
+[ext_resource type="Texture2D" path="res://assets/ui/shop/shop_window.png" id="r12"]
+
+[node name="Cabinet" type="Node2D"]
+texture_filter = 2
+
+[node name="Paper" type="ColorRect" parent="."]
+offset_right = 1280
+offset_bottom = 720
+color = Color(0.085, 0.055, 0.105, 1)
+
+[node name="Number" type="Label" parent="."]
+offset_left = 32
+offset_top = 15
+offset_right = 382
+offset_bottom = 45
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.88, 0.68, 0.34, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 17
+text = "FROG KNIGHT    /    АТЛАС"
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Title" type="Label" parent="."]
+offset_left = 32
+offset_top = 43
+offset_right = 982
+offset_bottom = 88
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.91, 0.72, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 32
+text = "Магазин"
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Index" type="Label" parent="."]
+offset_left = 1060
+offset_top = 33
+offset_right = 1235
+offset_bottom = 73
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.91, 0.72, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 22
+text = "13  /  15"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Sprite1" type="Sprite2D" parent="."]
+position = Vector2(184.000, 182.500)
+scale = Vector2(1.0000000, 1.0000000)
+texture = ExtResource("r1")
+
+[node name="Item0" type="Label" parent="."]
+offset_left = 32.000
+offset_top = 268.667
+offset_right = 336.000
+offset_bottom = 294.667
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "button close x"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite2" type="Sprite2D" parent="."]
+position = Vector2(488.000, 182.833)
+scale = Vector2(0.5159011, 0.5159011)
+texture = ExtResource("r2")
+
+[node name="Item1" type="Label" parent="."]
+offset_left = 336.000
+offset_top = 268.667
+offset_right = 640.000
+offset_bottom = 294.667
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "button next blank"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite3" type="Sprite2D" parent="."]
+position = Vector2(792.000, 182.833)
+scale = Vector2(0.4730250, 0.4730250)
+texture = ExtResource("r3")
+
+[node name="Item2" type="Label" parent="."]
+offset_left = 640.000
+offset_top = 268.667
+offset_right = 944.000
+offset_bottom = 294.667
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "card normal blank"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite4" type="Sprite2D" parent="."]
+position = Vector2(1096.000, 182.833)
+scale = Vector2(0.4730250, 0.4730250)
+texture = ExtResource("r4")
+
+[node name="Item3" type="Label" parent="."]
+offset_left = 944.000
+offset_top = 268.667
+offset_right = 1248.000
+offset_bottom = 294.667
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "card selected blank"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite5" type="Sprite2D" parent="."]
+position = Vector2(184.000, 379.500)
+scale = Vector2(0.4459582, 0.4459582)
+texture = ExtResource("r5")
+
+[node name="Item4" type="Label" parent="."]
+offset_left = 32.000
+offset_top = 465.333
+offset_right = 336.000
+offset_bottom = 491.333
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "card skull blank"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite6" type="Sprite2D" parent="."]
+position = Vector2(488.000, 379.500)
+scale = Vector2(0.7604167, 0.7604167)
+texture = ExtResource("r6")
+
+[node name="Item5" type="Label" parent="."]
+offset_left = 336.000
+offset_top = 465.333
+offset_right = 640.000
+offset_bottom = 491.333
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "currency bones blank"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite7" type="Sprite2D" parent="."]
+position = Vector2(792.000, 379.500)
+scale = Vector2(0.7793651, 0.7793651)
+texture = ExtResource("r7")
+
+[node name="Item6" type="Label" parent="."]
+offset_left = 640.000
+offset_top = 465.333
+offset_right = 944.000
+offset_bottom = 491.333
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "panel medium blank"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite8" type="Sprite2D" parent="."]
+position = Vector2(1096.000, 379.500)
+scale = Vector2(0.9742063, 0.9742063)
+texture = ExtResource("r8")
+
+[node name="Item7" type="Label" parent="."]
+offset_left = 944.000
+offset_top = 465.333
+offset_right = 1248.000
+offset_bottom = 491.333
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "panel small blank"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite9" type="Sprite2D" parent="."]
+position = Vector2(184.000, 576.167)
+scale = Vector2(0.6343669, 0.6343669)
+texture = ExtResource("r9")
+
+[node name="Item8" type="Label" parent="."]
+offset_left = 32.000
+offset_top = 662.000
+offset_right = 336.000
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "panel wide blank"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite10" type="Sprite2D" parent="."]
+position = Vector2(488.000, 576.167)
+scale = Vector2(0.5245726, 0.5245726)
+texture = ExtResource("r10")
+
+[node name="Item9" type="Label" parent="."]
+offset_left = 336.000
+offset_top = 662.000
+offset_right = 640.000
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "stall decoration"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite11" type="Sprite2D" parent="."]
+position = Vector2(792.000, 576.167)
+scale = Vector2(0.5060659, 0.5060659)
+texture = ExtResource("r11")
+
+[node name="Item10" type="Label" parent="."]
+offset_left = 640.000
+offset_top = 662.000
+offset_right = 944.000
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "title banner"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite12" type="Sprite2D" parent="."]
+position = Vector2(1096.000, 576.167)
+scale = Vector2(0.2308416, 0.2308416)
+texture = ExtResource("r12")
+
+[node name="Item11" type="Label" parent="."]
+offset_left = 944.000
+offset_top = 662.000
+offset_right = 1248.000
+offset_bottom = 688.000
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.74, 0.81, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.035, 0.09, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 15
+text = "window"
+horizontal_alignment = 1
+vertical_alignment = 1

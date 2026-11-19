@@ -1,0 +1,111 @@
+; Snapshot of the rejected pilot (old sprite dimensions), not a current Godot scene.
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/hybrid/vesper_court.glb" id="1_court"]
+[ext_resource type="SpriteFrames" path="res://assets/cast/frog_knight.tres" id="2_frog"]
+[ext_resource type="SpriteFrames" path="res://assets/cast/skeleton_bone.tres" id="3_bone"]
+[ext_resource type="SpriteFrames" path="res://assets/cast/ghost_purple.tres" id="4_ghost"]
+
+[sub_resource type="Environment" id="Env"]
+background_mode = 1
+background_color = Color(0.088, 0.09, 0.154, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.88, 0.84, 0.95, 1)
+ambient_light_energy = 0.78
+
+[sub_resource type="Gradient" id="ShadeRamp"]
+offsets = PackedFloat32Array(0, 0.55, 1)
+colors = PackedColorArray(0.09, 0.045, 0.12, 0.76, 0.09, 0.045, 0.12, 0.38, 0.09, 0.045, 0.12, 0)
+
+[sub_resource type="GradientTexture2D" id="Shade"]
+gradient = SubResource("ShadeRamp")
+width = 128
+height = 128
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="ShadowMat"]
+transparency = 1
+shading_mode = 0
+albedo_texture = SubResource("Shade")
+
+[sub_resource type="PlaneMesh" id="ShadowPlane"]
+material = SubResource("ShadowMat")
+size = Vector2(1.25, 0.68)
+
+[node name="VesperCourt" type="Node3D"]
+
+[node name="Court" parent="." instance=ExtResource("1_court")]
+
+[node name="Twilight" type="WorldEnvironment" parent="."]
+environment = SubResource("Env")
+
+[node name="Moon" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-54, -36, 0)
+light_color = Color(1, 0.93, 0.86, 1)
+light_energy = 0.68
+
+[node name="FireLeft" type="OmniLight3D" parent="."]
+position = Vector3(-2.65, 1.23, -1.55)
+light_color = Color(1, 0.53, 0.19, 1)
+light_energy = 1.15
+omni_range = 2.6
+
+[node name="FireRight" type="OmniLight3D" parent="."]
+position = Vector3(1.02, 1.23, -1.62)
+light_color = Color(1, 0.53, 0.19, 1)
+light_energy = 1.15
+omni_range = 2.6
+
+[node name="PortraitCamera" type="Camera3D" parent="."]
+position = Vector3(2.12, 10.69, 17.24)
+rotation_degrees = Vector3(-30, 7, 0)
+projection = 1
+size = 9.95
+current = true
+
+[node name="KnightShadow" type="MeshInstance3D" parent="."]
+position = Vector3(-1.20, 0.032, 1.13)
+mesh = SubResource("ShadowPlane")
+
+[node name="Knight" type="AnimatedSprite3D" parent="."]
+position = Vector3(-1.20, 0.035, 1.13)
+pixel_size = 0.042
+offset = Vector2(0, 26)
+billboard = 2
+texture_filter = 1
+sprite_frames = ExtResource("2_frog")
+animation = &"attack"
+frame = 2
+
+[node name="GuardShadow" type="MeshInstance3D" parent="."]
+position = Vector3(0.97, 0.032, 0.67)
+mesh = SubResource("ShadowPlane")
+
+[node name="BoneGuard" type="AnimatedSprite3D" parent="."]
+position = Vector3(0.97, 0.035, 0.67)
+pixel_size = 0.033
+offset = Vector2(0, 36)
+billboard = 2
+texture_filter = 1
+flip_h = true
+sprite_frames = ExtResource("3_bone")
+animation = &"attack"
+frame = 1
+
+[node name="SpectreShadow" type="MeshInstance3D" parent="."]
+position = Vector3(2.92, 0.032, -0.42)
+scale = Vector3(0.82, 1, 0.82)
+mesh = SubResource("ShadowPlane")
+
+[node name="Spectre" type="AnimatedSprite3D" parent="."]
+position = Vector3(2.92, 0.28, -0.42)
+pixel_size = 0.029
+offset = Vector2(0, 36)
+billboard = 2
+texture_filter = 1
+sprite_frames = ExtResource("4_ghost")
+animation = &"idle"
+autoplay = "idle"
+frame = 1

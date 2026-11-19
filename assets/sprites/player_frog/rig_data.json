@@ -1,0 +1,229 @@
+{
+  "scale": 0.2534562211981567,
+  "source_height_px": 868,
+  "character_height_px": 220,
+  "bones": [
+    {
+      "name": "torso",
+      "parent": null,
+      "pos": [
+        2.53,
+        -50.69
+      ]
+    },
+    {
+      "name": "head",
+      "parent": "torso",
+      "pos": [
+        -7.6,
+        -60.83
+      ]
+    },
+    {
+      "name": "shoulder_r",
+      "parent": "torso",
+      "pos": [
+        -36.75,
+        -58.3
+      ]
+    },
+    {
+      "name": "elbow_r",
+      "parent": "shoulder_r",
+      "pos": [
+        -19.01,
+        20.28
+      ]
+    },
+    {
+      "name": "shoulder_l",
+      "parent": "torso",
+      "pos": [
+        35.49,
+        -55.76
+      ]
+    },
+    {
+      "name": "elbow_l",
+      "parent": "shoulder_l",
+      "pos": [
+        25.34,
+        25.34
+      ]
+    },
+    {
+      "name": "hip_r",
+      "parent": "torso",
+      "pos": [
+        -17.74,
+        -5.07
+      ]
+    },
+    {
+      "name": "hip_l",
+      "parent": "torso",
+      "pos": [
+        12.68,
+        -5.07
+      ]
+    },
+    {
+      "name": "scarf_01",
+      "parent": "torso",
+      "pos": [
+        -2.53,
+        -60.83
+      ]
+    },
+    {
+      "name": "cloak",
+      "parent": "torso",
+      "pos": [
+        25.35,
+        -55.76
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "name": "head_helmet",
+      "file": "assets/sprites/player_frog/head_helmet.png",
+      "bone": "head",
+      "z": 28,
+      "pivot_px": [
+        55.8,
+        103.4
+      ],
+      "size_px": [
+        112,
+        109
+      ]
+    },
+    {
+      "name": "torso_chest",
+      "file": "assets/sprites/player_frog/torso_chest.png",
+      "bone": "torso",
+      "z": 20,
+      "pivot_px": [
+        50.7,
+        73.5
+      ],
+      "size_px": [
+        107,
+        95
+      ]
+    },
+    {
+      "name": "arm_r_upper",
+      "file": "assets/sprites/player_frog/arm_r_upper.png",
+      "bone": "shoulder_r",
+      "z": 27,
+      "pivot_px": [
+        31.7,
+        11.4
+      ],
+      "size_px": [
+        52,
+        52
+      ]
+    },
+    {
+      "name": "arm_r_forearm_sword",
+      "file": "assets/sprites/player_frog/arm_r_forearm_sword.png",
+      "bone": "elbow_r",
+      "z": 34,
+      "pivot_px": [
+        56.8,
+        124.4
+      ],
+      "size_px": [
+        60,
+        145
+      ]
+    },
+    {
+      "name": "arm_l_upper",
+      "file": "assets/sprites/player_frog/arm_l_upper.png",
+      "bone": "shoulder_l",
+      "z": 21,
+      "pivot_px": [
+        19.0,
+        16.5
+      ],
+      "size_px": [
+        56,
+        59
+      ]
+    },
+    {
+      "name": "arm_l_forearm_hand",
+      "file": "assets/sprites/player_frog/arm_l_forearm_hand.png",
+      "bone": "elbow_l",
+      "z": 22,
+      "pivot_px": [
+        16.5,
+        19.0
+      ],
+      "size_px": [
+        52,
+        42
+      ]
+    },
+    {
+      "name": "leg_r",
+      "file": "assets/sprites/player_frog/leg_r.png",
+      "bone": "hip_r",
+      "z": 11,
+      "pivot_px": [
+        35.2,
+        13.9
+      ],
+      "size_px": [
+        65,
+        70
+      ]
+    },
+    {
+      "name": "leg_l",
+      "file": "assets/sprites/player_frog/leg_l.png",
+      "bone": "hip_l",
+      "z": 10,
+      "pivot_px": [
+        27.9,
+        13.9
+      ],
+      "size_px": [
+        67,
+        75
+      ]
+    },
+    {
+      "name": "scarf",
+      "file": "assets/sprites/player_frog/scarf.png",
+      "bone": "scarf_01",
+      "z": 29,
+      "pivot_px": [
+        35.7,
+        11.4
+      ],
+      "size_px": [
+        82,
+        37
+      ]
+    },
+    {
+      "name": "cape",
+      "file": "assets/sprites/player_frog/cape.png",
+      "bone": "cloak",
+      "z": 5,
+      "pivot_px": [
+        12.7,
+        8.9
+      ],
+      "size_px": [
+        80,
+        87
+      ]
+    }
+  ]
+}

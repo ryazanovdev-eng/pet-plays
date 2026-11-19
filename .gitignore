@@ -33,3 +33,6 @@ __pycache__/
 docs/art/raw/
 # Uncomment if your project does not version PCK files as runtime dependencies.
 # *.pck
+
+raw/*
+!raw/.gdignore
