@@ -6,7 +6,7 @@ import shutil
 import subprocess
 import tempfile
 
-from PIL import Image, ImageOps
+from PIL import Image, ImageChops, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'demo' / 'media'
@@ -25,12 +25,12 @@ def godot(*args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('items', nargs='*', help='cast, arena, arena_edge, gallery, inventory or a specific inventory sheet name')
+    parser.add_argument('items', nargs='*', help='cast, arena, arena_edge, arena_wave, level_up, shop, gallery, inventory or one sheet')
     args = parser.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)
     for obsolete in ('hybrid.webp', 'hybrid-motion.webp'):
         (OUT / obsolete).unlink(missing_ok=True)
-    for item in args.items or ('cast', 'arena', 'arena_edge', 'gallery', 'inventory'):
+    for item in args.items or ('cast', 'arena', 'arena_edge', 'arena_wave', 'level_up', 'shop', 'gallery', 'inventory'):
         if item == 'cast':
             godot('--headless', '--script', 'res://tools/demo_frames.gd')
             # The static design portraits are distinct from the animated Godot poses.
@@ -40,15 +40,28 @@ if __name__ == '__main__':
                 (OUT / (png.stem + '.webp')).unlink(missing_ok=True)  # old reduced atlas
             continue
         catalog = {p.stem: p for p in (ROOT / 'game' / 'arena_inventory').glob('*.tscn')}
-        if item == 'inventory' or item in catalog:
-            for scene in sorted(catalog.values()) if item == 'inventory' else [catalog[item]]:
+        stills = {key: ROOT / 'game' / (key + '.tscn') for key in ('level_up', 'shop')}
+        if item == 'inventory' or item in catalog or item in stills:
+            selected = sorted(catalog.values()) if item == 'inventory' else [(stills | catalog)[item]]
+            for scene in selected:
                 with tempfile.TemporaryDirectory() as temp:
+                    count = 10 if item in stills else 2
                     godot('--resolution', '1280x720', '--fixed-fps', '12', '--write-movie',
-                          Path(temp) / 'frame.png', '--quit-after', '2', 'res://' + scene.relative_to(ROOT).as_posix())
-                    with Image.open(sorted(Path(temp).glob('*.png'))[-1]) as capture:
-                        capture.convert('RGB').save(OUT / (scene.stem + '.webp'), lossless=True)
+                          Path(temp) / 'frame.png', '--quit-after', str(count), 'res://' + scene.relative_to(ROOT).as_posix())
+                    captures = sorted(Path(temp).glob('*.png'))
+                    if len(captures) != count:
+                        raise SystemExit(f'{scene.stem}: incomplete capture')
+                    with Image.open(captures[1]) as sample:
+                        still = sample.convert('RGB')
+                    if item in stills:
+                        # A modal is a paused moment, not just an animation exported as a still.
+                        for path in captures[2:]:
+                            with Image.open(path) as later:
+                                if ImageChops.difference(still, later.convert('RGB')).getbbox():
+                                    raise SystemExit(f'{item}: movement behind the modal at {path.name}')
+                    still.save(OUT / (scene.stem + '.webp'), lossless=True)
             continue
-        if item not in ('arena', 'arena_edge', 'gallery'):
+        if item not in ('arena', 'arena_edge', 'arena_wave', 'gallery'):
             parser.error('Unknown scene: ' + item)
         with tempfile.TemporaryDirectory() as temp:
             godot('--resolution', '1280x720', '--fixed-fps', '24', '--write-movie',

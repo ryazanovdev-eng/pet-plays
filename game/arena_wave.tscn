@@ -1,0 +1,20 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://game/arena_parts/cleared_court.tscn" id="r1"]
+[ext_resource type="PackedScene" path="res://game/arena_parts/regulars_and_drops.tscn" id="r2"]
+[ext_resource type="PackedScene" path="res://game/arena_parts/clearance_hud.tscn" id="r3"]
+
+[node name="ClearanceWave" instance=ExtResource("r1")]
+
+[node name="FrogKnight" parent="Hero/DisplayScale"]
+animation = &"attack"
+frame = 2
+
+[node name="Regulars" parent="World/Depth" instance=ExtResource("r2")]
+
+[node name="HUD" parent="." instance=ExtResource("r3")]
+
+[node name="PlayerPointer" type="Polygon2D" parent="HUD"]
+position = Vector2(1193.8, 637.276)
+color = Color(1, 0.85, 0.28, 1)
+polygon = PackedVector2Array(-3, -4, 5, 0, -3, 4, -1, 0)

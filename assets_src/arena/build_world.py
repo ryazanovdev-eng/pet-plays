@@ -14,9 +14,9 @@ def v(x,y):return f'Vector2({num(x)}, {num(y)})'
 def title(s):return ''.join(x.capitalize() for x in s.split('_'))
 
 class Scene:
-    def __init__(self,name,kind='Node2D',props=''):
+    def __init__(self,name,kind='Node2D',props='',base=None):
         self.paths={};self.sub=[];self.nodes=[]; self.count=defaultdict(int)
-        self.node(name,kind,None,props)
+        self.node(name,None if base else kind,None,props,base)
     def node(self,name,kind,parent='.',props='',instance=None):
         header=f'[node name="{name}"'; header+=(f' type="{kind}"' if kind else '')+(f' parent="{parent}"' if parent else '')
         if instance:header+=f' instance={self.ref(instance)}'
@@ -48,22 +48,27 @@ def contact_texture():
     im.filter(ImageFilter.GaussianBlur(2)).save(OUT/'contact.png')
 
 w=Scene('VesperCourt');sort='y_sort_enabled = true';w.node('Depth','Node2D',props=sort)
+regulars=Scene('RegularsAndDrops',props=sort)
+giant=Scene('GiantEncounter',props=sort)
 def group(name):w.node(name,'Node2D','Depth',sort);return 'Depth/'+name
 
-def prop(parent,kind,x,y,height,flip=False,shadow=True,sub='props',reserve=True):
+def prop(parent,kind,x,y,height,flip=False,shadow=True,sub='props',reserve=True,scene=w):
     path=ENV+sub+'/'+kind+'.png'; a,b=size(path); k=height/b
-    if shadow:sprite(w,'Shade',COURT+'contact.png',x,y-2,min(height*.88,a*k*.9)/120,max(9,height*.13)/48,parent,extra='\nz_index = -1')
-    sprite(w,title(kind),path,x,y,-k if flip else k,k,parent,offset=(-a/2,-b+3))
+    if shadow:sprite(scene,'Shade',COURT+'contact.png',x,y-2,min(height*.88,a*k*.9)/120,max(9,height*.13)/48,parent,extra='\nz_index = -1')
+    sprite(scene,title(kind),path,x,y,-k if flip else k,k,parent,offset=(-a/2,-b+3))
     if reserve:OCC.append((x,y,min(a*k*.47,110),height*.46))
 
-def pickup(parent,id,x,y,h):prop(parent,id,x,y,h,sub='pickups')
-def actor(parent,id,x,y,m,clip='idle',frame=0,flip=False,play=False):
-    ACTORS.append((x,y,id));OCC.append((x,y,82,55));name=w.unique(title(id)+'Mark')
-    sprite(w,'Footfall',COURT+'contact.png',x,y,min(135,55*m)/120,18*m/48,parent,extra='\nz_index = -1')
-    w.node(name,'Node2D',parent,f'position = {v(x,y)}\nscale = {v(m,m)}')
-    w.node(title(id),None,parent+'/'+name,f'animation = &"{clip}"\nautoplay = "{clip if play else ""}"\nframe = {frame}\nflip_h = {str(flip).lower()}',f'game/cast/{id}.tscn')
+def pickup(id,x,y,h):prop('.',id,x,y,h,sub='pickups',scene=regulars)
+def actor(id,x,y,m,clip='idle',frame=0,flip=False,play=False):
+    scene=giant if id.startswith('boss_') else regulars
+    ACTORS.append((x,y,id));OCC.append((x,y,82,55));name=scene.unique(title(id)+'Mark')
+    sprite(scene,'Footfall',COURT+'contact.png',x,y,min(135,55*m)/120,18*m/48,extra='\nz_index = -1')
+    scene.node(name,'Node2D',props=f'position = {v(x,y)}\nscale = {v(m,m)}')
+    scene.node(title(id),None,name,f'animation = &"{clip}"\nautoplay = "{clip if play else ""}"\nframe = {frame}\nflip_h = {str(flip).lower()}',f'game/cast/{id}.tscn')
 
 CENTER=(2390,1700); EDGE=(3450,640); HERO_C=(2320,1768); HERO_E=(3438,720)
+CENTER_CAST=[('skeleton_lavender',2130,1598,1.19,'walk',1,False,True),('ghost_blue',2018,1740,1.13,'idle',1),('zombie_blue',2240,1970,1.16,'walk',2),('boss_rotten_giant',2632,1775,1.30,'attack1',1,True),('skeleton_turquoise',2830,1877,1.23,'walk',0,True),('ghost_purple',2490,1513,1.10,'walk',2,True,True)]
+EDGE_CAST=[('skeleton_bone',3255,667,1.17,'walk',2,False,True),('zombie_pink',3604,755,1.26,'hurt',1,True),('ghost_green',3730,610,1.17,'idle',2,True,True),('skeleton_turquoise',3350,945,1.17,'walk',3),('zombie_green',3055,880,1.13,'walk',1)]
 
 def build_world():
     # Ground is not downsampled to a thumbnail: each pixel is a world unit at zoom 1.
@@ -72,12 +77,12 @@ def build_world():
         for col in range(2):sprite(w,'Quadrant',COURT+f'ground_{row}{col}.jpg',col*2432,row*1728,parent='Terrain',offset=(0,0))
     p=group('MeridianCourt');
     for b in [('crypt_small_glowing',1890,1515,152),('brazier',2010,1518,68),('grave_round',1830,1558,68),('candle_cluster',1947,1543,31),('twisted_tree',2870,1510,182),('skull_pile',2785,1520,42),('hanging_lantern',1880,1872,121),('stone_altar',2672,1995,79),('candle_cluster',2605,2010,32),('angel_statue',2975,1930,139),('grave_cracked',2080,2020,85),('open_grave',2780,1420,64),('red_mushrooms',2810,1555,39)]:prop(p,*b)
-    for b in [('skeleton_lavender',2130,1598,1.19,'walk',1,False,True),('ghost_blue',2018,1740,1.13,'idle',1),('zombie_blue',2240,1970,1.16,'walk',2),('boss_rotten_giant',2632,1775,1.30,'attack1',1,True),('skeleton_turquoise',2830,1877,1.23,'walk',0,True),('ghost_purple',2490,1513,1.10,'walk',2,True,True)]:actor(p,*b)
-    for b in [('health_potion',2125,1814,39),('speed_potion',2755,1660,38),('bone',2214,1690,21),('bone',2460,1876,24),('bone',2430,1912,18)]:pickup(p,*b)
+    for b in CENTER_CAST:actor(*b)
+    for b in [('health_potion',2125,1814,39),('speed_potion',2755,1660,38),('bone',2214,1690,21),('bone',2460,1876,24),('bone',2430,1912,18)]:pickup(*b)
     p=group('LamplighterWalk');
     for b in [('wagon',2970,752,117),('coffin',3040,795,51),('signpost',3100,668,71),('grave_celtic',3650,908,82),('red_mushrooms',3704,907,39),('candle_cluster',3625,918,28),('twisted_tree',3878,731,172),('stone_cluster',3814,736,34),('open_grave',3190,958,69),('hanging_lantern',2864,873,113),('skull_pile',2955,794,34),('stone_altar',3020,543,57)]:prop(p,*b)
-    for b in [('skeleton_bone',3255,667,1.17,'walk',2,False,True),('zombie_pink',3604,755,1.26,'hurt',1,True),('ghost_green',3730,610,1.17,'idle',2,True,True),('skeleton_turquoise',3350,945,1.17,'walk',3),('zombie_green',3055,880,1.13,'walk',1)]:actor(p,*b)
-    for b in [('speed_potion',3230,805,40),('health_potion',3645,622,41),('bone',3515,853,23),('bone',3160,716,22)]:pickup(p,*b)
+    for b in EDGE_CAST:actor(*b)
+    for b in [('speed_potion',3230,805,40),('health_potion',3645,622,41),('bone',3515,853,23),('bone',3160,716,22)]:pickup(*b)
     p=group('BeyondTheIron');
     prop(p,'wide_stained_glass_mausoleum',3375,397,175,sub='wide_crypts')
     for b in [('twisted_tree',3095,395,159),('angel_statue',3635,415,104),('grave_round',2910,377,60),('grave_cracked',2966,360,62),('grave_celtic',3770,332,76),('brazier',3252,398,62),('brazier',3490,403,62),('candle_cluster',3542,384,31),('grave_cracked',3910,421,78),('grave_round',4005,461,73),('twisted_tree',4125,568,174),('stone_cluster',4000,606,43),('hanging_lantern',2915,316,99)]:prop(p,*b)
@@ -90,7 +95,11 @@ def build_world():
     for x,y in [(440,1000),(720,390),(1580,250),(2250,310),(4670,1550),(4260,2650),(3700,3200),(2410,3170),(1180,3180),(480,2420)]:
         p='Depth/BeyondTheIron';prop(p,'twisted_tree',x,y,R.randint(135,190));prop(p,'grave_cracked',x+98,y+21,66);prop(p,'stone_cluster',x-86,y+26,39)
     build_perimeter();plant()
+    w.node('OuterWoods',None,instance='game/arena_parts/outer_woods.tscn')
+    # Authored in world coordinates. Reference (don't rebake) the editable beds.
+    w.node('GroundDressing',None,instance='game/arena_parts/ground_dressing.tscn')
     w.save(GAME/'world.tscn')
+    regulars.save(GAME/'regulars_and_drops.tscn');giant.save(GAME/'giant_encounter.tscn')
 
 def build_perimeter():
     p=group('IronProcession');w.node('Perimeter','StaticBody2D',props='collision_layer = 1\ncollision_mask = 1')

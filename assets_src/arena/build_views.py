@@ -1,6 +1,6 @@
 """Presentation cameras and immutable snapshots of the shared HUD."""
 from PIL import Image, ImageDraw
-from build_world import Scene, sprite, size, ROOT, OUT, GAME, COURT, WALL, ROUTES, CENTER, EDGE, HERO_C, HERO_E, v, num, curve
+from build_world import Scene, sprite, ROOT, OUT, GAME, COURT, WALL, ROUTES, CENTER, EDGE, HERO_C, HERO_E, CENTER_CAST, EDGE_CAST, v, num, curve
 
 UI='assets/ui/hud/';HEALTH='assets/ui/health/'
 
@@ -17,8 +17,7 @@ def progress(s,name,path,rect,x,y,sx,sy,value,atlas=None):
     width,height=rect
     s.node(name,'TextureProgressBar',props=f'offset_left = {num(x)}\noffset_top = {num(y)}\noffset_right = {num(x+width)}\noffset_bottom = {num(y+height)}\nscale = {v(sx,sy)}\nmouse_filter = 2\nvalue = {value}\ntexture_progress = {res}')
 
-def hud():
-    h=Scene('BattleHUD','CanvasLayer')
+def controls_texture():
     # Recompose the clean source key artwork: the static demo has no E interaction.
     im=Image.open(ROOT/UI/'controls_help_panel.png').convert('RGBA');width,height=im.size
     # Shorten only the empty decorative side margins continuously; omit one whole
@@ -30,39 +29,83 @@ def hud():
             t=max(0,min(1,(b-113)/167));side=t*t*(3-2*t);sy=b+cut*(center*(b>=239)+(1-center)*side)
             px[u,b]=src[u,min(height-1,round(sy))]
     ImageDraw.Draw(dest).rectangle((775,125,789,174),fill=(0,0,0,0));dest.save(OUT/'controls.png')
+
+def marker(h,name,x,y,boss=False):
+    # The same authored placement feeds the world and the map; no runtime tracking.
+    r=3.5 if boss else 2
+    color='Color(0.86,0.48,1,1)' if boss else 'Color(0.98,0.36,0.34,1)'
+    h.node(name,'Polygon2D',props=f'position = {v(*project(x,y))}\ncolor = {color}\npolygon = {points([(0,-r),(r,0),(0,r),(-r,0)])}')
+
+def hud():
+    h=Scene('BattleHUD','CanvasLayer')
     sprite(h,'Controls',COURT+'controls.png',17,585,.35, .35,offset=(0,0))
     k=.37; x=16;y=4
     sprite(h,'HeroPortraitAndFrame',HEALTH+'runtime_layers/hero_empty_frame.png',x,y,k,k,offset=(0,0))
     progress(h,'HeroHealth',HEALTH+'runtime_layers/hero_full_red_overlay.png',(538,61),x+282*k,y+125*k,k,k,78,atlas=(282,125,538,61))
     sprite(h,'RoundedFillEnd',HEALTH+'runtime_layers/hero_rounded_right_cap.png',x+(282+538*.78-1)*k,y+125*k,k,k,offset=(0,0))
     label(h,'HitPoints','78 / 100',x+550*k,y+154*k,163,31,19)
-    label(h,'Level','6',x+249*k,y+231*k,32,29,19)
-    # Experience below the health bar, clear of the circular level medallion.
-    line(h,'ExperienceTrack',[(138,91),(318,91)],'Color(0.18,0.095,0.19,1)',5)
-    line(h,'ExperienceFill',[(138,91),(237,91)],'Color(0.98,0.69,0.24,1)',3)
+    label(h,'Level','4',x+249*k,y+231*k,32,29,19)
     sprite(h,'WavePlate',UI+'wave_panel_blank.png',640,55,.443)
-    label(h,'Wave','Волна 3/5',640,61,168,37,24)
-    sprite(h,'BonePlate',UI+'currency_bones_panel.png',817,61,.237)
-    label(h,'Currency','24',831,61,49,29,18)
-    # Portrait-less bar. No extra title or health text.
-    sprite(h,'BossFrame',HEALTH+'standalone_sprites/empty_frame.png',1116,61,.56,.38)
-    progress(h,'BossHealth',HEALTH+'standalone_sprites/red_fill.png',(469,70),992,49.2,.532,.326,68)
+    label(h,'Wave','Волна 2/5',640,61,168,37,24)
+    sprite(h,'BonePlate',UI+'currency_bones_panel.png',1057,679,.237)
+    label(h,'Currency','15',1071,679,49,29,18)
     sprite(h,'Cartouche',UI+'minimap_empty_frame.png',1196,631,.39)
     fence=[project(*pt) for pt in WALL];line(h,'MinimapWall',fence+[fence[0]],'Color(0.68,0.46,0.31,0.95)',1.8)
     for i,(_,route) in enumerate(ROUTES[:5]):
         pts=[project(*p) for p in curve(route)[::12] if 600<p[0]<4220 and 490<p[1]<2960]
         line(h,'MapWalk'+str(i),pts,'Color(0.59,0.44,0.51,0.73)',1.25)
-    for i,(x,y) in enumerate([(2130,1598),(2632,1775),(2830,1877),(3255,667),(3604,755),(3350,945)]):
-        u,b=project(x,y);h.node('Hostile'+str(i),'Polygon2D',props=f'position = {v(u,b)}\ncolor = Color(0.98,0.36,0.34,1)\npolygon = {points([(0,-2.5),(2.5,0),(0,2.5),(-2.5,0)])}')
+    regular_positions=[(x,y) for id,x,y,*_ in CENTER_CAST+EDGE_CAST if not id.startswith('boss_')]
+    for i,(x,y) in enumerate(regular_positions): marker(h,'Hostile'+str(i+1),x,y)
     h.save(GAME/'hud.tscn')
+
+    wave=Scene('ClearanceHUD',base='game/arena_parts/hud.tscn')
+    # Two lines inside a single cartouche; neither text draws over the actors.
+    wave.node('WavePlate',None,props='position = Vector2(640, 57)\nscale = Vector2(0.58, 0.66)')
+    wave.node('Wave',None,props='offset_top = 36\noffset_bottom = 73')
+    label(wave,'EnemiesRemaining',f'Осталось врагов: {len(regular_positions)}',640,77,208,24,16)
+    wave.save(GAME/'clearance_hud.tscn')
+
+    boss=Scene('GiantHUD',base='game/arena_parts/hud.tscn')
+    for name,text in [('Wave','Волна 3/5'),('Level','6'),('Currency','24')]:
+        boss.node(name,None,props=f'text = "{text}"')
+    # The original empty frame includes the giant's illustrated medallion.
+    k=.37; x=1280-16-869*k; y=4
+    prefix=HEALTH+'runtime_layers/rotten_giant_'
+    sprite(boss,'BossPortraitAndFrame',prefix+'empty_frame.png',x,y,k,offset=(0,0))
+    progress(boss,'BossHealth',prefix+'full_red_overlay.png',(538,61),x+282*k,y+125*k,k,k,68,atlas=(282,125,538,61))
+    sprite(boss,'BossFillEnd',prefix+'rounded_right_cap.png',x+(282+538*.68-1)*k,y+125*k,k,offset=(0,0))
+    for id,x,y,*_ in CENTER_CAST:
+        if id.startswith('boss_'): marker(boss,'BossPointer',x,y,True)
+    boss.save(GAME/'giant_hud.tscn')
 
 def hero():
     s=Scene('HeroMark');sprite(s,'Shadow',COURT+'contact.png',0,0,.72,.43)
     s.node('DisplayScale','Node2D',props='scale = Vector2(1.78, 1.78)')
     s.node('FrogKnight',None,'DisplayScale','animation = &"attack"\nautoplay = ""\nframe = 2', 'game/cast/frog_knight.tscn');s.save(GAME/'hero_mark.tscn')
 
-def view(name,cam,hero):
-    s=Scene('MeridianView' if name=='arena' else 'LamplighterView');s.node('World',None,instance='game/arena_parts/world.tscn');s.node('Hero',None,props=f'position = {v(*hero)}',instance='game/arena_parts/hero_mark.tscn');s.node('FixedCamera','Camera2D',props=f'position = {v(*cam)}\nposition_smoothing_enabled = false');s.node('HUD',None,instance='game/arena_parts/hud.tscn');s.node('PlayerPointer','Polygon2D','HUD',f'position = {v(*project(*hero))}\ncolor = Color(1, 0.85, 0.28, 1)\npolygon = {points([(-3,-4),(5,0),(-3,4),(-1,0)])}');s.save(ROOT/f'game/{name}.tscn')
+def views():
+    part='game/arena_parts/'
+    clear=Scene('ClearedCourt')
+    clear.node('World',None,instance=part+'world.tscn')
+    clear.node('Hero',None,props=f'position = {v(*HERO_C)}',instance=part+'hero_mark.tscn')
+    clear.node('FrogKnight',None,'Hero/DisplayScale','animation = &"idle"\nframe = 0')
+    clear.node('FixedCamera','Camera2D',props=f'position = {v(*CENTER)}\nposition_smoothing_enabled = false')
+    clear.save(GAME/'cleared_court.tscn')
+
+    for name,boss in [('arena',True),('arena_wave',False)]:
+        s=Scene('MeridianView' if boss else 'ClearanceWave',base=part+'cleared_court.tscn')
+        s.node('FrogKnight',None,'Hero/DisplayScale','animation = &"attack"\nframe = 2')
+        s.node('Regulars',None,'World/Depth',instance=part+'regulars_and_drops.tscn')
+        if boss: s.node('Giant',None,'World/Depth',instance=part+'giant_encounter.tscn')
+        s.node('HUD',None,instance=part+('giant_hud.tscn' if boss else 'clearance_hud.tscn'))
+        s.node('PlayerPointer','Polygon2D','HUD',f'position = {v(*project(*HERO_C))}\ncolor = Color(1, 0.85, 0.28, 1)\npolygon = {points([(-3,-4),(5,0),(-3,4),(-1,0)])}')
+        s.save(ROOT/f'game/{name}.tscn')
+
+    edge=Scene('LamplighterView',base='game/arena.tscn')
+    edge.node('Hero',None,props=f'position = {v(*HERO_E)}')
+    edge.node('FixedCamera',None,props=f'position = {v(*EDGE)}')
+    edge.node('PlayerPointer',None,'HUD',f'position = {v(*project(*HERO_E))}')
+    edge.save(ROOT/'game/arena_edge.tscn')
 
 if __name__=='__main__':
-    hud();hero();view('arena',CENTER,HERO_C);view('arena_edge',EDGE,HERO_E)
+    controls_texture();hud();hero();views()

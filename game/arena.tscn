@@ -1,21 +1,21 @@
 [gd_scene format=3]
 
-[ext_resource type="PackedScene" path="res://game/arena_parts/world.tscn" id="r1"]
-[ext_resource type="PackedScene" path="res://game/arena_parts/hero_mark.tscn" id="r2"]
-[ext_resource type="PackedScene" path="res://game/arena_parts/hud.tscn" id="r3"]
+[ext_resource type="PackedScene" path="res://game/arena_parts/cleared_court.tscn" id="r1"]
+[ext_resource type="PackedScene" path="res://game/arena_parts/regulars_and_drops.tscn" id="r2"]
+[ext_resource type="PackedScene" path="res://game/arena_parts/giant_encounter.tscn" id="r3"]
+[ext_resource type="PackedScene" path="res://game/arena_parts/giant_hud.tscn" id="r4"]
 
-[node name="MeridianView" type="Node2D"]
+[node name="MeridianView" instance=ExtResource("r1")]
 
-[node name="World" parent="." instance=ExtResource("r1")]
+[node name="FrogKnight" parent="Hero/DisplayScale"]
+animation = &"attack"
+frame = 2
 
-[node name="Hero" parent="." instance=ExtResource("r2")]
-position = Vector2(2320, 1768)
+[node name="Regulars" parent="World/Depth" instance=ExtResource("r2")]
 
-[node name="FixedCamera" type="Camera2D" parent="."]
-position = Vector2(2390, 1700)
-position_smoothing_enabled = false
+[node name="Giant" parent="World/Depth" instance=ExtResource("r3")]
 
-[node name="HUD" parent="." instance=ExtResource("r3")]
+[node name="HUD" parent="." instance=ExtResource("r4")]
 
 [node name="PlayerPointer" type="Polygon2D" parent="HUD"]
 position = Vector2(1193.8, 637.276)

@@ -1,0 +1,634 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://game/arena_parts/cleared_court.tscn" id="cleared_court"]
+[ext_resource type="Texture2D" path="res://assets/ui/shop/shop_stall_decoration.png" id="shop_stall_decoration"]
+[ext_resource type="Texture2D" path="res://assets/environment/pickups/health_potion_large.png" id="health_potion_large"]
+[ext_resource type="Texture2D" path="res://assets/ui/insignia/bone_totem.png" id="bone_totem"]
+[ext_resource type="Texture2D" path="res://assets/ui/levelup/candles_cluster_medium.png" id="candles_cluster_medium"]
+[ext_resource type="Texture2D" path="res://assets/ui/levelup/separator_gold_skull_long.png" id="separator_gold_skull_long"]
+[ext_resource type="Texture2D" path="res://assets/ui/levelup/panel_wide_blank.png" id="panel_wide_blank"]
+[ext_resource type="Texture2D" path="res://assets/ui/portraits/hero_approved.png" id="hero_approved"]
+[ext_resource type="Texture2D" path="res://assets/ui/shop/panel_shop_small_blank.png" id="panel_shop_small_blank"]
+[ext_resource type="Texture2D" path="res://assets/ui/shop/currency_bones_blank.png" id="currency_bones_blank"]
+[ext_resource type="Texture2D" path="res://assets/ui/shop/button_shop_next_blank.png" id="button_shop_next_blank"]
+
+[sub_resource type="SystemFont" id="Display"]
+font_names = PackedStringArray("Georgia", "Liberation Serif", "DejaVu Serif")
+font_weight = 700
+
+[sub_resource type="SystemFont" id="SmallCaps"]
+font_names = PackedStringArray("Segoe UI", "Noto Sans", "DejaVu Sans")
+font_weight = 700
+spacing_glyph = 1
+
+[sub_resource type="Gradient" id="WarmShadowsColors"]
+offsets = PackedFloat32Array(0, 0.4, 0.7, 1)
+colors = PackedColorArray(0.1255, 0.0706, 0.1412, 0.1804, 0.098, 0.0549, 0.1333, 0.1098, 0.1255, 0.0549, 0.1922, 0.4392, 0.0863, 0.051, 0.1529, 0.6863)
+
+[sub_resource type="GradientTexture2D" id="WarmShadows"]
+gradient = SubResource("WarmShadowsColors")
+width = 128
+height = 128
+fill_from = Vector2(0, 0)
+fill_to = Vector2(1, 0)
+
+[sub_resource type="Gradient" id="LampGlowColors"]
+colors = PackedColorArray(1, 0.8471, 0.5725, 0.3765, 1, 0.8471, 0.5725, 0)
+
+[sub_resource type="GradientTexture2D" id="LampGlow"]
+gradient = SubResource("LampGlowColors")
+width = 256
+height = 256
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
+
+[sub_resource type="Gradient" id="CartShadowColors"]
+colors = PackedColorArray(0.1294, 0.0627, 0.1255, 0.7294, 0.1294, 0.0627, 0.1255, 0)
+
+[sub_resource type="GradientTexture2D" id="CartShadow"]
+gradient = SubResource("CartShadowColors")
+width = 256
+height = 256
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
+
+[node name="Shop" type="Node2D"]
+
+[node name="ClearedCourt" parent="." instance=ExtResource("cleared_court")]
+process_mode = 4
+
+[node name="Presentation" type="CanvasLayer" parent="."]
+layer = 8
+
+[node name="FrogKnight" parent="ClearedCourt/Hero/DisplayScale"]
+flip_h = true
+
+[node name="WarmShadowsVeil" type="TextureRect" parent="Presentation"]
+offset_left = 0
+offset_top = 0
+offset_right = 1280
+offset_bottom = 720
+mouse_filter = 2
+texture = SubResource("WarmShadows")
+expand_mode = 1
+
+[node name="LanternLight" type="TextureRect" parent="Presentation"]
+offset_left = 113
+offset_top = 168
+offset_right = 523
+offset_bottom = 484
+mouse_filter = 2
+texture = SubResource("LampGlow")
+expand_mode = 1
+
+[node name="Footprint" type="TextureRect" parent="Presentation"]
+offset_left = 134
+offset_top = 389
+offset_right = 494
+offset_bottom = 455
+mouse_filter = 2
+texture = SubResource("CartShadow")
+expand_mode = 1
+
+[node name="WaysideStall" type="TextureRect" parent="Presentation"]
+offset_left = 147
+offset_top = 205
+offset_right = 466
+offset_bottom = 426
+mouse_filter = 2
+texture = ExtResource("shop_stall_decoration")
+expand_mode = 1
+
+[node name="StockVial" type="TextureRect" parent="Presentation"]
+offset_left = 269
+offset_top = 312
+offset_right = 289
+offset_bottom = 337
+mouse_filter = 2
+texture = ExtResource("health_potion_large")
+expand_mode = 1
+
+[node name="StockTalisman" type="TextureRect" parent="Presentation"]
+offset_left = 316
+offset_top = 309
+offset_right = 345
+offset_bottom = 338
+mouse_filter = 2
+texture = ExtResource("bone_totem")
+expand_mode = 1
+
+[node name="WaxLights" type="TextureRect" parent="Presentation"]
+offset_left = 427
+offset_top = 392
+offset_right = 479
+offset_bottom = 440
+mouse_filter = 2
+texture = ExtResource("candles_cluster_medium")
+expand_mode = 1
+
+[node name="Wayfinder" type="TextureRect" parent="Presentation"]
+offset_left = 202
+offset_top = 127
+offset_right = 424
+offset_bottom = 167
+mouse_filter = 2
+texture = ExtResource("separator_gold_skull_long")
+expand_mode = 1
+
+[node name="Rest" type="Label" parent="Presentation"]
+offset_left = 155
+offset_top = 165
+offset_right = 469
+offset_bottom = 195
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.9294, 0.7333, 1)
+theme_override_fonts/font = SubResource("SmallCaps")
+theme_override_colors/font_outline_color = Color(0.2078, 0.098, 0.1922, 1)
+theme_override_constants/outline_size = 3
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 17
+text = "ПЕРЕДЫШКА"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Knight" type="Node2D" parent="Presentation"]
+position = Vector2(36, 581)
+
+[node name="StatusPlate" type="TextureRect" parent="Presentation/Knight"]
+offset_left = 0
+offset_top = 0
+offset_right = 420
+offset_bottom = 107
+mouse_filter = 2
+texture = ExtResource("panel_wide_blank")
+expand_mode = 1
+
+[node name="Portrait" type="TextureRect" parent="Presentation/Knight"]
+offset_left = 16
+offset_top = 9
+offset_right = 106
+offset_bottom = 99
+mouse_filter = 2
+texture = ExtResource("hero_approved")
+expand_mode = 1
+
+[node name="Identity" type="Label" parent="Presentation/Knight"]
+offset_left = 124
+offset_top = 17
+offset_right = 244
+offset_bottom = 40
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.9255, 0.7843, 0.5373, 1)
+theme_override_fonts/font = SubResource("SmallCaps")
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 14
+text = "РЫЦАРЬ"
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Divide" type="Line2D" parent="Presentation/Knight"]
+points = PackedVector2Array(124, 44, 385, 44)
+width = 1
+default_color = Color(0.8275, 0.6784, 0.4549, 0.4196)
+antialiased = true
+
+[node name="HealthValue" type="Label" parent="Presentation/Knight"]
+offset_left = 123
+offset_top = 48
+offset_right = 262
+offset_bottom = 86
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.9333, 0.8039, 1)
+theme_override_fonts/font = SubResource("Display")
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 20
+text = "78 / 120 HP"
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="SwordPower" type="Label" parent="Presentation/Knight"]
+offset_left = 276
+offset_top = 49
+offset_right = 392
+offset_bottom = 85
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.9333, 0.8039, 1)
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 19
+text = "Урон: 13"
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Inlay" type="Polygon2D" parent="Presentation/Knight"]
+polygon = PackedVector2Array(260, 65, 263, 68, 260, 71, 257, 68)
+color = Color(0.7961, 0.5922, 0.4196, 1)
+antialiased = true
+
+[node name="Ledger" type="Node2D" parent="Presentation"]
+position = Vector2(639, 37)
+
+[node name="Cover" type="NinePatchRect" parent="Presentation/Ledger"]
+offset_left = 0
+offset_top = 0
+offset_right = 610
+offset_bottom = 646
+mouse_filter = 2
+texture = ExtResource("panel_shop_small_blank")
+patch_margin_left = 37
+patch_margin_top = 37
+patch_margin_right = 37
+patch_margin_bottom = 37
+
+[node name="Issue" type="Label" parent="Presentation/Ledger"]
+offset_left = 35
+offset_top = 26
+offset_right = 315
+offset_bottom = 52
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.9098, 0.7647, 0.5294, 1)
+theme_override_fonts/font = SubResource("SmallCaps")
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 15
+text = "ЛАВКА КОСТЕЙ"
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Title" type="Label" parent="Presentation/Ledger"]
+offset_left = 32
+offset_top = 47
+offset_right = 364
+offset_bottom = 115
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.9412, 0.7843, 1)
+theme_override_fonts/font = SubResource("Display")
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 49
+text = "Магазин"
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Subtitle" type="Label" parent="Presentation/Ledger"]
+offset_left = 36
+offset_top = 116
+offset_right = 371
+offset_bottom = 146
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.9176, 0.8392, 0.8275, 1)
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 19
+text = "Вторая волна пройдена"
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="PurseLabel" type="Label" parent="Presentation/Ledger"]
+offset_left = 391
+offset_top = 38
+offset_right = 557
+offset_bottom = 62
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.9176, 0.7922, 0.5804, 1)
+theme_override_fonts/font = SubResource("SmallCaps")
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 13
+text = "КОШЕЛЁК"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Purse" type="TextureRect" parent="Presentation/Ledger"]
+offset_left = 382
+offset_top = 63
+offset_right = 564
+offset_bottom = 118
+mouse_filter = 2
+texture = ExtResource("currency_bones_blank")
+expand_mode = 1
+
+[node name="PurseValue" type="Label" parent="Presentation/Ledger"]
+offset_left = 451
+offset_top = 69
+offset_right = 542
+offset_bottom = 110
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.9333, 0.8039, 1)
+theme_override_fonts/font = SubResource("Display")
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 26
+text = "24"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="InventoryRule" type="Line2D" parent="Presentation/Ledger"]
+points = PackedVector2Array(36, 162, 574, 162)
+width = 1
+default_color = Color(0.8863, 0.6863, 0.4471, 0.502)
+antialiased = true
+
+[node name="InventoryFinial" type="Polygon2D" parent="Presentation/Ledger"]
+polygon = PackedVector2Array(574, 159, 577, 162, 574, 165, 571, 162)
+color = Color(0.902, 0.7098, 0.502, 1)
+antialiased = true
+
+[node name="Broth" type="Node2D" parent="Presentation/Ledger"]
+position = Vector2(32, 178)
+
+[node name="IconMat" type="TextureRect" parent="Presentation/Ledger/Broth"]
+offset_left = 0
+offset_top = 13
+offset_right = 100
+offset_bottom = 113
+mouse_filter = 2
+texture = ExtResource("panel_shop_small_blank")
+expand_mode = 1
+self_modulate = Color(0.9569, 0.8706, 0.7647, 1)
+
+[node name="Goods" type="TextureRect" parent="Presentation/Ledger/Broth"]
+offset_left = 22
+offset_top = 25
+offset_right = 78
+offset_bottom = 98
+mouse_filter = 2
+texture = ExtResource("health_potion_large")
+expand_mode = 1
+
+[node name="Name" type="Label" parent="Presentation/Ledger/Broth"]
+offset_left = 114
+offset_top = 5
+offset_right = 415
+offset_bottom = 42
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.9294, 0.7882, 1)
+theme_override_fonts/font = SubResource("Display")
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 26
+text = "Скелетный отвар"
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Effect" type="Label" parent="Presentation/Ledger/Broth"]
+offset_left = 115
+offset_top = 46
+offset_right = 431
+offset_bottom = 98
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.9451, 0.8745, 0.8471, 1)
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 18
+text = "Лечит на 25 HP,\nне выше максимума."
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Limit" type="Label" parent="Presentation/Ledger/Broth"]
+offset_left = 115
+offset_top = 107
+offset_right = 435
+offset_bottom = 132
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.8588, 0.7569, 0.7882, 1)
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 16
+text = "Один раз за посещение"
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="PriceTag" type="TextureRect" parent="Presentation/Ledger/Broth"]
+offset_left = 416
+offset_top = 13
+offset_right = 545
+offset_bottom = 58
+mouse_filter = 2
+texture = ExtResource("currency_bones_blank")
+expand_mode = 1
+
+[node name="Price" type="Label" parent="Presentation/Ledger/Broth"]
+offset_left = 459
+offset_top = 14
+offset_right = 527
+offset_bottom = 56
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.9412, 0.7765, 1)
+theme_override_fonts/font = SubResource("Display")
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 23
+text = "15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Availability" type="Label" parent="Presentation/Ledger/Broth"]
+offset_left = 411
+offset_top = 63
+offset_right = 550
+offset_bottom = 110
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.9843, 0.9059, 0.6235, 1)
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 16
+text = "Доступно"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Rule" type="Line2D" parent="Presentation/Ledger/Broth"]
+points = PackedVector2Array(2, 147, 542, 147)
+width = 1
+default_color = Color(0.8235, 0.651, 0.4549, 0.4667)
+antialiased = true
+
+[node name="Totem" type="Node2D" parent="Presentation/Ledger"]
+position = Vector2(32, 338)
+
+[node name="IconMat" type="TextureRect" parent="Presentation/Ledger/Totem"]
+offset_left = 0
+offset_top = 13
+offset_right = 100
+offset_bottom = 113
+mouse_filter = 2
+texture = ExtResource("panel_shop_small_blank")
+expand_mode = 1
+self_modulate = Color(0.7137, 0.651, 0.7451, 1)
+
+[node name="Goods" type="TextureRect" parent="Presentation/Ledger/Totem"]
+offset_left = 10
+offset_top = 18
+offset_right = 90
+offset_bottom = 100
+mouse_filter = 2
+texture = ExtResource("bone_totem")
+expand_mode = 1
+
+[node name="Name" type="Label" parent="Presentation/Ledger/Totem"]
+offset_left = 114
+offset_top = 5
+offset_right = 415
+offset_bottom = 42
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.9294, 0.7882, 1)
+theme_override_fonts/font = SubResource("Display")
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 26
+text = "Костяной тотем"
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Effect" type="Label" parent="Presentation/Ledger/Totem"]
+offset_left = 115
+offset_top = 46
+offset_right = 431
+offset_bottom = 98
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.9451, 0.8745, 0.8471, 1)
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 18
+text = "+15 к максимуму HP\nи лечение на 15."
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Limit" type="Label" parent="Presentation/Ledger/Totem"]
+offset_left = 115
+offset_top = 107
+offset_right = 435
+offset_bottom = 132
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.8588, 0.7569, 0.7882, 1)
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 16
+text = "Один раз за попытку"
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="PriceTag" type="TextureRect" parent="Presentation/Ledger/Totem"]
+offset_left = 416
+offset_top = 13
+offset_right = 545
+offset_bottom = 58
+mouse_filter = 2
+texture = ExtResource("currency_bones_blank")
+expand_mode = 1
+self_modulate = Color(0.7333, 0.6902, 0.7843, 1)
+
+[node name="Price" type="Label" parent="Presentation/Ledger/Totem"]
+offset_left = 459
+offset_top = 14
+offset_right = 527
+offset_bottom = 56
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.8863, 0.8431, 0.8745, 1)
+theme_override_fonts/font = SubResource("Display")
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 23
+text = "25"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Availability" type="Label" parent="Presentation/Ledger/Totem"]
+offset_left = 411
+offset_top = 63
+offset_right = 550
+offset_bottom = 110
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.8667, 0.7451, 0.8196, 1)
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 16
+text = "Не хватает\n1 кости"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Rule" type="Line2D" parent="Presentation/Ledger/Totem"]
+points = PackedVector2Array(2, 147, 542, 147)
+width = 1
+default_color = Color(0.8235, 0.651, 0.4549, 0.4667)
+antialiased = true
+
+[node name="NextPlate" type="TextureRect" parent="Presentation/Ledger"]
+offset_left = 235
+offset_top = 530
+offset_right = 562
+offset_bottom = 598
+mouse_filter = 2
+texture = ExtResource("button_shop_next_blank")
+expand_mode = 1
+
+[node name="Proceed" type="Label" parent="Presentation/Ledger"]
+offset_left = 251
+offset_top = 535
+offset_right = 437
+offset_bottom = 591
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.9333, 0.8039, 1)
+theme_override_fonts/font = SubResource("Display")
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 25
+text = "Дальше"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="KeycapRule" type="Line2D" parent="Presentation/Ledger"]
+points = PackedVector2Array(437, 550, 437, 579)
+width = 1
+default_color = Color(0.8941, 0.7176, 0.8627, 0.702)
+antialiased = true
+
+[node name="Shortcut" type="Label" parent="Presentation/Ledger"]
+offset_left = 447
+offset_top = 540
+offset_right = 535
+offset_bottom = 587
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.8588, 0.6157, 1)
+theme_override_fonts/font = SubResource("SmallCaps")
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 15
+text = "ENTER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NextWave" type="Label" parent="Presentation/Ledger"]
+offset_left = 37
+offset_top = 531
+offset_right = 187
+offset_bottom = 553
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.8745, 0.7529, 0.6706, 1)
+theme_override_fonts/font = SubResource("SmallCaps")
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 13
+text = "ДАЛЕЕ"
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="WaveNumber" type="Label" parent="Presentation/Ledger"]
+offset_left = 36
+offset_top = 553
+offset_right = 227
+offset_bottom = 592
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.8902, 0.7059, 1)
+theme_override_fonts/font = SubResource("Display")
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 24
+text = "Волна 3 / 5"
+horizontal_alignment = 0
+vertical_alignment = 1

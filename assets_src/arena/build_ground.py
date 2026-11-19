@@ -1,4 +1,4 @@
-"""Offline paint pass. Four 1:1 quadrants, no game-time terrain generation."""
+"""Surveyed road layout and iron fence artwork; paint_churchyard.py bakes the current ground."""
 from pathlib import Path
 from math import sin, cos, pi, hypot, ceil, floor
 from random import Random
@@ -104,5 +104,4 @@ def fence_module(name,dx,dy):
 
 if __name__=='__main__':
     OUT.mkdir(parents=True,exist_ok=True)
-    paint_ground()
     for name,dx,dy in [('iron_straight',131,0),('iron_rising',61,-88),('iron_falling',61,88)]: fence_module(name,dx,dy)

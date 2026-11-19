@@ -6,9 +6,7 @@
 [ext_resource type="Texture2D" path="res://assets/ui/health/runtime_layers/hero_rounded_right_cap.png" id="r4"]
 [ext_resource type="Texture2D" path="res://assets/ui/hud/wave_panel_blank.png" id="r5"]
 [ext_resource type="Texture2D" path="res://assets/ui/hud/currency_bones_panel.png" id="r6"]
-[ext_resource type="Texture2D" path="res://assets/ui/health/standalone_sprites/empty_frame.png" id="r7"]
-[ext_resource type="Texture2D" path="res://assets/ui/health/standalone_sprites/red_fill.png" id="r8"]
-[ext_resource type="Texture2D" path="res://assets/ui/hud/minimap_empty_frame.png" id="r9"]
+[ext_resource type="Texture2D" path="res://assets/ui/hud/minimap_empty_frame.png" id="r7"]
 
 [sub_resource type="AtlasTexture" id="HeroHealthCrop"]
 atlas = ExtResource("r3")
@@ -71,21 +69,9 @@ theme_override_colors/font_color = Color(1, 0.935, 0.79, 1)
 theme_override_colors/font_outline_color = Color(0.12, 0.055, 0.12, 1)
 theme_override_constants/outline_size = 3
 theme_override_font_sizes/font_size = 19
-text = "6"
+text = "4"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="ExperienceTrack" type="Line2D" parent="."]
-points = PackedVector2Array(138, 91, 318, 91)
-width = 5
-default_color = Color(0.18,0.095,0.19,1)
-antialiased = true
-
-[node name="ExperienceFill" type="Line2D" parent="."]
-points = PackedVector2Array(138, 91, 237, 91)
-width = 3
-default_color = Color(0.98,0.69,0.24,1)
-antialiased = true
 
 [node name="WavePlate" type="Sprite2D" parent="."]
 position = Vector2(640, 55)
@@ -102,48 +88,33 @@ theme_override_colors/font_color = Color(1, 0.935, 0.79, 1)
 theme_override_colors/font_outline_color = Color(0.12, 0.055, 0.12, 1)
 theme_override_constants/outline_size = 3
 theme_override_font_sizes/font_size = 24
-text = "Волна 3/5"
+text = "Волна 2/5"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="BonePlate" type="Sprite2D" parent="."]
-position = Vector2(817, 61)
+position = Vector2(1057, 679)
 scale = Vector2(0.237, 0.237)
 texture = ExtResource("r6")
 
 [node name="Currency" type="Label" parent="."]
-offset_left = 806.5
-offset_top = 46.5
-offset_right = 855.5
-offset_bottom = 75.5
+offset_left = 1046.5
+offset_top = 664.5
+offset_right = 1095.5
+offset_bottom = 693.5
 mouse_filter = 2
 theme_override_colors/font_color = Color(1, 0.935, 0.79, 1)
 theme_override_colors/font_outline_color = Color(0.12, 0.055, 0.12, 1)
 theme_override_constants/outline_size = 3
 theme_override_font_sizes/font_size = 18
-text = "24"
+text = "15"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="BossFrame" type="Sprite2D" parent="."]
-position = Vector2(1116, 61)
-scale = Vector2(0.56, 0.38)
-texture = ExtResource("r7")
-
-[node name="BossHealth" type="TextureProgressBar" parent="."]
-offset_left = 992
-offset_top = 49.2
-offset_right = 1461
-offset_bottom = 119.2
-scale = Vector2(0.532, 0.326)
-mouse_filter = 2
-value = 68
-texture_progress = ExtResource("r8")
 
 [node name="Cartouche" type="Sprite2D" parent="."]
 position = Vector2(1196, 631)
 scale = Vector2(0.39, 0.39)
-texture = ExtResource("r9")
+texture = ExtResource("r7")
 
 [node name="MinimapWall" type="Line2D" parent="."]
 points = PackedVector2Array(1167.18, 608.94, 1224.82, 608.94, 1243.52, 636, 1224.82, 663.94, 1167.18, 663.94, 1148.48, 636, 1167.18, 608.94)
@@ -181,32 +152,52 @@ width = 1.25
 default_color = Color(0.59,0.44,0.51,0.73)
 antialiased = true
 
-[node name="Hostile0" type="Polygon2D" parent="."]
+[node name="Hostile1" type="Polygon2D" parent="."]
 position = Vector2(1189.62, 633.536)
 color = Color(0.98,0.36,0.34,1)
-polygon = PackedVector2Array(0, -2.5, 2.5, 0, 0, 2.5, -2.5, 0)
-
-[node name="Hostile1" type="Polygon2D" parent="."]
-position = Vector2(1200.664, 637.43)
-color = Color(0.98,0.36,0.34,1)
-polygon = PackedVector2Array(0, -2.5, 2.5, 0, 0, 2.5, -2.5, 0)
+polygon = PackedVector2Array(0, -2, 2, 0, 0, 2, -2, 0)
 
 [node name="Hostile2" type="Polygon2D" parent="."]
-position = Vector2(1205.02, 639.674)
+position = Vector2(1187.156, 636.66)
 color = Color(0.98,0.36,0.34,1)
-polygon = PackedVector2Array(0, -2.5, 2.5, 0, 0, 2.5, -2.5, 0)
+polygon = PackedVector2Array(0, -2, 2, 0, 0, 2, -2, 0)
 
 [node name="Hostile3" type="Polygon2D" parent="."]
-position = Vector2(1214.37, 613.054)
+position = Vector2(1192.04, 641.72)
 color = Color(0.98,0.36,0.34,1)
-polygon = PackedVector2Array(0, -2.5, 2.5, 0, 0, 2.5, -2.5, 0)
+polygon = PackedVector2Array(0, -2, 2, 0, 0, 2, -2, 0)
 
 [node name="Hostile4" type="Polygon2D" parent="."]
-position = Vector2(1222.048, 614.99)
+position = Vector2(1205.02, 639.674)
 color = Color(0.98,0.36,0.34,1)
-polygon = PackedVector2Array(0, -2.5, 2.5, 0, 0, 2.5, -2.5, 0)
+polygon = PackedVector2Array(0, -2, 2, 0, 0, 2, -2, 0)
 
 [node name="Hostile5" type="Polygon2D" parent="."]
+position = Vector2(1197.54, 631.666)
+color = Color(0.98,0.36,0.34,1)
+polygon = PackedVector2Array(0, -2, 2, 0, 0, 2, -2, 0)
+
+[node name="Hostile6" type="Polygon2D" parent="."]
+position = Vector2(1214.37, 613.054)
+color = Color(0.98,0.36,0.34,1)
+polygon = PackedVector2Array(0, -2, 2, 0, 0, 2, -2, 0)
+
+[node name="Hostile7" type="Polygon2D" parent="."]
+position = Vector2(1222.048, 614.99)
+color = Color(0.98,0.36,0.34,1)
+polygon = PackedVector2Array(0, -2, 2, 0, 0, 2, -2, 0)
+
+[node name="Hostile8" type="Polygon2D" parent="."]
+position = Vector2(1224.82, 611.8)
+color = Color(0.98,0.36,0.34,1)
+polygon = PackedVector2Array(0, -2, 2, 0, 0, 2, -2, 0)
+
+[node name="Hostile9" type="Polygon2D" parent="."]
 position = Vector2(1216.46, 619.17)
 color = Color(0.98,0.36,0.34,1)
-polygon = PackedVector2Array(0, -2.5, 2.5, 0, 0, 2.5, -2.5, 0)
+polygon = PackedVector2Array(0, -2, 2, 0, 0, 2, -2, 0)
+
+[node name="Hostile10" type="Polygon2D" parent="."]
+position = Vector2(1209.97, 617.74)
+color = Color(0.98,0.36,0.34,1)
+polygon = PackedVector2Array(0, -2, 2, 0, 0, 2, -2, 0)

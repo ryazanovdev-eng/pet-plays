@@ -1,0 +1,2141 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/arena/woods/ember_oak.png" id="ember_oak"]
+[ext_resource type="Texture2D" path="res://assets/arena/woods/honey_hornbeam.png" id="honey_hornbeam"]
+[ext_resource type="Texture2D" path="res://assets/arena/woods/crooked_plum.png" id="crooked_plum"]
+[ext_resource type="Texture2D" path="res://assets/arena/woods/blue_spindle.png" id="blue_spindle"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/twisted_tree.png" id="twisted_tree"]
+
+[node name="OuterWoods" type="Node2D"]
+z_index = -2
+texture_filter = 2
+
+[node name="DistantSilhouettes" type="Node2D" parent="."]
+modulate = Color(0.58, 0.58, 0.73, 1)
+
+[node name="BlueSpindle001" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(1355, 154)
+scale = Vector2(-0.473, 0.46)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle002" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(2202, 156)
+scale = Vector2(-0.429, 0.402)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak003" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(2332, 157)
+scale = Vector2(0.655, 0.596)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="CrookedPlum004" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(1844, 158)
+scale = Vector2(-0.616, 0.645)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle005" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(1960, 162)
+scale = Vector2(0.386, 0.409)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle006" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(1006, 167)
+scale = Vector2(-0.454, 0.429)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle007" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(1552, 169)
+scale = Vector2(0.408, 0.413)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak008" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(1749, 169)
+scale = Vector2(0.517, 0.478)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle009" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(2462, 170)
+scale = Vector2(-0.542, 0.547)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle010" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(2084, 171)
+scale = Vector2(0.535, 0.501)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak011" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(2584, 171)
+scale = Vector2(0.636, 0.579)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak012" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(1112, 172)
+scale = Vector2(0.465, 0.458)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="CrookedPlum013" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(1455, 174)
+scale = Vector2(0.561, 0.59)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="CrookedPlum014" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(1233, 187)
+scale = Vector2(-0.775, 0.705)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle015" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(1646, 188)
+scale = Vector2(-0.565, 0.559)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak016" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(2704, 195)
+scale = Vector2(-0.597, 0.581)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="CrookedPlum017" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(890, 249)
+scale = Vector2(0.715, 0.694)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle018" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(2745, 260)
+scale = Vector2(0.437, 0.399)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle019" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(3600, 264)
+scale = Vector2(-0.38, 0.393)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak020" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(3150, 265)
+scale = Vector2(-0.525, 0.533)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak021" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(3792, 272)
+scale = Vector2(-0.442, 0.42)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="CrookedPlum022" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(3507, 276)
+scale = Vector2(0.643, 0.586)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle023" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(3888, 276)
+scale = Vector2(0.467, 0.47)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="CrookedPlum024" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(3690, 284)
+scale = Vector2(-0.605, 0.61)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="CrookedPlum025" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(2840, 290)
+scale = Vector2(-0.575, 0.523)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle026" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(2945, 290)
+scale = Vector2(-0.446, 0.48)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle027" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(3226, 290)
+scale = Vector2(-0.468, 0.492)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="CrookedPlum028" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(3041, 306)
+scale = Vector2(0.645, 0.635)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="CrookedPlum029" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(3999, 315)
+scale = Vector2(0.554, 0.519)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="CrookedPlum030" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(823, 326)
+scale = Vector2(-0.654, 0.648)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle031" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4070, 367)
+scale = Vector2(-0.422, 0.441)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="CrookedPlum032" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(783, 416)
+scale = Vector2(0.513, 0.557)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="CrookedPlum033" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4150, 450)
+scale = Vector2(-0.542, 0.506)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle034" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(730, 493)
+scale = Vector2(-0.433, 0.42)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak035" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4176, 570)
+scale = Vector2(0.409, 0.431)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle036" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(673, 588)
+scale = Vector2(0.585, 0.543)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle037" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(595, 670)
+scale = Vector2(-0.435, 0.428)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle038" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4260, 671)
+scale = Vector2(-0.421, 0.412)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak039" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4268, 731)
+scale = Vector2(-0.572, 0.567)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle040" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(517, 770)
+scale = Vector2(0.438, 0.412)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="CrookedPlum041" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4290, 815)
+scale = Vector2(-0.642, 0.593)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle042" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4325, 824)
+scale = Vector2(0.524, 0.497)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak043" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(486, 862)
+scale = Vector2(-0.599, 0.586)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="CrookedPlum044" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4392, 920)
+scale = Vector2(0.493, 0.529)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="EmberOak045" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(436, 938)
+scale = Vector2(0.586, 0.617)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle046" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4340, 957)
+scale = Vector2(-0.441, 0.452)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="CrookedPlum047" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4482, 1013)
+scale = Vector2(0.639, 0.678)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle048" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(347, 1028)
+scale = Vector2(-0.385, 0.408)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle049" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4514, 1115)
+scale = Vector2(0.371, 0.393)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="CrookedPlum050" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(310, 1123)
+scale = Vector2(0.705, 0.665)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle051" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4567, 1189)
+scale = Vector2(-0.544, 0.523)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle052" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(243, 1198)
+scale = Vector2(-0.402, 0.406)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle053" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4660, 1274)
+scale = Vector2(-0.449, 0.474)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle054" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(171, 1286)
+scale = Vector2(-0.404, 0.393)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle055" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4723, 1368)
+scale = Vector2(0.459, 0.435)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="CrookedPlum056" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(99, 1394)
+scale = Vector2(-0.632, 0.603)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="EmberOak057" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4775, 1456)
+scale = Vector2(-0.568, 0.533)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="CrookedPlum058" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(14, 1495)
+scale = Vector2(-0.552, 0.524)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="EmberOak059" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4818, 1545)
+scale = Vector2(-0.545, 0.54)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="CrookedPlum060" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(-50, 1605)
+scale = Vector2(0.604, 0.564)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="EmberOak061" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4892, 1644)
+scale = Vector2(-0.451, 0.467)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle062" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(-83, 1697)
+scale = Vector2(0.407, 0.407)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak063" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(5023, 1740)
+scale = Vector2(-0.445, 0.456)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle064" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(-176, 1750)
+scale = Vector2(0.538, 0.536)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle065" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(-126, 1827)
+scale = Vector2(-0.522, 0.489)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle066" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4948, 1844)
+scale = Vector2(0.506, 0.53)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak067" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(-85, 1914)
+scale = Vector2(0.578, 0.611)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle068" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4919, 1934)
+scale = Vector2(-0.518, 0.515)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle069" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(-8, 1974)
+scale = Vector2(-0.483, 0.492)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle070" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4846, 2042)
+scale = Vector2(0.484, 0.464)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle071" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(57, 2074)
+scale = Vector2(0.44, 0.474)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="CrookedPlum072" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4784, 2121)
+scale = Vector2(0.658, 0.608)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle073" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4711, 2182)
+scale = Vector2(0.522, 0.519)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="CrookedPlum074" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(119, 2184)
+scale = Vector2(-0.683, 0.688)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="CrookedPlum075" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4674, 2277)
+scale = Vector2(-0.683, 0.625)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="CrookedPlum076" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(155, 2281)
+scale = Vector2(0.525, 0.547)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle077" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4597, 2343)
+scale = Vector2(0.444, 0.462)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="CrookedPlum078" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(223, 2373)
+scale = Vector2(0.533, 0.551)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="CrookedPlum079" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4532, 2452)
+scale = Vector2(0.672, 0.634)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle080" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(283, 2465)
+scale = Vector2(0.426, 0.405)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle081" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(339, 2538)
+scale = Vector2(0.433, 0.427)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle082" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4479, 2551)
+scale = Vector2(0.461, 0.489)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle083" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(401, 2626)
+scale = Vector2(0.452, 0.452)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle084" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4427, 2642)
+scale = Vector2(-0.403, 0.424)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle085" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(439, 2713)
+scale = Vector2(-0.421, 0.446)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak086" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4349, 2743)
+scale = Vector2(0.461, 0.433)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak087" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(512, 2813)
+scale = Vector2(0.562, 0.531)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak088" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4279, 2847)
+scale = Vector2(-0.605, 0.59)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak089" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(586, 2898)
+scale = Vector2(-0.537, 0.501)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak090" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4207, 2929)
+scale = Vector2(0.568, 0.527)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle091" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(639, 2982)
+scale = Vector2(0.486, 0.465)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak092" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4170, 3051)
+scale = Vector2(0.474, 0.512)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle093" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(702, 3071)
+scale = Vector2(0.538, 0.556)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="CrookedPlum094" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4089, 3136)
+scale = Vector2(-0.655, 0.665)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="CrookedPlum095" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(779, 3151)
+scale = Vector2(0.683, 0.632)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle096" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(4027, 3205)
+scale = Vector2(-0.444, 0.429)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="CrookedPlum097" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(818, 3272)
+scale = Vector2(0.699, 0.688)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="EmberOak098" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(3978, 3310)
+scale = Vector2(0.586, 0.547)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle099" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(888, 3361)
+scale = Vector2(0.458, 0.423)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle100" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(1083, 3413)
+scale = Vector2(-0.502, 0.545)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="CrookedPlum101" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(3462, 3414)
+scale = Vector2(0.542, 0.576)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle102" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(3253, 3417)
+scale = Vector2(-0.494, 0.519)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="CrookedPlum103" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(2576, 3418)
+scale = Vector2(-0.574, 0.572)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle104" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(1684, 3419)
+scale = Vector2(0.472, 0.445)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle105" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(1571, 3421)
+scale = Vector2(-0.481, 0.507)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak106" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(3917, 3421)
+scale = Vector2(-0.605, 0.575)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak107" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(3011, 3424)
+scale = Vector2(-0.569, 0.618)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle108" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(1324, 3425)
+scale = Vector2(0.442, 0.477)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle109" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(2117, 3428)
+scale = Vector2(-0.44, 0.457)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle110" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(1778, 3429)
+scale = Vector2(0.515, 0.511)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle111" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(3582, 3430)
+scale = Vector2(-0.543, 0.5)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle112" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(973, 3431)
+scale = Vector2(-0.42, 0.399)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle113" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(3134, 3435)
+scale = Vector2(-0.457, 0.44)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak114" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(1888, 3439)
+scale = Vector2(0.567, 0.538)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak115" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(1996, 3439)
+scale = Vector2(-0.572, 0.612)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="CrookedPlum116" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(2811, 3440)
+scale = Vector2(-0.52, 0.51)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle117" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(2909, 3442)
+scale = Vector2(-0.603, 0.553)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak118" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(2684, 3443)
+scale = Vector2(0.522, 0.515)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle119" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(2224, 3444)
+scale = Vector2(-0.494, 0.453)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="CrookedPlum120" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(2452, 3447)
+scale = Vector2(-0.662, 0.639)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="EmberOak121" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(2334, 3448)
+scale = Vector2(0.562, 0.611)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle122" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(1444, 3449)
+scale = Vector2(0.452, 0.488)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak123" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(3795, 3450)
+scale = Vector2(-0.628, 0.6)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak124" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(3367, 3453)
+scale = Vector2(-0.431, 0.461)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="CrookedPlum125" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(3692, 3453)
+scale = Vector2(0.74, 0.727)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="CrookedPlum126" type="Sprite2D" parent="DistantSilhouettes"]
+position = Vector2(1198, 3454)
+scale = Vector2(0.679, 0.647)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="MiddleGrove" type="Node2D" parent="."]
+modulate = Color(0.78, 0.74, 0.82, 1)
+
+[node name="CrookedPlum001" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(2322, 275)
+scale = Vector2(0.596, 0.59)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle002" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(2735, 276)
+scale = Vector2(-0.597, 0.547)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak003" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(1630, 282)
+scale = Vector2(0.595, 0.56)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle004" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(1930, 282)
+scale = Vector2(-0.507, 0.548)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak005" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(2200, 282)
+scale = Vector2(-0.534, 0.559)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="HoneyHornbeam006" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(1489, 288)
+scale = Vector2(-0.655, 0.599)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="HoneyHornbeam007" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(2079, 295)
+scale = Vector2(0.636, 0.594)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="EmberOak008" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(1057, 296)
+scale = Vector2(-0.541, 0.499)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle009" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(1198, 300)
+scale = Vector2(0.575, 0.578)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle010" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(2467, 302)
+scale = Vector2(-0.658, 0.62)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="HoneyHornbeam011" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(1781, 306)
+scale = Vector2(0.624, 0.58)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="BlueSpindle012" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(1336, 307)
+scale = Vector2(-0.475, 0.49)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="HoneyHornbeam013" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(2609, 309)
+scale = Vector2(0.566, 0.602)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="CrookedPlum014" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(3210, 314)
+scale = Vector2(0.655, 0.703)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="HoneyHornbeam015" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(2838, 319)
+scale = Vector2(-0.523, 0.528)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="CrookedPlum016" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(2951, 324)
+scale = Vector2(0.719, 0.721)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="EmberOak017" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(3765, 325)
+scale = Vector2(0.632, 0.611)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="CrookedPlum018" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(2742, 329)
+scale = Vector2(-0.542, 0.55)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle019" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(3158, 332)
+scale = Vector2(0.502, 0.509)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="HoneyHornbeam020" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(3538, 332)
+scale = Vector2(0.466, 0.502)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="CrookedPlum021" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(3639, 342)
+scale = Vector2(0.67, 0.641)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="EmberOak022" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(3021, 346)
+scale = Vector2(0.524, 0.485)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle023" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(3834, 348)
+scale = Vector2(0.575, 0.527)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak024" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(939, 386)
+scale = Vector2(-0.599, 0.638)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="CrookedPlum025" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(3943, 394)
+scale = Vector2(-0.65, 0.656)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="HoneyHornbeam026" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4021, 448)
+scale = Vector2(-0.563, 0.562)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="CrookedPlum027" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(872, 510)
+scale = Vector2(0.586, 0.621)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="CrookedPlum028" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4092, 530)
+scale = Vector2(-0.615, 0.578)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="EmberOak029" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4169, 626)
+scale = Vector2(0.535, 0.501)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle030" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(791, 634)
+scale = Vector2(0.493, 0.521)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak031" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(682, 734)
+scale = Vector2(0.564, 0.541)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle032" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4195, 750)
+scale = Vector2(0.509, 0.512)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="HoneyHornbeam033" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(630, 859)
+scale = Vector2(-0.507, 0.535)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="CrookedPlum034" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4290, 859)
+scale = Vector2(0.502, 0.535)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="HoneyHornbeam035" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(539, 971)
+scale = Vector2(-0.525, 0.5)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="HoneyHornbeam036" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4365, 989)
+scale = Vector2(0.479, 0.468)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="EmberOak037" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4295, 1000)
+scale = Vector2(0.62, 0.654)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak038" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(465, 1078)
+scale = Vector2(0.603, 0.646)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="HoneyHornbeam039" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4407, 1106)
+scale = Vector2(0.513, 0.532)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="BlueSpindle040" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(405, 1199)
+scale = Vector2(0.463, 0.465)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak041" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4490, 1226)
+scale = Vector2(0.592, 0.641)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle042" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(310, 1306)
+scale = Vector2(-0.642, 0.592)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle043" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4564, 1347)
+scale = Vector2(-0.522, 0.521)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle044" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(216, 1408)
+scale = Vector2(-0.455, 0.482)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="HoneyHornbeam045" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4642, 1448)
+scale = Vector2(-0.574, 0.554)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="CrookedPlum046" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(148, 1543)
+scale = Vector2(0.752, 0.686)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="EmberOak047" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4711, 1589)
+scale = Vector2(-0.525, 0.546)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak048" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(66, 1652)
+scale = Vector2(-0.518, 0.541)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="CrookedPlum049" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4786, 1685)
+scale = Vector2(-0.668, 0.681)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="EmberOak050" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4894, 1759)
+scale = Vector2(0.609, 0.576)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="CrookedPlum051" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(-24, 1781)
+scale = Vector2(0.671, 0.706)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="HoneyHornbeam052" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4785, 1870)
+scale = Vector2(0.509, 0.524)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="HoneyHornbeam053" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(69, 1882)
+scale = Vector2(0.548, 0.508)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="EmberOak054" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(115, 1994)
+scale = Vector2(-0.488, 0.512)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle055" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4709, 2001)
+scale = Vector2(0.537, 0.529)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="CrookedPlum056" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4649, 2116)
+scale = Vector2(-0.789, 0.737)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="HoneyHornbeam057" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(188, 2117)
+scale = Vector2(-0.554, 0.597)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="EmberOak058" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(276, 2208)
+scale = Vector2(0.536, 0.495)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak059" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4560, 2215)
+scale = Vector2(-0.593, 0.625)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="HoneyHornbeam060" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(347, 2304)
+scale = Vector2(-0.547, 0.504)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="BlueSpindle061" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4493, 2315)
+scale = Vector2(0.553, 0.589)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="CrookedPlum062" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(399, 2420)
+scale = Vector2(-0.757, 0.781)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle063" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4412, 2430)
+scale = Vector2(0.422, 0.449)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle064" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(483, 2532)
+scale = Vector2(-0.503, 0.51)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle065" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4343, 2538)
+scale = Vector2(-0.602, 0.554)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="BlueSpindle066" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4276, 2646)
+scale = Vector2(0.495, 0.525)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak067" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(554, 2648)
+scale = Vector2(0.58, 0.588)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle068" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4215, 2746)
+scale = Vector2(-0.511, 0.521)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="CrookedPlum069" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(621, 2776)
+scale = Vector2(0.673, 0.652)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="EmberOak070" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4127, 2855)
+scale = Vector2(0.635, 0.658)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak071" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(700, 2890)
+scale = Vector2(-0.558, 0.508)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="HoneyHornbeam072" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(4040, 2979)
+scale = Vector2(0.641, 0.599)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="BlueSpindle073" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(788, 2985)
+scale = Vector2(0.621, 0.596)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="HoneyHornbeam074" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(3971, 3081)
+scale = Vector2(-0.577, 0.526)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="CrookedPlum075" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(845, 3089)
+scale = Vector2(-0.817, 0.755)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="CrookedPlum076" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(3884, 3205)
+scale = Vector2(-0.691, 0.631)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle077" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(930, 3217)
+scale = Vector2(0.442, 0.465)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="HoneyHornbeam078" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(3441, 3297)
+scale = Vector2(0.698, 0.684)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="HoneyHornbeam079" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(1804, 3298)
+scale = Vector2(0.642, 0.663)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="EmberOak080" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(1924, 3302)
+scale = Vector2(0.474, 0.508)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak081" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(1147, 3304)
+scale = Vector2(-0.741, 0.683)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle082" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(2479, 3310)
+scale = Vector2(-0.513, 0.557)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="HoneyHornbeam083" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(3293, 3312)
+scale = Vector2(-0.616, 0.58)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="HoneyHornbeam084" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(2860, 3313)
+scale = Vector2(0.648, 0.651)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="CrookedPlum085" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(1020, 3314)
+scale = Vector2(0.575, 0.615)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="CrookedPlum086" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(3004, 3314)
+scale = Vector2(0.734, 0.723)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="EmberOak087" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(2190, 3320)
+scale = Vector2(0.564, 0.564)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="CrookedPlum088" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(3151, 3321)
+scale = Vector2(-0.629, 0.644)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="EmberOak089" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(3844, 3321)
+scale = Vector2(-0.512, 0.498)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak090" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(1673, 3322)
+scale = Vector2(-0.625, 0.628)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak091" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(1389, 3325)
+scale = Vector2(0.694, 0.661)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="BlueSpindle092" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(3572, 3326)
+scale = Vector2(-0.452, 0.488)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="HoneyHornbeam093" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(2051, 3328)
+scale = Vector2(0.509, 0.503)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="CrookedPlum094" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(2720, 3328)
+scale = Vector2(-0.784, 0.74)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle095" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(2324, 3335)
+scale = Vector2(-0.577, 0.573)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak096" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(2599, 3336)
+scale = Vector2(-0.494, 0.509)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="HoneyHornbeam097" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(1268, 3337)
+scale = Vector2(0.643, 0.654)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="BlueSpindle098" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(3715, 3338)
+scale = Vector2(-0.475, 0.45)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="EmberOak099" type="Sprite2D" parent="MiddleGrove"]
+position = Vector2(1537, 3339)
+scale = Vector2(-0.517, 0.558)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="IronwardFringe" type="Node2D" parent="."]
+modulate = Color(0.95, 0.88, 0.9, 1)
+
+[node name="HoneyHornbeam001" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(3516, 350)
+scale = Vector2(0.572, 0.52)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="TwistedTree002" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(3241, 354)
+scale = Vector2(0.605, 0.583)
+texture = ExtResource("twisted_tree")
+centered = false
+offset = Vector2(-168, -296)
+
+[node name="BlueSpindle003" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(3045, 369)
+scale = Vector2(-0.473, 0.452)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="CrookedPlum004" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(2058, 370)
+scale = Vector2(0.491, 0.499)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle005" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(3690, 371)
+scale = Vector2(-0.405, 0.438)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="CrookedPlum006" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(1372, 379)
+scale = Vector2(0.499, 0.538)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="HoneyHornbeam007" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(2921, 382)
+scale = Vector2(0.478, 0.448)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="CrookedPlum008" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(1227, 386)
+scale = Vector2(-0.688, 0.666)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="EmberOak009" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(2415, 386)
+scale = Vector2(-0.519, 0.532)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak010" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(2730, 392)
+scale = Vector2(-0.555, 0.55)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak011" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(1874, 394)
+scale = Vector2(-0.533, 0.577)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="HoneyHornbeam012" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(2224, 398)
+scale = Vector2(-0.449, 0.461)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="HoneyHornbeam013" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(1699, 400)
+scale = Vector2(0.465, 0.447)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="EmberOak014" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(3588, 400)
+scale = Vector2(-0.528, 0.487)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak015" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(1066, 401)
+scale = Vector2(0.677, 0.619)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak016" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(2560, 403)
+scale = Vector2(-0.67, 0.617)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="CrookedPlum017" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(3172, 404)
+scale = Vector2(0.515, 0.547)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="EmberOak018" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(1530, 405)
+scale = Vector2(0.648, 0.601)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="CrookedPlum019" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(3778, 406)
+scale = Vector2(0.649, 0.607)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="EmberOak020" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(2804, 412)
+scale = Vector2(0.531, 0.558)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak021" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(3880, 457)
+scale = Vector2(-0.555, 0.539)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="TwistedTree022" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(1017, 481)
+scale = Vector2(0.744, 0.718)
+texture = ExtResource("twisted_tree")
+centered = false
+offset = Vector2(-168, -296)
+
+[node name="HoneyHornbeam023" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(3958, 551)
+scale = Vector2(-0.519, 0.543)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="CrookedPlum024" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(4006, 634)
+scale = Vector2(0.719, 0.685)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="TwistedTree025" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(909, 647)
+scale = Vector2(0.646, 0.62)
+texture = ExtResource("twisted_tree")
+centered = false
+offset = Vector2(-168, -296)
+
+[node name="EmberOak026" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(4089, 756)
+scale = Vector2(-0.541, 0.555)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="CrookedPlum027" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(782, 789)
+scale = Vector2(0.728, 0.777)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="BlueSpindle028" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(4154, 849)
+scale = Vector2(-0.425, 0.44)
+texture = ExtResource("blue_spindle")
+centered = false
+offset = Vector2(-116, -384)
+
+[node name="HoneyHornbeam029" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(701, 937)
+scale = Vector2(-0.507, 0.467)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="HoneyHornbeam030" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(4243, 979)
+scale = Vector2(0.558, 0.587)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="CrookedPlum031" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(4295, 1081)
+scale = Vector2(-0.547, 0.529)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="EmberOak032" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(597, 1086)
+scale = Vector2(-0.627, 0.614)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="TwistedTree033" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(4245, 1087)
+scale = Vector2(0.785, 0.792)
+texture = ExtResource("twisted_tree")
+centered = false
+offset = Vector2(-168, -296)
+
+[node name="TwistedTree034" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(478, 1230)
+scale = Vector2(0.845, 0.778)
+texture = ExtResource("twisted_tree")
+centered = false
+offset = Vector2(-168, -296)
+
+[node name="TwistedTree035" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(4359, 1239)
+scale = Vector2(0.71, 0.704)
+texture = ExtResource("twisted_tree")
+centered = false
+offset = Vector2(-168, -296)
+
+[node name="CrookedPlum036" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(4445, 1383)
+scale = Vector2(-0.74, 0.716)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="EmberOak037" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(380, 1387)
+scale = Vector2(0.583, 0.62)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="CrookedPlum038" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(4553, 1496)
+scale = Vector2(-0.684, 0.704)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="EmberOak039" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(261, 1530)
+scale = Vector2(-0.424, 0.45)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak040" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(4669, 1645)
+scale = Vector2(-0.609, 0.585)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="TwistedTree041" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(190, 1660)
+scale = Vector2(0.695, 0.689)
+texture = ExtResource("twisted_tree")
+centered = false
+offset = Vector2(-168, -296)
+
+[node name="HoneyHornbeam042" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(4794, 1735)
+scale = Vector2(0.656, 0.638)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="EmberOak043" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(130, 1821)
+scale = Vector2(-0.619, 0.601)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak044" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(4680, 1862)
+scale = Vector2(-0.614, 0.635)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="HoneyHornbeam045" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(253, 1984)
+scale = Vector2(0.425, 0.444)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="HoneyHornbeam046" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(4621, 1994)
+scale = Vector2(-0.498, 0.474)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="EmberOak047" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(4542, 2109)
+scale = Vector2(0.59, 0.59)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak048" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(327, 2128)
+scale = Vector2(-0.465, 0.425)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak049" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(4427, 2272)
+scale = Vector2(-0.602, 0.64)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="HoneyHornbeam050" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(416, 2287)
+scale = Vector2(-0.562, 0.539)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="EmberOak051" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(508, 2415)
+scale = Vector2(-0.646, 0.651)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak052" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(4317, 2416)
+scale = Vector2(-0.462, 0.479)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak053" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(614, 2552)
+scale = Vector2(0.662, 0.612)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="HoneyHornbeam054" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(4201, 2582)
+scale = Vector2(-0.508, 0.51)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="TwistedTree055" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(721, 2703)
+scale = Vector2(-0.66, 0.601)
+texture = ExtResource("twisted_tree")
+centered = false
+offset = Vector2(-168, -296)
+
+[node name="CrookedPlum056" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(4126, 2714)
+scale = Vector2(-0.558, 0.509)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="CrookedPlum057" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(4030, 2834)
+scale = Vector2(0.793, 0.771)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="HoneyHornbeam058" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(799, 2847)
+scale = Vector2(0.496, 0.49)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="HoneyHornbeam059" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(905, 2996)
+scale = Vector2(-0.457, 0.446)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="HoneyHornbeam060" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(3933, 3009)
+scale = Vector2(-0.71, 0.665)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="HoneyHornbeam061" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(996, 3157)
+scale = Vector2(0.539, 0.496)
+texture = ExtResource("honey_hornbeam")
+centered = false
+offset = Vector2(-99, -341)
+
+[node name="CrookedPlum062" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(3522, 3201)
+scale = Vector2(0.742, 0.734)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="CrookedPlum063" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(1574, 3212)
+scale = Vector2(0.548, 0.521)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="EmberOak064" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(2081, 3212)
+scale = Vector2(0.703, 0.651)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="TwistedTree065" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(3832, 3212)
+scale = Vector2(0.58, 0.577)
+texture = ExtResource("twisted_tree")
+centered = false
+offset = Vector2(-168, -296)
+
+[node name="EmberOak066" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(2987, 3213)
+scale = Vector2(-0.458, 0.46)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="CrookedPlum067" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(1048, 3215)
+scale = Vector2(0.613, 0.598)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="TwistedTree068" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(1756, 3216)
+scale = Vector2(-0.596, 0.633)
+texture = ExtResource("twisted_tree")
+centered = false
+offset = Vector2(-168, -296)
+
+[node name="EmberOak069" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(3320, 3217)
+scale = Vector2(-0.593, 0.606)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="CrookedPlum070" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(3143, 3220)
+scale = Vector2(-0.629, 0.673)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)
+
+[node name="EmberOak071" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(1219, 3221)
+scale = Vector2(-0.561, 0.514)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak072" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(2250, 3225)
+scale = Vector2(0.467, 0.433)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak073" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(2635, 3229)
+scale = Vector2(-0.552, 0.544)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak074" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(2801, 3229)
+scale = Vector2(-0.556, 0.543)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="TwistedTree075" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(1405, 3233)
+scale = Vector2(-0.759, 0.779)
+texture = ExtResource("twisted_tree")
+centered = false
+offset = Vector2(-168, -296)
+
+[node name="EmberOak076" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(2441, 3235)
+scale = Vector2(0.469, 0.469)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="EmberOak077" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(1933, 3236)
+scale = Vector2(-0.583, 0.627)
+texture = ExtResource("ember_oak")
+centered = false
+offset = Vector2(-200, -324)
+
+[node name="CrookedPlum078" type="Sprite2D" parent="IronwardFringe"]
+position = Vector2(3679, 3240)
+scale = Vector2(0.764, 0.725)
+texture = ExtResource("crooked_plum")
+centered = false
+offset = Vector2(-148, -276)

@@ -1,23 +1,14 @@
 [gd_scene format=3]
 
-[ext_resource type="PackedScene" path="res://game/arena_parts/world.tscn" id="r1"]
-[ext_resource type="PackedScene" path="res://game/arena_parts/hero_mark.tscn" id="r2"]
-[ext_resource type="PackedScene" path="res://game/arena_parts/hud.tscn" id="r3"]
+[ext_resource type="PackedScene" path="res://game/arena.tscn" id="r1"]
 
-[node name="LamplighterView" type="Node2D"]
+[node name="LamplighterView" instance=ExtResource("r1")]
 
-[node name="World" parent="." instance=ExtResource("r1")]
-
-[node name="Hero" parent="." instance=ExtResource("r2")]
+[node name="Hero" parent="."]
 position = Vector2(3438, 720)
 
-[node name="FixedCamera" type="Camera2D" parent="."]
+[node name="FixedCamera" parent="."]
 position = Vector2(3450, 640)
-position_smoothing_enabled = false
 
-[node name="HUD" parent="." instance=ExtResource("r3")]
-
-[node name="PlayerPointer" type="Polygon2D" parent="HUD"]
+[node name="PlayerPointer" parent="HUD"]
 position = Vector2(1218.396, 614.22)
-color = Color(1, 0.85, 0.28, 1)
-polygon = PackedVector2Array(-3, -4, 5, 0, -3, 4, -1, 0)

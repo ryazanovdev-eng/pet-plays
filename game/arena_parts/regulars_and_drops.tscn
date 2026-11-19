@@ -1,0 +1,295 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/arena/court/contact.png" id="r1"]
+[ext_resource type="PackedScene" path="res://game/cast/skeleton_lavender.tscn" id="r2"]
+[ext_resource type="PackedScene" path="res://game/cast/ghost_blue.tscn" id="r3"]
+[ext_resource type="PackedScene" path="res://game/cast/zombie_blue.tscn" id="r4"]
+[ext_resource type="PackedScene" path="res://game/cast/skeleton_turquoise.tscn" id="r5"]
+[ext_resource type="PackedScene" path="res://game/cast/ghost_purple.tscn" id="r6"]
+[ext_resource type="Texture2D" path="res://assets/environment/pickups/health_potion.png" id="r7"]
+[ext_resource type="Texture2D" path="res://assets/environment/pickups/speed_potion.png" id="r8"]
+[ext_resource type="Texture2D" path="res://assets/environment/pickups/bone.png" id="r9"]
+[ext_resource type="PackedScene" path="res://game/cast/skeleton_bone.tscn" id="r10"]
+[ext_resource type="PackedScene" path="res://game/cast/zombie_pink.tscn" id="r11"]
+[ext_resource type="PackedScene" path="res://game/cast/ghost_green.tscn" id="r12"]
+[ext_resource type="PackedScene" path="res://game/cast/zombie_green.tscn" id="r13"]
+
+[node name="RegularsAndDrops" type="Node2D"]
+y_sort_enabled = true
+
+[node name="Footfall" type="Sprite2D" parent="."]
+position = Vector2(2130, 1598)
+scale = Vector2(0.54542, 0.44625)
+texture = ExtResource("r1")
+z_index = -1
+
+[node name="SkeletonLavenderMark" type="Node2D" parent="."]
+position = Vector2(2130, 1598)
+scale = Vector2(1.19, 1.19)
+
+[node name="SkeletonLavender" parent="SkeletonLavenderMark" instance=ExtResource("r2")]
+animation = &"walk"
+autoplay = "walk"
+frame = 1
+flip_h = false
+
+[node name="Footfall2" type="Sprite2D" parent="."]
+position = Vector2(2018, 1740)
+scale = Vector2(0.51792, 0.42375)
+texture = ExtResource("r1")
+z_index = -1
+
+[node name="GhostBlueMark" type="Node2D" parent="."]
+position = Vector2(2018, 1740)
+scale = Vector2(1.13, 1.13)
+
+[node name="GhostBlue" parent="GhostBlueMark" instance=ExtResource("r3")]
+animation = &"idle"
+autoplay = ""
+frame = 1
+flip_h = false
+
+[node name="Footfall3" type="Sprite2D" parent="."]
+position = Vector2(2240, 1970)
+scale = Vector2(0.53167, 0.435)
+texture = ExtResource("r1")
+z_index = -1
+
+[node name="ZombieBlueMark" type="Node2D" parent="."]
+position = Vector2(2240, 1970)
+scale = Vector2(1.16, 1.16)
+
+[node name="ZombieBlue" parent="ZombieBlueMark" instance=ExtResource("r4")]
+animation = &"walk"
+autoplay = ""
+frame = 2
+flip_h = false
+
+[node name="Footfall4" type="Sprite2D" parent="."]
+position = Vector2(2830, 1877)
+scale = Vector2(0.56375, 0.46125)
+texture = ExtResource("r1")
+z_index = -1
+
+[node name="SkeletonTurquoiseMark" type="Node2D" parent="."]
+position = Vector2(2830, 1877)
+scale = Vector2(1.23, 1.23)
+
+[node name="SkeletonTurquoise" parent="SkeletonTurquoiseMark" instance=ExtResource("r5")]
+animation = &"walk"
+autoplay = ""
+frame = 0
+flip_h = true
+
+[node name="Footfall5" type="Sprite2D" parent="."]
+position = Vector2(2490, 1513)
+scale = Vector2(0.50417, 0.4125)
+texture = ExtResource("r1")
+z_index = -1
+
+[node name="GhostPurpleMark" type="Node2D" parent="."]
+position = Vector2(2490, 1513)
+scale = Vector2(1.1, 1.1)
+
+[node name="GhostPurple" parent="GhostPurpleMark" instance=ExtResource("r6")]
+animation = &"walk"
+autoplay = "walk"
+frame = 2
+flip_h = true
+
+[node name="Shade" type="Sprite2D" parent="."]
+position = Vector2(2125, 1812)
+scale = Vector2(0.225, 0.1875)
+texture = ExtResource("r1")
+z_index = -1
+
+[node name="HealthPotion" type="Sprite2D" parent="."]
+position = Vector2(2125, 1814)
+scale = Vector2(0.14286, 0.14286)
+texture = ExtResource("r7")
+centered = false
+offset = Vector2(-105, -270)
+
+[node name="Shade2" type="Sprite2D" parent="."]
+position = Vector2(2755, 1658)
+scale = Vector2(0.22068, 0.1875)
+texture = ExtResource("r1")
+z_index = -1
+
+[node name="SpeedPotion" type="Sprite2D" parent="."]
+position = Vector2(2755, 1660)
+scale = Vector2(0.13194, 0.13194)
+texture = ExtResource("r8")
+centered = false
+offset = Vector2(-111.5, -285)
+
+[node name="Shade3" type="Sprite2D" parent="."]
+position = Vector2(2214, 1688)
+scale = Vector2(0.154, 0.1875)
+texture = ExtResource("r1")
+z_index = -1
+
+[node name="Bone" type="Sprite2D" parent="."]
+position = Vector2(2214, 1690)
+scale = Vector2(0.1123, 0.1123)
+texture = ExtResource("r9")
+centered = false
+offset = Vector2(-125.5, -184)
+
+[node name="Shade4" type="Sprite2D" parent="."]
+position = Vector2(2460, 1874)
+scale = Vector2(0.176, 0.1875)
+texture = ExtResource("r1")
+z_index = -1
+
+[node name="Bone2" type="Sprite2D" parent="."]
+position = Vector2(2460, 1876)
+scale = Vector2(0.12834, 0.12834)
+texture = ExtResource("r9")
+centered = false
+offset = Vector2(-125.5, -184)
+
+[node name="Shade5" type="Sprite2D" parent="."]
+position = Vector2(2430, 1910)
+scale = Vector2(0.132, 0.1875)
+texture = ExtResource("r1")
+z_index = -1
+
+[node name="Bone3" type="Sprite2D" parent="."]
+position = Vector2(2430, 1912)
+scale = Vector2(0.09626, 0.09626)
+texture = ExtResource("r9")
+centered = false
+offset = Vector2(-125.5, -184)
+
+[node name="Footfall6" type="Sprite2D" parent="."]
+position = Vector2(3255, 667)
+scale = Vector2(0.53625, 0.43875)
+texture = ExtResource("r1")
+z_index = -1
+
+[node name="SkeletonBoneMark" type="Node2D" parent="."]
+position = Vector2(3255, 667)
+scale = Vector2(1.17, 1.17)
+
+[node name="SkeletonBone" parent="SkeletonBoneMark" instance=ExtResource("r10")]
+animation = &"walk"
+autoplay = "walk"
+frame = 2
+flip_h = false
+
+[node name="Footfall7" type="Sprite2D" parent="."]
+position = Vector2(3604, 755)
+scale = Vector2(0.5775, 0.4725)
+texture = ExtResource("r1")
+z_index = -1
+
+[node name="ZombiePinkMark" type="Node2D" parent="."]
+position = Vector2(3604, 755)
+scale = Vector2(1.26, 1.26)
+
+[node name="ZombiePink" parent="ZombiePinkMark" instance=ExtResource("r11")]
+animation = &"hurt"
+autoplay = ""
+frame = 1
+flip_h = true
+
+[node name="Footfall8" type="Sprite2D" parent="."]
+position = Vector2(3730, 610)
+scale = Vector2(0.53625, 0.43875)
+texture = ExtResource("r1")
+z_index = -1
+
+[node name="GhostGreenMark" type="Node2D" parent="."]
+position = Vector2(3730, 610)
+scale = Vector2(1.17, 1.17)
+
+[node name="GhostGreen" parent="GhostGreenMark" instance=ExtResource("r12")]
+animation = &"idle"
+autoplay = "idle"
+frame = 2
+flip_h = true
+
+[node name="Footfall9" type="Sprite2D" parent="."]
+position = Vector2(3350, 945)
+scale = Vector2(0.53625, 0.43875)
+texture = ExtResource("r1")
+z_index = -1
+
+[node name="SkeletonTurquoiseMark2" type="Node2D" parent="."]
+position = Vector2(3350, 945)
+scale = Vector2(1.17, 1.17)
+
+[node name="SkeletonTurquoise" parent="SkeletonTurquoiseMark2" instance=ExtResource("r5")]
+animation = &"walk"
+autoplay = ""
+frame = 3
+flip_h = false
+
+[node name="Footfall10" type="Sprite2D" parent="."]
+position = Vector2(3055, 880)
+scale = Vector2(0.51792, 0.42375)
+texture = ExtResource("r1")
+z_index = -1
+
+[node name="ZombieGreenMark" type="Node2D" parent="."]
+position = Vector2(3055, 880)
+scale = Vector2(1.13, 1.13)
+
+[node name="ZombieGreen" parent="ZombieGreenMark" instance=ExtResource("r13")]
+animation = &"walk"
+autoplay = ""
+frame = 1
+flip_h = false
+
+[node name="Shade6" type="Sprite2D" parent="."]
+position = Vector2(3230, 803)
+scale = Vector2(0.23229, 0.1875)
+texture = ExtResource("r1")
+z_index = -1
+
+[node name="SpeedPotion2" type="Sprite2D" parent="."]
+position = Vector2(3230, 805)
+scale = Vector2(0.13889, 0.13889)
+texture = ExtResource("r8")
+centered = false
+offset = Vector2(-111.5, -285)
+
+[node name="Shade7" type="Sprite2D" parent="."]
+position = Vector2(3645, 620)
+scale = Vector2(0.23654, 0.1875)
+texture = ExtResource("r1")
+z_index = -1
+
+[node name="HealthPotion2" type="Sprite2D" parent="."]
+position = Vector2(3645, 622)
+scale = Vector2(0.15018, 0.15018)
+texture = ExtResource("r7")
+centered = false
+offset = Vector2(-105, -270)
+
+[node name="Shade8" type="Sprite2D" parent="."]
+position = Vector2(3515, 851)
+scale = Vector2(0.16867, 0.1875)
+texture = ExtResource("r1")
+z_index = -1
+
+[node name="Bone4" type="Sprite2D" parent="."]
+position = Vector2(3515, 853)
+scale = Vector2(0.12299, 0.12299)
+texture = ExtResource("r9")
+centered = false
+offset = Vector2(-125.5, -184)
+
+[node name="Shade9" type="Sprite2D" parent="."]
+position = Vector2(3160, 714)
+scale = Vector2(0.16133, 0.1875)
+texture = ExtResource("r1")
+z_index = -1
+
+[node name="Bone5" type="Sprite2D" parent="."]
+position = Vector2(3160, 716)
+scale = Vector2(0.11765, 0.11765)
+texture = ExtResource("r9")
+centered = false
+offset = Vector2(-125.5, -184)

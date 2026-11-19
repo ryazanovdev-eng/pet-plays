@@ -33,10 +33,12 @@ try{
     let clips=0,images=0;for(const b of $('roster').children){b.click();for(const o of $('clip').options){$('clip').value=o.value;$('clip').onchange();await Promise.all(loaded.map(i=>i.decode()));if(loaded.some(i=>i.naturalWidth!==clip.w||i.naturalHeight!==clip.h||i.naturalWidth<250))throw Error('Frame resolution: '+b.value+'/'+o.value);images+=loaded.length;$('step').click();if(frame!==1||playing||$('frame-link').href!==loaded[1].src)throw Error('Frame control');clips++}}
     $('rate').value='0.5';$('rate').onchange();if(!$('readout').textContent.includes(String(+(clip.fps/2).toFixed(2))+' кадр/с'))throw Error('Preview speed');
     $('light').click();if(!document.querySelector('.plate.light'))throw Error('Light background');
-    for(const b of $('scenes').children){b.click();for(const checked of [false,true]){$('motion').checked=checked;showScene();await $('scene').decode();if($('scene').naturalWidth!==1280||$('scene').naturalHeight!==720)throw Error('Wrong capture resolution')}}
+    for(const b of $('scenes').children){b.click();const paused=['level_up','shop'].includes(b.value);for(const checked of [false,true]){$('motion').checked=checked;showScene();await $('scene').decode();if($('scene').naturalWidth!==1280||$('scene').naturalHeight!==720)throw Error('Wrong capture resolution');if($('motion').disabled!==paused||$('scene').src.endsWith('-motion.webp')!==(!paused&&checked)||$('path').textContent!=='game/'+b.value+'.tscn')throw Error('Wrong view: '+b.value)}}
     for(const o of $('shelf').options){$('shelf').value=o.value;$('shelf').onchange();await $('sheet').decode()}
+    history.replaceState(null,'','#view-shop');viewFromLink();if(sceneKey!=='shop'||!$('motion').disabled)throw Error('Direct scene link');
+    history.replaceState(null,'','#sheet-08_terrain');viewFromLink();if($('shelf').value!=='08_terrain')throw Error('Direct atlas link');
     return {actors:$('actor').length,clips,images,views:[...$('scenes').children].map(b=>b.value),sheets:$('shelf').length};})()`);
-  assert.equal(result.actors,12);assert.equal(result.clips,62);assert.equal(result.images,248);assert.deepEqual(result.views,['arena','arena_edge','gallery']);assert.ok(result.sheets>=15);
+  assert.equal(result.actors,12);assert.equal(result.clips,62);assert.equal(result.images,248);assert.deepEqual(result.views,['arena','arena_edge','arena_wave','level_up','shop','gallery']);assert.ok(result.sheets>=15);
   const catalog=await verify('CAST');
   const manifest=JSON.parse(await readFile(new URL('../assets/cast/manifest.json',import.meta.url),'utf8'));
   for(const [id,actor] of Object.entries(manifest.characters)) for(const [action,sequence] of Object.entries(actor.animations)){

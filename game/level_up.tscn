@@ -1,0 +1,531 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://game/arena_wave.tscn" id="arena_wave"]
+[ext_resource type="Texture2D" path="res://assets/ui/levelup/card_upgrade_normal_blank.png" id="card_upgrade_normal_blank"]
+[ext_resource type="Texture2D" path="res://assets/ui/insignia/winged_boot.png" id="winged_boot"]
+[ext_resource type="Texture2D" path="res://assets/ui/levelup/card_upgrade_selected_blank.png" id="card_upgrade_selected_blank"]
+[ext_resource type="Texture2D" path="res://assets/ui/insignia/ruby_heart.png" id="ruby_heart"]
+[ext_resource type="Texture2D" path="res://assets/ui/insignia/knight_blade.png" id="knight_blade"]
+
+[sub_resource type="SystemFont" id="Display"]
+font_names = PackedStringArray("Georgia", "Liberation Serif", "DejaVu Serif")
+font_weight = 700
+
+[sub_resource type="SystemFont" id="SmallCaps"]
+font_names = PackedStringArray("Segoe UI", "Noto Sans", "DejaVu Sans")
+font_weight = 700
+spacing_glyph = 1
+
+[sub_resource type="Gradient" id="VioletDuskColors"]
+offsets = PackedFloat32Array(0, 0.34, 0.54, 0.81, 1)
+colors = PackedColorArray(0.0627, 0.0392, 0.1255, 0.6275, 0.0941, 0.051, 0.1725, 0.4, 0.1216, 0.0588, 0.1804, 0.3255, 0.0902, 0.0471, 0.1412, 0.6745, 0.0667, 0.0353, 0.1176, 0.8902)
+
+[sub_resource type="GradientTexture2D" id="VioletDusk"]
+gradient = SubResource("VioletDuskColors")
+width = 128
+height = 128
+fill_from = Vector2(0, 0)
+fill_to = Vector2(0, 1)
+
+[sub_resource type="Gradient" id="TitleCloudColors"]
+colors = PackedColorArray(0.1412, 0.0667, 0.1529, 0.9294, 0.1412, 0.0667, 0.1529, 0)
+
+[sub_resource type="GradientTexture2D" id="TitleCloud"]
+gradient = SubResource("TitleCloudColors")
+width = 256
+height = 256
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
+
+[sub_resource type="Gradient" id="winged_bootMistColors"]
+colors = PackedColorArray(0.5882, 0.8745, 0.8667, 0.349, 0.5882, 0.8745, 0.8667, 0)
+
+[sub_resource type="GradientTexture2D" id="winged_bootMist"]
+gradient = SubResource("winged_bootMistColors")
+width = 256
+height = 256
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
+
+[sub_resource type="Gradient" id="ruby_heartMistColors"]
+colors = PackedColorArray(1, 0.8196, 0.4824, 0.349, 1, 0.8196, 0.4824, 0)
+
+[sub_resource type="GradientTexture2D" id="ruby_heartMist"]
+gradient = SubResource("ruby_heartMistColors")
+width = 256
+height = 256
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
+
+[sub_resource type="Gradient" id="knight_bladeMistColors"]
+colors = PackedColorArray(0.9608, 0.7294, 0.5451, 0.349, 0.9608, 0.7294, 0.5451, 0)
+
+[sub_resource type="GradientTexture2D" id="knight_bladeMist"]
+gradient = SubResource("knight_bladeMistColors")
+width = 256
+height = 256
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
+
+[node name="LevelUp" type="Node2D"]
+
+[node name="FrozenWave" parent="." instance=ExtResource("arena_wave")]
+process_mode = 4
+
+[node name="Presentation" type="CanvasLayer" parent="."]
+layer = 8
+
+[node name="Controls" parent="FrozenWave/HUD"]
+visible = false
+
+[node name="VioletDuskVeil" type="TextureRect" parent="Presentation"]
+offset_left = 0
+offset_top = 0
+offset_right = 1280
+offset_bottom = 720
+mouse_filter = 2
+texture = SubResource("VioletDusk")
+expand_mode = 1
+
+[node name="TitleGround" type="TextureRect" parent="Presentation"]
+offset_left = 318
+offset_top = 108
+offset_right = 962
+offset_bottom = 301
+mouse_filter = 2
+texture = SubResource("TitleCloud")
+expand_mode = 1
+
+[node name="Herald" type="Node2D" parent="Presentation"]
+position = Vector2(640, 171)
+
+[node name="Chapter" type="Label" parent="Presentation/Herald"]
+offset_left = -160
+offset_top = -34
+offset_right = 160
+offset_bottom = -11
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.8941, 0.6118, 1)
+theme_override_fonts/font = SubResource("SmallCaps")
+theme_override_colors/font_outline_color = Color(0.2078, 0.098, 0.1922, 1)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 15
+text = "ДОСТУПЕН УРОВЕНЬ 4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Rule0" type="Line2D" parent="Presentation/Herald"]
+points = PackedVector2Array(-129, -21, -190, -21)
+width = 1
+default_color = Color(0.9176, 0.7647, 0.4588, 0.7529)
+antialiased = true
+
+[node name="Finial0" type="Polygon2D" parent="Presentation/Herald"]
+polygon = PackedVector2Array(-193, -24, -190, -21, -193, -18, -196, -21)
+color = Color(0.9765, 0.851, 0.5804, 1)
+antialiased = true
+
+[node name="Rule1" type="Line2D" parent="Presentation/Herald"]
+points = PackedVector2Array(129, -21, 190, -21)
+width = 1
+default_color = Color(0.9176, 0.7647, 0.4588, 0.7529)
+antialiased = true
+
+[node name="Finial1" type="Polygon2D" parent="Presentation/Herald"]
+polygon = PackedVector2Array(193, -24, 196, -21, 193, -18, 190, -21)
+color = Color(0.9765, 0.851, 0.5804, 1)
+antialiased = true
+
+[node name="Heading" type="Label" parent="Presentation/Herald"]
+offset_left = -255
+offset_top = -14
+offset_right = 255
+offset_bottom = 47
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.9451, 0.7961, 1)
+theme_override_fonts/font = SubResource("Display")
+theme_override_colors/font_outline_color = Color(0.2078, 0.098, 0.1922, 1)
+theme_override_constants/outline_size = 3
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 44
+text = "Новый уровень"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Instruction" type="Label" parent="Presentation/Herald"]
+offset_left = -210
+offset_top = 48
+offset_right = 210
+offset_bottom = 78
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.949, 0.8549, 1)
+theme_override_colors/font_outline_color = Color(0.2078, 0.098, 0.1922, 1)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 20
+text = "Выберите одно улучшение"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Speed" type="Node2D" parent="Presentation"]
+position = Vector2(388, 433)
+
+[node name="Frame" type="TextureRect" parent="Presentation/Speed"]
+offset_left = -114.0
+offset_top = 0
+offset_right = 114.0
+offset_bottom = 247
+mouse_filter = 2
+texture = ExtResource("card_upgrade_normal_blank")
+expand_mode = 1
+
+[node name="Halo" type="TextureRect" parent="Presentation/Speed"]
+offset_left = -54.72
+offset_top = 22.199999999999996
+offset_right = 54.72
+offset_bottom = 115.80000000000001
+mouse_filter = 2
+texture = SubResource("winged_bootMist")
+expand_mode = 1
+
+[node name="CoinDie" type="Line2D" parent="Presentation/Speed"]
+points = PackedVector2Array(38.88, 69, 27.4923, 96.4923, 0, 107.88, -27.4923, 96.4923, -38.88, 69, -27.4923, 41.5077, -0, 30.12, 27.4923, 41.5077)
+width = 1
+default_color = Color(0.5882, 0.8745, 0.8667, 0.4039)
+antialiased = true
+closed = true
+
+[node name="Emblem" type="TextureRect" parent="Presentation/Speed"]
+offset_left = -36.0
+offset_top = 33.0
+offset_right = 36.0
+offset_bottom = 105.0
+mouse_filter = 2
+texture = ExtResource("winged_boot")
+expand_mode = 1
+
+[node name="Star0" type="Polygon2D" parent="Presentation/Speed"]
+polygon = PackedVector2Array(-47.52, 66, -44.52, 69, -47.52, 72, -50.52, 69)
+color = Color(0.5882, 0.8745, 0.8667, 1)
+antialiased = true
+
+[node name="Star1" type="Polygon2D" parent="Presentation/Speed"]
+polygon = PackedVector2Array(47.52, 66, 50.52, 69, 47.52, 72, 44.52, 69)
+color = Color(0.5882, 0.8745, 0.8667, 1)
+antialiased = true
+
+[node name="Name" type="Label" parent="Presentation/Speed"]
+offset_left = -105
+offset_top = 112
+offset_right = 105
+offset_bottom = 146
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.9373, 0.8235, 1)
+theme_override_fonts/font = SubResource("Display")
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 26
+text = "Скорость"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Etch0" type="Line2D" parent="Presentation/Speed"]
+points = PackedVector2Array(-72, 150, -7, 150)
+width = 1
+default_color = Color(0.8353, 0.6471, 0.4078, 0.6275)
+antialiased = true
+
+[node name="Etch1" type="Line2D" parent="Presentation/Speed"]
+points = PackedVector2Array(72, 150, 7, 150)
+width = 1
+default_color = Color(0.8353, 0.6471, 0.4078, 0.6275)
+antialiased = true
+
+[node name="Mark" type="Polygon2D" parent="Presentation/Speed"]
+polygon = PackedVector2Array(0, 147, 3, 150, 0, 153, -3, 150)
+color = Color(0.9608, 0.8235, 0.5882, 1)
+antialiased = true
+
+[node name="Amount" type="Label" parent="Presentation/Speed"]
+offset_left = -93
+offset_top = 154
+offset_right = 93
+offset_bottom = 188
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.5882, 0.8745, 0.8667, 1)
+theme_override_fonts/font = SubResource("Display")
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 26
+text = "+10%"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Effect" type="Label" parent="Presentation/Speed"]
+offset_left = -105
+offset_top = 184
+offset_right = 105
+offset_bottom = 228
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.9608, 0.8941, 0.8549, 1)
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 16
+text = "к базовой скорости"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Vitality" type="Node2D" parent="Presentation"]
+position = Vector2(640, 419)
+
+[node name="Frame" type="TextureRect" parent="Presentation/Vitality"]
+offset_left = -119.0
+offset_top = 0
+offset_right = 119.0
+offset_bottom = 263
+mouse_filter = 2
+texture = ExtResource("card_upgrade_selected_blank")
+expand_mode = 1
+
+[node name="Focus" type="Label" parent="Presentation/Vitality"]
+offset_left = -76
+offset_top = 23
+offset_right = 76
+offset_bottom = 44
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.8902, 0.6353, 1)
+theme_override_fonts/font = SubResource("SmallCaps")
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 13
+text = "ВЫБРАНО"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Halo" type="TextureRect" parent="Presentation/Vitality"]
+offset_left = -54.72
+offset_top = 33.199999999999996
+offset_right = 54.72
+offset_bottom = 126.80000000000001
+mouse_filter = 2
+texture = SubResource("ruby_heartMist")
+expand_mode = 1
+
+[node name="CoinDie" type="Line2D" parent="Presentation/Vitality"]
+points = PackedVector2Array(38.88, 80, 27.4923, 107.4923, 0, 118.88, -27.4923, 107.4923, -38.88, 80, -27.4923, 52.5077, -0, 41.12, 27.4923, 52.5077)
+width = 1
+default_color = Color(1, 0.8196, 0.4824, 0.4039)
+antialiased = true
+closed = true
+
+[node name="Emblem" type="TextureRect" parent="Presentation/Vitality"]
+offset_left = -36.0
+offset_top = 44.0
+offset_right = 36.0
+offset_bottom = 116.0
+mouse_filter = 2
+texture = ExtResource("ruby_heart")
+expand_mode = 1
+
+[node name="Star0" type="Polygon2D" parent="Presentation/Vitality"]
+polygon = PackedVector2Array(-47.52, 77, -44.52, 80, -47.52, 83, -50.52, 80)
+color = Color(1, 0.8196, 0.4824, 1)
+antialiased = true
+
+[node name="Star1" type="Polygon2D" parent="Presentation/Vitality"]
+polygon = PackedVector2Array(47.52, 77, 50.52, 80, 47.52, 83, 44.52, 80)
+color = Color(1, 0.8196, 0.4824, 1)
+antialiased = true
+
+[node name="Name" type="Label" parent="Presentation/Vitality"]
+offset_left = -105
+offset_top = 122
+offset_right = 105
+offset_bottom = 156
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.9373, 0.8235, 1)
+theme_override_fonts/font = SubResource("Display")
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 26
+text = "Живучесть"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Etch0" type="Line2D" parent="Presentation/Vitality"]
+points = PackedVector2Array(-72, 160, -7, 160)
+width = 1
+default_color = Color(0.8353, 0.6471, 0.4078, 0.6275)
+antialiased = true
+
+[node name="Etch1" type="Line2D" parent="Presentation/Vitality"]
+points = PackedVector2Array(72, 160, 7, 160)
+width = 1
+default_color = Color(0.8353, 0.6471, 0.4078, 0.6275)
+antialiased = true
+
+[node name="Mark" type="Polygon2D" parent="Presentation/Vitality"]
+polygon = PackedVector2Array(0, 157, 3, 160, 0, 163, -3, 160)
+color = Color(0.9608, 0.8235, 0.5882, 1)
+antialiased = true
+
+[node name="Amount" type="Label" parent="Presentation/Vitality"]
+offset_left = -93
+offset_top = 164
+offset_right = 93
+offset_bottom = 198
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.8196, 0.4824, 1)
+theme_override_fonts/font = SubResource("Display")
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 26
+text = "+20 HP"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Effect" type="Label" parent="Presentation/Vitality"]
+offset_left = -105
+offset_top = 194
+offset_right = 105
+offset_bottom = 238
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.9608, 0.8941, 0.8549, 1)
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 16
+text = "к максимуму HP\nи лечение на 20"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Damage" type="Node2D" parent="Presentation"]
+position = Vector2(892, 433)
+
+[node name="Frame" type="TextureRect" parent="Presentation/Damage"]
+offset_left = -114.0
+offset_top = 0
+offset_right = 114.0
+offset_bottom = 247
+mouse_filter = 2
+texture = ExtResource("card_upgrade_normal_blank")
+expand_mode = 1
+
+[node name="Halo" type="TextureRect" parent="Presentation/Damage"]
+offset_left = -54.72
+offset_top = 22.199999999999996
+offset_right = 54.72
+offset_bottom = 115.80000000000001
+mouse_filter = 2
+texture = SubResource("knight_bladeMist")
+expand_mode = 1
+
+[node name="CoinDie" type="Line2D" parent="Presentation/Damage"]
+points = PackedVector2Array(38.88, 69, 27.4923, 96.4923, 0, 107.88, -27.4923, 96.4923, -38.88, 69, -27.4923, 41.5077, -0, 30.12, 27.4923, 41.5077)
+width = 1
+default_color = Color(0.9608, 0.7294, 0.5451, 0.4039)
+antialiased = true
+closed = true
+
+[node name="Emblem" type="TextureRect" parent="Presentation/Damage"]
+offset_left = -36.0
+offset_top = 33.0
+offset_right = 36.0
+offset_bottom = 105.0
+mouse_filter = 2
+texture = ExtResource("knight_blade")
+expand_mode = 1
+
+[node name="Star0" type="Polygon2D" parent="Presentation/Damage"]
+polygon = PackedVector2Array(-47.52, 66, -44.52, 69, -47.52, 72, -50.52, 69)
+color = Color(0.9608, 0.7294, 0.5451, 1)
+antialiased = true
+
+[node name="Star1" type="Polygon2D" parent="Presentation/Damage"]
+polygon = PackedVector2Array(47.52, 66, 50.52, 69, 47.52, 72, 44.52, 69)
+color = Color(0.9608, 0.7294, 0.5451, 1)
+antialiased = true
+
+[node name="Name" type="Label" parent="Presentation/Damage"]
+offset_left = -105
+offset_top = 112
+offset_right = 105
+offset_bottom = 146
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.9373, 0.8235, 1)
+theme_override_fonts/font = SubResource("Display")
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 26
+text = "Урон меча"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Etch0" type="Line2D" parent="Presentation/Damage"]
+points = PackedVector2Array(-72, 150, -7, 150)
+width = 1
+default_color = Color(0.8353, 0.6471, 0.4078, 0.6275)
+antialiased = true
+
+[node name="Etch1" type="Line2D" parent="Presentation/Damage"]
+points = PackedVector2Array(72, 150, 7, 150)
+width = 1
+default_color = Color(0.8353, 0.6471, 0.4078, 0.6275)
+antialiased = true
+
+[node name="Mark" type="Polygon2D" parent="Presentation/Damage"]
+polygon = PackedVector2Array(0, 147, 3, 150, 0, 153, -3, 150)
+color = Color(0.9608, 0.8235, 0.5882, 1)
+antialiased = true
+
+[node name="Amount" type="Label" parent="Presentation/Damage"]
+offset_left = -93
+offset_top = 154
+offset_right = 93
+offset_bottom = 188
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.9608, 0.7294, 0.5451, 1)
+theme_override_fonts/font = SubResource("Display")
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 26
+text = "+15%"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Effect" type="Label" parent="Presentation/Damage"]
+offset_left = -105
+offset_top = 184
+offset_right = 105
+offset_bottom = 228
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.9608, 0.8941, 0.8549, 1)
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 16
+text = "к базовому урону"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Legend" type="Label" parent="Presentation"]
+offset_left = 320
+offset_top = 679
+offset_right = 960
+offset_bottom = 711
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.9765, 0.898, 0.8, 1)
+theme_override_colors/font_outline_color = Color(0.2078, 0.098, 0.1922, 1)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.1098, 0.0549, 0.1255, 0.7216)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 15
+text = "Выбор: мышь или клавиши 1 / 2 / 3"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,50 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://game/arena_parts/hud.tscn" id="r1"]
+[ext_resource type="Texture2D" path="res://assets/ui/health/runtime_layers/rotten_giant_empty_frame.png" id="r2"]
+[ext_resource type="Texture2D" path="res://assets/ui/health/runtime_layers/rotten_giant_full_red_overlay.png" id="r3"]
+[ext_resource type="Texture2D" path="res://assets/ui/health/runtime_layers/rotten_giant_rounded_right_cap.png" id="r4"]
+
+[sub_resource type="AtlasTexture" id="BossHealthCrop"]
+atlas = ExtResource("r3")
+region = Rect2(282, 125, 538, 61)
+
+[node name="GiantHUD" instance=ExtResource("r1")]
+
+[node name="Wave" parent="."]
+text = "Волна 3/5"
+
+[node name="Level" parent="."]
+text = "6"
+
+[node name="Currency" parent="."]
+text = "24"
+
+[node name="BossPortraitAndFrame" type="Sprite2D" parent="."]
+position = Vector2(942.47, 4)
+scale = Vector2(0.37, 0.37)
+texture = ExtResource("r2")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="BossHealth" type="TextureProgressBar" parent="."]
+offset_left = 1046.81
+offset_top = 50.25
+offset_right = 1584.81
+offset_bottom = 111.25
+scale = Vector2(0.37, 0.37)
+mouse_filter = 2
+value = 68
+texture_progress = SubResource("BossHealthCrop")
+
+[node name="BossFillEnd" type="Sprite2D" parent="."]
+position = Vector2(1181.8008, 50.25)
+scale = Vector2(0.37, 0.37)
+texture = ExtResource("r4")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="BossPointer" type="Polygon2D" parent="."]
+position = Vector2(1200.664, 637.43)
+color = Color(0.86,0.48,1,1)
+polygon = PackedVector2Array(0, -3.5, 3.5, 0, 0, 3.5, -3.5, 0)

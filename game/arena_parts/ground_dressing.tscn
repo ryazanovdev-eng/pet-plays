@@ -1,0 +1,2465 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r05_c07.png" id="r1"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r02_c06.png" id="r2"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r02_c02.png" id="r3"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r01_c07.png" id="r4"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r06_c06.png" id="r5"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r04_c06.png" id="r6"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r01_c02.png" id="r7"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r03_c07.png" id="r8"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r02_c04.png" id="r9"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r04_c07.png" id="r10"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r05_c02.png" id="r11"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r07_c08.png" id="r12"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r03_c08.png" id="r13"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r02_c01.png" id="r14"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r01_c06.png" id="r15"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r01_c01.png" id="r16"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r06_c02.png" id="r17"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r02_c05.png" id="r18"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r02_c02.png" id="r19"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r01_c07.png" id="r20"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r02_c03.png" id="r21"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r03_c04.png" id="r22"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r02_c07.png" id="r23"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r07_c06.png" id="r24"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r02_c08.png" id="r25"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r02_c06.png" id="r26"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r04_c05.png" id="r27"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r01_c05.png" id="r28"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r05_c08.png" id="r29"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r05_c04.png" id="r30"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r01_c08.png" id="r31"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r06_c04.png" id="r32"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r01_c03.png" id="r33"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r05_c01.png" id="r34"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r06_c06.png" id="r35"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/stone_cluster.png" id="r36"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r06_c01.png" id="r37"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r06_c05.png" id="r38"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r03_c06.png" id="r39"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r05_c05.png" id="r40"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r05_c06.png" id="r41"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r01_c04.png" id="r42"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r05_c08.png" id="r43"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r03_c01.png" id="r44"]
+[ext_resource type="Texture2D" path="res://assets/environment/props/red_mushrooms.png" id="r45"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r06_c07.png" id="r46"]
+[ext_resource type="Texture2D" path="res://assets/environment/vegetation/vegetation_r01_c03.png" id="r47"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r07_c08.png" id="r48"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r01_c02.png" id="r49"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r04_c03.png" id="r50"]
+[ext_resource type="Texture2D" path="res://assets/environment/ground_overlays/ground_overlays_r05_c05.png" id="r51"]
+
+[node name="GroundDressing" type="Node2D"]
+z_index = -2
+texture_filter = 2
+
+[node name="MeridianCourt" type="Node2D" parent="."]
+
+[node name="PorticoFire" type="Node2D" parent="MeridianCourt"]
+position = Vector2(1863, 1691)
+
+[node name="Ochre" type="Sprite2D" parent="MeridianCourt/PorticoFire"]
+position = Vector2(-46, -13)
+scale = Vector2(0.27094, 0.27094)
+texture = ExtResource("r1")
+centered = false
+offset = Vector2(-84.5, -128)
+
+[node name="Basalt" type="Sprite2D" parent="MeridianCourt/PorticoFire"]
+position = Vector2(-15, -8)
+scale = Vector2(0.30298, 0.30298)
+texture = ExtResource("r2")
+centered = false
+offset = Vector2(-72, -104)
+flip_h = true
+
+[node name="Shingle" type="Sprite2D" parent="MeridianCourt/PorticoFire"]
+position = Vector2(-63, 2)
+scale = Vector2(0.17621, 0.17621)
+texture = ExtResource("r3")
+centered = false
+offset = Vector2(-71, -104)
+flip_h = true
+
+[node name="Litter" type="Sprite2D" parent="MeridianCourt/PorticoFire"]
+position = Vector2(-84, 4)
+scale = Vector2(0.18898, 0.18898)
+texture = ExtResource("r4")
+centered = false
+offset = Vector2(-64.5, -98)
+flip_h = true
+
+[node name="Yellow" type="Sprite2D" parent="MeridianCourt/PorticoFire"]
+position = Vector2(29, 9)
+scale = Vector2(0.22662, 0.22662)
+texture = ExtResource("r5")
+centered = false
+offset = Vector2(-80.5, -128)
+flip_h = true
+
+[node name="Litter2" type="Sprite2D" parent="MeridianCourt/PorticoFire"]
+position = Vector2(57, 16)
+scale = Vector2(0.21028, 0.21028)
+texture = ExtResource("r4")
+centered = false
+offset = Vector2(-64.5, -98)
+flip_h = true
+
+[node name="NorthViolets" type="Node2D" parent="MeridianCourt"]
+position = Vector2(2218, 1443)
+
+[node name="Shingle2" type="Sprite2D" parent="MeridianCourt/NorthViolets"]
+position = Vector2(-63, -26)
+scale = Vector2(0.16778, 0.16778)
+texture = ExtResource("r3")
+centered = false
+offset = Vector2(-71, -104)
+
+[node name="Heather" type="Sprite2D" parent="MeridianCourt/NorthViolets"]
+position = Vector2(5, -14)
+scale = Vector2(0.28905, 0.28905)
+texture = ExtResource("r6")
+centered = false
+offset = Vector2(-66, -126)
+
+[node name="Blade" type="Sprite2D" parent="MeridianCourt/NorthViolets"]
+position = Vector2(-48, -13)
+scale = Vector2(0.24339, 0.24339)
+texture = ExtResource("r7")
+centered = false
+offset = Vector2(-48.5, -81)
+flip_h = true
+
+[node name="Heather2" type="Sprite2D" parent="MeridianCourt/NorthViolets"]
+position = Vector2(-29, -3)
+scale = Vector2(0.22568, 0.22568)
+texture = ExtResource("r6")
+centered = false
+offset = Vector2(-66, -126)
+
+[node name="Ivy" type="Sprite2D" parent="MeridianCourt/NorthViolets"]
+position = Vector2(31, 1)
+scale = Vector2(0.47724, 0.47724)
+texture = ExtResource("r8")
+centered = false
+offset = Vector2(-70.5, -76)
+flip_h = true
+
+[node name="Basalt2" type="Sprite2D" parent="MeridianCourt/NorthViolets"]
+position = Vector2(-4, 3)
+scale = Vector2(0.37098, 0.37098)
+texture = ExtResource("r9")
+centered = false
+offset = Vector2(-74.5, -97)
+
+[node name="Gold" type="Sprite2D" parent="MeridianCourt/NorthViolets"]
+position = Vector2(40, 18)
+scale = Vector2(0.22132, 0.22132)
+texture = ExtResource("r10")
+centered = false
+offset = Vector2(-62, -111)
+flip_h = true
+
+[node name="Litter3" type="Sprite2D" parent="MeridianCourt/NorthViolets"]
+position = Vector2(64, 25)
+scale = Vector2(0.19322, 0.19322)
+texture = ExtResource("r4")
+centered = false
+offset = Vector2(-64.5, -98)
+
+[node name="RootAndCaps" type="Node2D" parent="MeridianCourt"]
+position = Vector2(2923, 1562)
+
+[node name="RubyCap" type="Sprite2D" parent="MeridianCourt/RootAndCaps"]
+position = Vector2(-3, -11)
+scale = Vector2(0.4181, 0.4181)
+texture = ExtResource("r11")
+centered = false
+offset = Vector2(-72.5, -107)
+
+[node name="Basalt3" type="Sprite2D" parent="MeridianCourt/RootAndCaps"]
+position = Vector2(26, -7)
+scale = Vector2(0.36388, 0.36388)
+texture = ExtResource("r9")
+centered = false
+offset = Vector2(-74.5, -97)
+
+[node name="HoneyCap" type="Sprite2D" parent="MeridianCourt/RootAndCaps"]
+position = Vector2(-36, 4)
+scale = Vector2(0.28463, 0.28463)
+texture = ExtResource("r12")
+centered = false
+offset = Vector2(-79, -120)
+
+[node name="Ivy2" type="Sprite2D" parent="MeridianCourt/RootAndCaps"]
+position = Vector2(-10, 7)
+scale = Vector2(0.45106, 0.45106)
+texture = ExtResource("r13")
+centered = false
+offset = Vector2(-79.5, -99)
+flip_h = true
+
+[node name="Shingle3" type="Sprite2D" parent="MeridianCourt/RootAndCaps"]
+position = Vector2(29, 15)
+scale = Vector2(0.30072, 0.30072)
+texture = ExtResource("r14")
+centered = false
+offset = Vector2(-61.5, -79)
+
+[node name="Sedge" type="Sprite2D" parent="MeridianCourt/RootAndCaps"]
+position = Vector2(-53, 25)
+scale = Vector2(0.22409, 0.22409)
+texture = ExtResource("r15")
+centered = false
+offset = Vector2(-79, -110)
+flip_h = true
+
+[node name="Litter4" type="Sprite2D" parent="MeridianCourt/RootAndCaps"]
+position = Vector2(-69, 30)
+scale = Vector2(0.13379, 0.13379)
+texture = ExtResource("r16")
+centered = false
+offset = Vector2(-76.5, -120)
+flip_h = true
+
+[node name="LanternDaisies" type="Node2D" parent="MeridianCourt"]
+position = Vector2(1835, 1828)
+
+[node name="Daisy" type="Sprite2D" parent="MeridianCourt/LanternDaisies"]
+position = Vector2(-11, -12)
+scale = Vector2(0.3059, 0.3059)
+texture = ExtResource("r17")
+centered = false
+offset = Vector2(-78.5, -126)
+flip_h = true
+
+[node name="Fern" type="Sprite2D" parent="MeridianCourt/LanternDaisies"]
+position = Vector2(17, -4)
+scale = Vector2(0.32967, 0.32967)
+texture = ExtResource("r13")
+centered = false
+offset = Vector2(-79.5, -99)
+
+[node name="Shingle4" type="Sprite2D" parent="MeridianCourt/LanternDaisies"]
+position = Vector2(-45, 6)
+scale = Vector2(0.20268, 0.20268)
+texture = ExtResource("r14")
+centered = false
+offset = Vector2(-61.5, -79)
+
+[node name="Basalt4" type="Sprite2D" parent="MeridianCourt/LanternDaisies"]
+position = Vector2(29, 7)
+scale = Vector2(0.25974, 0.25974)
+texture = ExtResource("r18")
+centered = false
+offset = Vector2(-69.5, -97)
+
+[node name="Sedge2" type="Sprite2D" parent="MeridianCourt/LanternDaisies"]
+position = Vector2(-25, 9)
+scale = Vector2(0.26224, 0.26224)
+texture = ExtResource("r19")
+centered = false
+offset = Vector2(-64, -101)
+
+[node name="Gold2" type="Sprite2D" parent="MeridianCourt/LanternDaisies"]
+position = Vector2(61, 23)
+scale = Vector2(0.15382, 0.15382)
+texture = ExtResource("r10")
+centered = false
+offset = Vector2(-62, -111)
+
+[node name="Blade2" type="Sprite2D" parent="MeridianCourt/LanternDaisies"]
+position = Vector2(86, 33)
+scale = Vector2(0.11489, 0.11489)
+texture = ExtResource("r20")
+centered = false
+offset = Vector2(-81, -125)
+flip_h = true
+
+[node name="WestBarrowLedge" type="Node2D" parent="MeridianCourt"]
+position = Vector2(2116, 2018)
+
+[node name="Basalt5" type="Sprite2D" parent="MeridianCourt/WestBarrowLedge"]
+position = Vector2(-3, -15)
+scale = Vector2(0.46306, 0.46306)
+texture = ExtResource("r21")
+centered = false
+offset = Vector2(-63.5, -87)
+flip_h = true
+
+[node name="Blade3" type="Sprite2D" parent="MeridianCourt/WestBarrowLedge"]
+position = Vector2(-18, -8)
+scale = Vector2(0.34684, 0.34684)
+texture = ExtResource("r7")
+centered = false
+offset = Vector2(-48.5, -81)
+
+[node name="Ivy3" type="Sprite2D" parent="MeridianCourt/WestBarrowLedge"]
+position = Vector2(12, 2)
+scale = Vector2(0.48894, 0.48894)
+texture = ExtResource("r22")
+centered = false
+offset = Vector2(-74.5, -79)
+flip_h = true
+
+[node name="Litter5" type="Sprite2D" parent="MeridianCourt/WestBarrowLedge"]
+position = Vector2(-32, 11)
+scale = Vector2(0.19385, 0.19385)
+texture = ExtResource("r4")
+centered = false
+offset = Vector2(-64.5, -98)
+flip_h = true
+
+[node name="Scree" type="Sprite2D" parent="MeridianCourt/WestBarrowLedge"]
+position = Vector2(31, 11)
+scale = Vector2(0.30892, 0.30892)
+texture = ExtResource("r23")
+centered = false
+offset = Vector2(-68.5, -91)
+
+[node name="AltarHollow" type="Node2D" parent="MeridianCourt"]
+position = Vector2(2619, 1972)
+
+[node name="Shingle5" type="Sprite2D" parent="MeridianCourt/AltarHollow"]
+position = Vector2(-105, -15)
+scale = Vector2(0.14495, 0.14495)
+texture = ExtResource("r3")
+centered = false
+offset = Vector2(-71, -104)
+
+[node name="InkCap" type="Sprite2D" parent="MeridianCourt/AltarHollow"]
+position = Vector2(49, -8)
+scale = Vector2(0.24538, 0.24538)
+texture = ExtResource("r24")
+centered = false
+offset = Vector2(-71.5, -115)
+flip_h = true
+
+[node name="Blade4" type="Sprite2D" parent="MeridianCourt/AltarHollow"]
+position = Vector2(-89, -5)
+scale = Vector2(0.16327, 0.16327)
+texture = ExtResource("r20")
+centered = false
+offset = Vector2(-81, -125)
+flip_h = true
+
+[node name="Scree2" type="Sprite2D" parent="MeridianCourt/AltarHollow"]
+position = Vector2(-51, -4)
+scale = Vector2(0.24655, 0.24655)
+texture = ExtResource("r25")
+centered = false
+offset = Vector2(-73.5, -105)
+flip_h = true
+
+[node name="Ivy4" type="Sprite2D" parent="MeridianCourt/AltarHollow"]
+position = Vector2(28, 1)
+scale = Vector2(0.34314, 0.34314)
+texture = ExtResource("r13")
+centered = false
+offset = Vector2(-79.5, -99)
+
+[node name="Sedge3" type="Sprite2D" parent="MeridianCourt/AltarHollow"]
+position = Vector2(-30, 2)
+scale = Vector2(0.2285, 0.2285)
+texture = ExtResource("r26")
+centered = false
+offset = Vector2(-70.5, -108)
+
+[node name="Heather3" type="Sprite2D" parent="MeridianCourt/AltarHollow"]
+position = Vector2(1, 3)
+scale = Vector2(0.34394, 0.34394)
+texture = ExtResource("r27")
+centered = false
+offset = Vector2(-54.5, -114)
+flip_h = true
+
+[node name="Litter6" type="Sprite2D" parent="MeridianCourt/AltarHollow"]
+position = Vector2(82, 6)
+scale = Vector2(0.19828, 0.19828)
+texture = ExtResource("r28")
+centered = false
+offset = Vector2(-71, -109)
+
+[node name="Blade5" type="Sprite2D" parent="MeridianCourt/AltarHollow"]
+position = Vector2(103, 19)
+scale = Vector2(0.11937, 0.11937)
+texture = ExtResource("r20")
+centered = false
+offset = Vector2(-81, -125)
+flip_h = true
+
+[node name="AngelsFoot" type="Node2D" parent="MeridianCourt"]
+position = Vector2(2922, 1945)
+
+[node name="Blade6" type="Sprite2D" parent="MeridianCourt/AngelsFoot"]
+position = Vector2(-41, -10)
+scale = Vector2(0.21019, 0.21019)
+texture = ExtResource("r7")
+centered = false
+offset = Vector2(-48.5, -81)
+
+[node name="Scarlet" type="Sprite2D" parent="MeridianCourt/AngelsFoot"]
+position = Vector2(-1, -2)
+scale = Vector2(0.24299, 0.24299)
+texture = ExtResource("r29")
+centered = false
+offset = Vector2(-89.5, -139)
+
+[node name="Ochre2" type="Sprite2D" parent="MeridianCourt/AngelsFoot"]
+position = Vector2(-19, 3)
+scale = Vector2(0.25514, 0.25514)
+texture = ExtResource("r30")
+centered = false
+offset = Vector2(-77.5, -113)
+flip_h = true
+
+[node name="Basalt6" type="Sprite2D" parent="MeridianCourt/AngelsFoot"]
+position = Vector2(18, 3)
+scale = Vector2(0.23691, 0.23691)
+texture = ExtResource("r9")
+centered = false
+offset = Vector2(-74.5, -97)
+flip_h = true
+
+[node name="Drift" type="Sprite2D" parent="MeridianCourt/AngelsFoot"]
+position = Vector2(34, 14)
+scale = Vector2(0.15837, 0.15837)
+texture = ExtResource("r31")
+centered = false
+offset = Vector2(-84, -101)
+flip_h = true
+
+[node name="ChancelChips" type="Node2D" parent="MeridianCourt"]
+position = Vector2(1983, 1812)
+
+[node name="Basalt7" type="Sprite2D" parent="MeridianCourt/ChancelChips"]
+position = Vector2(3, -1)
+scale = Vector2(0.20153, 0.20153)
+texture = ExtResource("r2")
+centered = false
+offset = Vector2(-72, -104)
+flip_h = true
+
+[node name="Blade7" type="Sprite2D" parent="MeridianCourt/ChancelChips"]
+position = Vector2(26, 7)
+scale = Vector2(0.10523, 0.10523)
+texture = ExtResource("r20")
+centered = false
+offset = Vector2(-81, -125)
+
+[node name="EastBankSeedheads" type="Node2D" parent="MeridianCourt"]
+position = Vector2(2841, 1611)
+
+[node name="Daisy2" type="Sprite2D" parent="MeridianCourt/EastBankSeedheads"]
+position = Vector2(-2, 3)
+scale = Vector2(0.22724, 0.22724)
+texture = ExtResource("r32")
+centered = false
+offset = Vector2(-72, -96)
+flip_h = true
+
+[node name="Fern2" type="Sprite2D" parent="MeridianCourt/EastBankSeedheads"]
+position = Vector2(-19, 11)
+scale = Vector2(0.13213, 0.13213)
+texture = ExtResource("r13")
+centered = false
+offset = Vector2(-79.5, -99)
+
+[node name="NorthLeafDrift" type="Node2D" parent="MeridianCourt"]
+position = Vector2(2140, 1382)
+
+[node name="Fallen" type="Sprite2D" parent="MeridianCourt/NorthLeafDrift"]
+position = Vector2(4, -1)
+scale = Vector2(0.16092, 0.16092)
+texture = ExtResource("r33")
+centered = false
+offset = Vector2(-80.5, -120)
+flip_h = true
+
+[node name="RubyCap2" type="Sprite2D" parent="MeridianCourt/NorthLeafDrift"]
+position = Vector2(24, 9)
+scale = Vector2(0.13067, 0.13067)
+texture = ExtResource("r34")
+centered = false
+offset = Vector2(-54, -97)
+
+[node name="Windfall" type="Node2D" parent="MeridianCourt"]
+position = Vector2(2285, 1561)
+
+[node name="Fallen2" type="Sprite2D" parent="MeridianCourt/Windfall"]
+position = Vector2(-17, -9)
+scale = Vector2(0.26547, 0.26547)
+texture = ExtResource("r33")
+centered = false
+offset = Vector2(-80.5, -120)
+flip_h = true
+
+[node name="RubyCap3" type="Sprite2D" parent="MeridianCourt/Windfall"]
+position = Vector2(17, -5)
+scale = Vector2(0.29099, 0.29099)
+texture = ExtResource("r34")
+centered = false
+offset = Vector2(-54, -97)
+
+[node name="Ochre3" type="Sprite2D" parent="MeridianCourt/Windfall"]
+position = Vector2(31, 1)
+scale = Vector2(0.23985, 0.23985)
+texture = ExtResource("r30")
+centered = false
+offset = Vector2(-77.5, -113)
+
+[node name="Ivy5" type="Sprite2D" parent="MeridianCourt/Windfall"]
+position = Vector2(-23, 9)
+scale = Vector2(0.23169, 0.23169)
+texture = ExtResource("r13")
+centered = false
+offset = Vector2(-79.5, -99)
+flip_h = true
+
+[node name="Shingle6" type="Sprite2D" parent="MeridianCourt/Windfall"]
+position = Vector2(-46, 21)
+scale = Vector2(0.21376, 0.21376)
+texture = ExtResource("r14")
+centered = false
+offset = Vector2(-61.5, -79)
+flip_h = true
+
+[node name="SouthViolets" type="Node2D" parent="MeridianCourt"]
+position = Vector2(2420, 2006)
+
+[node name="Heather4" type="Sprite2D" parent="MeridianCourt/SouthViolets"]
+position = Vector2(0, -4)
+scale = Vector2(0.31509, 0.31509)
+texture = ExtResource("r35")
+centered = false
+offset = Vector2(-70.5, -100)
+flip_h = true
+
+[node name="Basalt8" type="Sprite2D" parent="MeridianCourt/SouthViolets"]
+position = Vector2(22, 4)
+scale = Vector2(0.14315, 0.14315)
+texture = ExtResource("r36")
+centered = false
+offset = Vector2(-107, -152)
+flip_h = true
+
+[node name="Heather5" type="Sprite2D" parent="MeridianCourt/SouthViolets"]
+position = Vector2(43, 22)
+scale = Vector2(0.14727, 0.14727)
+texture = ExtResource("r27")
+centered = false
+offset = Vector2(-54.5, -114)
+
+[node name="LamplighterWalk" type="Node2D" parent="."]
+
+[node name="CartWheelBank" type="Node2D" parent="LamplighterWalk"]
+position = Vector2(2919, 713)
+
+[node name="Sedge4" type="Sprite2D" parent="LamplighterWalk/CartWheelBank"]
+position = Vector2(99, -21)
+scale = Vector2(0.15149, 0.15149)
+texture = ExtResource("r19")
+centered = false
+offset = Vector2(-64, -101)
+flip_h = true
+
+[node name="Shingle7" type="Sprite2D" parent="LamplighterWalk/CartWheelBank"]
+position = Vector2(78, -10)
+scale = Vector2(0.23675, 0.23675)
+texture = ExtResource("r3")
+centered = false
+offset = Vector2(-71, -104)
+
+[node name="Scree3" type="Sprite2D" parent="LamplighterWalk/CartWheelBank"]
+position = Vector2(46, -6)
+scale = Vector2(0.27157, 0.27157)
+texture = ExtResource("r23")
+centered = false
+offset = Vector2(-68.5, -91)
+flip_h = true
+
+[node name="Ivy6" type="Sprite2D" parent="LamplighterWalk/CartWheelBank"]
+position = Vector2(-44, 0)
+scale = Vector2(0.41396, 0.41396)
+texture = ExtResource("r8")
+centered = false
+offset = Vector2(-70.5, -76)
+flip_h = true
+
+[node name="Blade8" type="Sprite2D" parent="LamplighterWalk/CartWheelBank"]
+position = Vector2(29, 0)
+scale = Vector2(0.22733, 0.22733)
+texture = ExtResource("r20")
+centered = false
+offset = Vector2(-81, -125)
+flip_h = true
+
+[node name="HoneyCap2" type="Sprite2D" parent="LamplighterWalk/CartWheelBank"]
+position = Vector2(-25, 2)
+scale = Vector2(0.29827, 0.29827)
+texture = ExtResource("r12")
+centered = false
+offset = Vector2(-79, -120)
+flip_h = true
+
+[node name="Basalt9" type="Sprite2D" parent="LamplighterWalk/CartWheelBank"]
+position = Vector2(0, 4)
+scale = Vector2(0.45342, 0.45342)
+texture = ExtResource("r21")
+centered = false
+offset = Vector2(-63.5, -87)
+
+[node name="Litter7" type="Sprite2D" parent="LamplighterWalk/CartWheelBank"]
+position = Vector2(-72, 10)
+scale = Vector2(0.19455, 0.19455)
+texture = ExtResource("r4")
+centered = false
+offset = Vector2(-64.5, -98)
+flip_h = true
+
+[node name="Blade9" type="Sprite2D" parent="LamplighterWalk/CartWheelBank"]
+position = Vector2(-97, 20)
+scale = Vector2(0.19097, 0.19097)
+texture = ExtResource("r7")
+centered = false
+offset = Vector2(-48.5, -81)
+
+[node name="SextonVerge" type="Node2D" parent="LamplighterWalk"]
+position = Vector2(3071, 581)
+
+[node name="Daisy3" type="Sprite2D" parent="LamplighterWalk/SextonVerge"]
+position = Vector2(-11, -10)
+scale = Vector2(0.45343, 0.45343)
+texture = ExtResource("r37")
+centered = false
+offset = Vector2(-72, -102)
+flip_h = true
+
+[node name="Fern3" type="Sprite2D" parent="LamplighterWalk/SextonVerge"]
+position = Vector2(14, -5)
+scale = Vector2(0.33797, 0.33797)
+texture = ExtResource("r13")
+centered = false
+offset = Vector2(-79.5, -99)
+
+[node name="Sedge5" type="Sprite2D" parent="LamplighterWalk/SextonVerge"]
+position = Vector2(-27, 6)
+scale = Vector2(0.27739, 0.27739)
+texture = ExtResource("r19")
+centered = false
+offset = Vector2(-64, -101)
+
+[node name="Basalt10" type="Sprite2D" parent="LamplighterWalk/SextonVerge"]
+position = Vector2(30, 8)
+scale = Vector2(0.28595, 0.28595)
+texture = ExtResource("r2")
+centered = false
+offset = Vector2(-72, -104)
+
+[node name="Gold3" type="Sprite2D" parent="LamplighterWalk/SextonVerge"]
+position = Vector2(51, 9)
+scale = Vector2(0.19841, 0.19841)
+texture = ExtResource("r10")
+centered = false
+offset = Vector2(-62, -111)
+
+[node name="Shingle8" type="Sprite2D" parent="LamplighterWalk/SextonVerge"]
+position = Vector2(-45, 10)
+scale = Vector2(0.18902, 0.18902)
+texture = ExtResource("r3")
+centered = false
+offset = Vector2(-71, -104)
+flip_h = true
+
+[node name="Blade10" type="Sprite2D" parent="LamplighterWalk/SextonVerge"]
+position = Vector2(87, 18)
+scale = Vector2(0.21816, 0.21816)
+texture = ExtResource("r7")
+centered = false
+offset = Vector2(-48.5, -81)
+flip_h = true
+
+[node name="FenceHeather" type="Node2D" parent="LamplighterWalk"]
+position = Vector2(3204, 507)
+
+[node name="Heather6" type="Sprite2D" parent="LamplighterWalk/FenceHeather"]
+position = Vector2(48, -13)
+scale = Vector2(0.23175, 0.23175)
+texture = ExtResource("r27")
+centered = false
+offset = Vector2(-54.5, -114)
+flip_h = true
+
+[node name="Ivy7" type="Sprite2D" parent="LamplighterWalk/FenceHeather"]
+position = Vector2(14, -6)
+scale = Vector2(0.27708, 0.27708)
+texture = ExtResource("r13")
+centered = false
+offset = Vector2(-79.5, -99)
+
+[node name="Basalt11" type="Sprite2D" parent="LamplighterWalk/FenceHeather"]
+position = Vector2(-10, -3)
+scale = Vector2(0.47786, 0.47786)
+texture = ExtResource("r21")
+centered = false
+offset = Vector2(-63.5, -87)
+
+[node name="Gold4" type="Sprite2D" parent="LamplighterWalk/FenceHeather"]
+position = Vector2(63, 6)
+scale = Vector2(0.1982, 0.1982)
+texture = ExtResource("r38")
+centered = false
+offset = Vector2(-71, -92)
+flip_h = true
+
+[node name="Litter8" type="Sprite2D" parent="LamplighterWalk/FenceHeather"]
+position = Vector2(91, 9)
+scale = Vector2(0.14655, 0.14655)
+texture = ExtResource("r16")
+centered = false
+offset = Vector2(-76.5, -120)
+
+[node name="Heather7" type="Sprite2D" parent="LamplighterWalk/FenceHeather"]
+position = Vector2(-27, 12)
+scale = Vector2(0.22977, 0.22977)
+texture = ExtResource("r6")
+centered = false
+offset = Vector2(-66, -126)
+flip_h = true
+
+[node name="Blade11" type="Sprite2D" parent="LamplighterWalk/FenceHeather"]
+position = Vector2(-56, 15)
+scale = Vector2(0.15431, 0.15431)
+texture = ExtResource("r20")
+centered = false
+offset = Vector2(-81, -125)
+flip_h = true
+
+[node name="Shingle9" type="Sprite2D" parent="LamplighterWalk/FenceHeather"]
+position = Vector2(-82, 29)
+scale = Vector2(0.22495, 0.22495)
+texture = ExtResource("r14")
+centered = false
+offset = Vector2(-61.5, -79)
+flip_h = true
+
+[node name="IronCorner" type="Node2D" parent="LamplighterWalk"]
+position = Vector2(3661, 507)
+
+[node name="Fern4" type="Sprite2D" parent="LamplighterWalk/IronCorner"]
+position = Vector2(101, -12)
+scale = Vector2(0.22527, 0.22527)
+texture = ExtResource("r39")
+centered = false
+offset = Vector2(-75, -67)
+flip_h = true
+
+[node name="Scarlet2" type="Sprite2D" parent="LamplighterWalk/IronCorner"]
+position = Vector2(-48, -5)
+scale = Vector2(0.26307, 0.26307)
+texture = ExtResource("r40")
+centered = false
+offset = Vector2(-78.5, -120)
+flip_h = true
+
+[node name="Litter9" type="Sprite2D" parent="LamplighterWalk/IronCorner"]
+position = Vector2(78, -4)
+scale = Vector2(0.20999, 0.20999)
+texture = ExtResource("r28")
+centered = false
+offset = Vector2(-71, -109)
+flip_h = true
+
+[node name="Litter10" type="Sprite2D" parent="LamplighterWalk/IronCorner"]
+position = Vector2(-74, 2)
+scale = Vector2(0.22774, 0.22774)
+texture = ExtResource("r4")
+centered = false
+offset = Vector2(-64.5, -98)
+flip_h = true
+
+[node name="Ochre4" type="Sprite2D" parent="LamplighterWalk/IronCorner"]
+position = Vector2(-27, 2)
+scale = Vector2(0.33501, 0.33501)
+texture = ExtResource("r41")
+centered = false
+offset = Vector2(-80.5, -122)
+
+[node name="GnarledRoots" type="Node2D" parent="LamplighterWalk"]
+position = Vector2(3801, 717)
+
+[node name="Shingle10" type="Sprite2D" parent="LamplighterWalk/GnarledRoots"]
+position = Vector2(-68, -13)
+scale = Vector2(0.23806, 0.23806)
+texture = ExtResource("r14")
+centered = false
+offset = Vector2(-61.5, -79)
+flip_h = true
+
+[node name="Fallen3" type="Sprite2D" parent="LamplighterWalk/GnarledRoots"]
+position = Vector2(6, -11)
+scale = Vector2(0.34529, 0.34529)
+texture = ExtResource("r33")
+centered = false
+offset = Vector2(-80.5, -120)
+
+[node name="RubyCap4" type="Sprite2D" parent="LamplighterWalk/GnarledRoots"]
+position = Vector2(35, -9)
+scale = Vector2(0.37408, 0.37408)
+texture = ExtResource("r34")
+centered = false
+offset = Vector2(-54, -97)
+flip_h = true
+
+[node name="Litter11" type="Sprite2D" parent="LamplighterWalk/GnarledRoots"]
+position = Vector2(-53, -8)
+scale = Vector2(0.22362, 0.22362)
+texture = ExtResource("r28")
+centered = false
+offset = Vector2(-71, -109)
+
+[node name="Ochre5" type="Sprite2D" parent="LamplighterWalk/GnarledRoots"]
+position = Vector2(-2, 1)
+scale = Vector2(0.34626, 0.34626)
+texture = ExtResource("r41")
+centered = false
+offset = Vector2(-80.5, -122)
+flip_h = true
+
+[node name="Ivy8" type="Sprite2D" parent="LamplighterWalk/GnarledRoots"]
+position = Vector2(-35, 4)
+scale = Vector2(0.4571, 0.4571)
+texture = ExtResource("r8")
+centered = false
+offset = Vector2(-70.5, -76)
+
+[node name="Litter12" type="Sprite2D" parent="LamplighterWalk/GnarledRoots"]
+position = Vector2(52, 14)
+scale = Vector2(0.19111, 0.19111)
+texture = ExtResource("r42")
+centered = false
+offset = Vector2(-73, -124)
+flip_h = true
+
+[node name="Blade12" type="Sprite2D" parent="LamplighterWalk/GnarledRoots"]
+position = Vector2(74, 22)
+scale = Vector2(0.21597, 0.21597)
+texture = ExtResource("r7")
+centered = false
+offset = Vector2(-48.5, -81)
+flip_h = true
+
+[node name="CrossAndCaps" type="Node2D" parent="LamplighterWalk"]
+position = Vector2(3691, 910)
+
+[node name="RubyCap5" type="Sprite2D" parent="LamplighterWalk/CrossAndCaps"]
+position = Vector2(2, -13)
+scale = Vector2(0.34241, 0.34241)
+texture = ExtResource("r34")
+centered = false
+offset = Vector2(-54, -97)
+flip_h = true
+
+[node name="Basalt12" type="Sprite2D" parent="LamplighterWalk/CrossAndCaps"]
+position = Vector2(-26, 0)
+scale = Vector2(0.27575, 0.27575)
+texture = ExtResource("r9")
+centered = false
+offset = Vector2(-74.5, -97)
+
+[node name="Ivy9" type="Sprite2D" parent="LamplighterWalk/CrossAndCaps"]
+position = Vector2(11, 7)
+scale = Vector2(0.54061, 0.54061)
+texture = ExtResource("r8")
+centered = false
+offset = Vector2(-70.5, -76)
+flip_h = true
+
+[node name="HoneyCap3" type="Sprite2D" parent="LamplighterWalk/CrossAndCaps"]
+position = Vector2(38, 7)
+scale = Vector2(0.2568, 0.2568)
+texture = ExtResource("r43")
+centered = false
+offset = Vector2(-68.5, -99)
+
+[node name="Shingle11" type="Sprite2D" parent="LamplighterWalk/CrossAndCaps"]
+position = Vector2(-33, 18)
+scale = Vector2(0.25942, 0.25942)
+texture = ExtResource("r14")
+centered = false
+offset = Vector2(-61.5, -79)
+flip_h = true
+
+[node name="Sedge6" type="Sprite2D" parent="LamplighterWalk/CrossAndCaps"]
+position = Vector2(53, 19)
+scale = Vector2(0.18017, 0.18017)
+texture = ExtResource("r26")
+centered = false
+offset = Vector2(-70.5, -108)
+flip_h = true
+
+[node name="Litter13" type="Sprite2D" parent="LamplighterWalk/CrossAndCaps"]
+position = Vector2(72, 21)
+scale = Vector2(0.11961, 0.11961)
+texture = ExtResource("r42")
+centered = false
+offset = Vector2(-73, -124)
+
+[node name="OpenGraveLedge" type="Node2D" parent="LamplighterWalk"]
+position = Vector2(3114, 979)
+
+[node name="Basalt13" type="Sprite2D" parent="LamplighterWalk/OpenGraveLedge"]
+position = Vector2(11, -12)
+scale = Vector2(0.44669, 0.44669)
+texture = ExtResource("r21")
+centered = false
+offset = Vector2(-63.5, -87)
+
+[node name="Blade13" type="Sprite2D" parent="LamplighterWalk/OpenGraveLedge"]
+position = Vector2(-18, -3)
+scale = Vector2(0.48687, 0.48687)
+texture = ExtResource("r7")
+centered = false
+offset = Vector2(-48.5, -81)
+flip_h = true
+
+[node name="Scree4" type="Sprite2D" parent="LamplighterWalk/OpenGraveLedge"]
+position = Vector2(23, 7)
+scale = Vector2(0.24559, 0.24559)
+texture = ExtResource("r25")
+centered = false
+offset = Vector2(-73.5, -105)
+flip_h = true
+
+[node name="Litter14" type="Sprite2D" parent="LamplighterWalk/OpenGraveLedge"]
+position = Vector2(49, 9)
+scale = Vector2(0.17895, 0.17895)
+texture = ExtResource("r42")
+centered = false
+offset = Vector2(-73, -124)
+
+[node name="Ivy10" type="Sprite2D" parent="LamplighterWalk/OpenGraveLedge"]
+position = Vector2(-34, 12)
+scale = Vector2(0.39653, 0.39653)
+texture = ExtResource("r22")
+centered = false
+offset = Vector2(-74.5, -79)
+flip_h = true
+
+[node name="Blade14" type="Sprite2D" parent="LamplighterWalk/OpenGraveLedge"]
+position = Vector2(-61, 20)
+scale = Vector2(0.26265, 0.26265)
+texture = ExtResource("r7")
+centered = false
+offset = Vector2(-48.5, -81)
+flip_h = true
+
+[node name="Shingle12" type="Sprite2D" parent="LamplighterWalk/OpenGraveLedge"]
+position = Vector2(-87, 31)
+scale = Vector2(0.20195, 0.20195)
+texture = ExtResource("r14")
+centered = false
+offset = Vector2(-61.5, -79)
+flip_h = true
+
+[node name="BentPost" type="Node2D" parent="LamplighterWalk"]
+position = Vector2(2895, 895)
+
+[node name="Litter15" type="Sprite2D" parent="LamplighterWalk/BentPost"]
+position = Vector2(43, -14)
+scale = Vector2(0.15319, 0.15319)
+texture = ExtResource("r4")
+centered = false
+offset = Vector2(-64.5, -98)
+flip_h = true
+
+[node name="Ochre6" type="Sprite2D" parent="LamplighterWalk/BentPost"]
+position = Vector2(1, -5)
+scale = Vector2(0.27502, 0.27502)
+texture = ExtResource("r1")
+centered = false
+offset = Vector2(-84.5, -128)
+flip_h = true
+
+[node name="Basalt14" type="Sprite2D" parent="LamplighterWalk/BentPost"]
+position = Vector2(21, 2)
+scale = Vector2(0.20794, 0.20794)
+texture = ExtResource("r36")
+centered = false
+offset = Vector2(-107, -152)
+flip_h = true
+
+[node name="Fern5" type="Sprite2D" parent="LamplighterWalk/BentPost"]
+position = Vector2(-25, 8)
+scale = Vector2(0.21148, 0.21148)
+texture = ExtResource("r13")
+centered = false
+offset = Vector2(-79.5, -99)
+
+[node name="Yellow2" type="Sprite2D" parent="LamplighterWalk/BentPost"]
+position = Vector2(-38, 20)
+scale = Vector2(0.11434, 0.11434)
+texture = ExtResource("r5")
+centered = false
+offset = Vector2(-80.5, -128)
+
+[node name="SextonsFlints" type="Node2D" parent="LamplighterWalk"]
+position = Vector2(3140, 699)
+
+[node name="Blade15" type="Sprite2D" parent="LamplighterWalk/SextonsFlints"]
+position = Vector2(-21, 7)
+scale = Vector2(0.10847, 0.10847)
+texture = ExtResource("r7")
+centered = false
+offset = Vector2(-48.5, -81)
+
+[node name="IronSeedheads" type="Node2D" parent="LamplighterWalk"]
+position = Vector2(3763, 818)
+
+[node name="Daisy4" type="Sprite2D" parent="LamplighterWalk/IronSeedheads"]
+position = Vector2(1, -3)
+scale = Vector2(0.18523, 0.18523)
+texture = ExtResource("r32")
+centered = false
+offset = Vector2(-72, -96)
+flip_h = true
+
+[node name="Fern6" type="Sprite2D" parent="LamplighterWalk/IronSeedheads"]
+position = Vector2(26, 9)
+scale = Vector2(0.18794, 0.18794)
+texture = ExtResource("r44")
+centered = false
+offset = Vector2(-41, -53)
+flip_h = true
+
+[node name="GraveyardDrift" type="Node2D" parent="LamplighterWalk"]
+position = Vector2(3510, 952)
+
+[node name="Fallen4" type="Sprite2D" parent="LamplighterWalk/GraveyardDrift"]
+position = Vector2(1, -2)
+scale = Vector2(0.19597, 0.19597)
+texture = ExtResource("r31")
+centered = false
+offset = Vector2(-84, -101)
+flip_h = true
+
+[node name="RubyCap6" type="Sprite2D" parent="LamplighterWalk/GraveyardDrift"]
+position = Vector2(27, 12)
+scale = Vector2(0.08268, 0.08268)
+texture = ExtResource("r45")
+centered = false
+offset = Vector2(-83.5, -150)
+
+[node name="OuterDistricts" type="Node2D" parent="."]
+
+[node name="ReliquaryEaves" type="Node2D" parent="OuterDistricts"]
+position = Vector2(1112, 1089)
+
+[node name="Heather8" type="Sprite2D" parent="OuterDistricts/ReliquaryEaves"]
+position = Vector2(2, -11)
+scale = Vector2(0.31847, 0.31847)
+texture = ExtResource("r6")
+centered = false
+offset = Vector2(-66, -126)
+flip_h = true
+
+[node name="Ivy11" type="Sprite2D" parent="OuterDistricts/ReliquaryEaves"]
+position = Vector2(24, -5)
+scale = Vector2(0.33235, 0.33235)
+texture = ExtResource("r13")
+centered = false
+offset = Vector2(-79.5, -99)
+
+[node name="Basalt15" type="Sprite2D" parent="OuterDistricts/ReliquaryEaves"]
+position = Vector2(-13, 3)
+scale = Vector2(0.52322, 0.52322)
+texture = ExtResource("r21")
+centered = false
+offset = Vector2(-63.5, -87)
+
+[node name="Heather9" type="Sprite2D" parent="OuterDistricts/ReliquaryEaves"]
+position = Vector2(-41, 9)
+scale = Vector2(0.23782, 0.23782)
+texture = ExtResource("r6")
+centered = false
+offset = Vector2(-66, -126)
+flip_h = true
+
+[node name="Shingle13" type="Sprite2D" parent="OuterDistricts/ReliquaryEaves"]
+position = Vector2(35, 11)
+scale = Vector2(0.26846, 0.26846)
+texture = ExtResource("r14")
+centered = false
+offset = Vector2(-61.5, -79)
+flip_h = true
+
+[node name="Blade16" type="Sprite2D" parent="OuterDistricts/ReliquaryEaves"]
+position = Vector2(-58, 22)
+scale = Vector2(0.18814, 0.18814)
+texture = ExtResource("r20")
+centered = false
+offset = Vector2(-81, -125)
+flip_h = true
+
+[node name="Gold5" type="Sprite2D" parent="OuterDistricts/ReliquaryEaves"]
+position = Vector2(-78, 24)
+scale = Vector2(0.14998, 0.14998)
+texture = ExtResource("r10")
+centered = false
+offset = Vector2(-62, -111)
+flip_h = true
+
+[node name="ReliquaryCopse" type="Node2D" parent="OuterDistricts"]
+position = Vector2(1318, 992)
+
+[node name="Fern7" type="Sprite2D" parent="OuterDistricts/ReliquaryCopse"]
+position = Vector2(-11, -3)
+scale = Vector2(0.65525, 0.65525)
+texture = ExtResource("r39")
+centered = false
+offset = Vector2(-75, -67)
+
+[node name="Basalt16" type="Sprite2D" parent="OuterDistricts/ReliquaryCopse"]
+position = Vector2(18, -3)
+scale = Vector2(0.3434, 0.3434)
+texture = ExtResource("r18")
+centered = false
+offset = Vector2(-69.5, -97)
+
+[node name="Yellow3" type="Sprite2D" parent="OuterDistricts/ReliquaryCopse"]
+position = Vector2(-31, 5)
+scale = Vector2(0.36079, 0.36079)
+texture = ExtResource("r46")
+centered = false
+offset = Vector2(-75, -97)
+
+[node name="Litter16" type="Sprite2D" parent="OuterDistricts/ReliquaryCopse"]
+position = Vector2(-59, 11)
+scale = Vector2(0.16924, 0.16924)
+texture = ExtResource("r42")
+centered = false
+offset = Vector2(-73, -124)
+flip_h = true
+
+[node name="Blade17" type="Sprite2D" parent="OuterDistricts/ReliquaryCopse"]
+position = Vector2(-80, 25)
+scale = Vector2(0.15209, 0.15209)
+texture = ExtResource("r20")
+centered = false
+offset = Vector2(-81, -125)
+
+[node name="WestProcession" type="Node2D" parent="OuterDistricts"]
+position = Vector2(1583, 1406)
+
+[node name="Blade18" type="Sprite2D" parent="OuterDistricts/WestProcession"]
+position = Vector2(-15, -9)
+scale = Vector2(0.24154, 0.24154)
+texture = ExtResource("r20")
+centered = false
+offset = Vector2(-81, -125)
+
+[node name="Basalt17" type="Sprite2D" parent="OuterDistricts/WestProcession"]
+position = Vector2(16, -7)
+scale = Vector2(0.3901, 0.3901)
+texture = ExtResource("r21")
+centered = false
+offset = Vector2(-63.5, -87)
+flip_h = true
+
+[node name="Ivy12" type="Sprite2D" parent="OuterDistricts/WestProcession"]
+position = Vector2(-31, 5)
+scale = Vector2(0.38044, 0.38044)
+texture = ExtResource("r8")
+centered = false
+offset = Vector2(-70.5, -76)
+flip_h = true
+
+[node name="Litter17" type="Sprite2D" parent="OuterDistricts/WestProcession"]
+position = Vector2(45, 10)
+scale = Vector2(0.20078, 0.20078)
+texture = ExtResource("r4")
+centered = false
+offset = Vector2(-64.5, -98)
+flip_h = true
+
+[node name="Blade19" type="Sprite2D" parent="OuterDistricts/WestProcession"]
+position = Vector2(-56, 11)
+scale = Vector2(0.22541, 0.22541)
+texture = ExtResource("r47")
+centered = false
+offset = Vector2(-58.5, -91)
+
+[node name="Scree5" type="Sprite2D" parent="OuterDistricts/WestProcession"]
+position = Vector2(25, 11)
+scale = Vector2(0.26873, 0.26873)
+texture = ExtResource("r23")
+centered = false
+offset = Vector2(-68.5, -91)
+
+[node name="Shingle14" type="Sprite2D" parent="OuterDistricts/WestProcession"]
+position = Vector2(-89, 17)
+scale = Vector2(0.20915, 0.20915)
+texture = ExtResource("r14")
+centered = false
+offset = Vector2(-61.5, -79)
+
+[node name="WestBarrowSteps" type="Node2D" parent="OuterDistricts"]
+position = Vector2(744, 1809)
+
+[node name="RubyCap7" type="Sprite2D" parent="OuterDistricts/WestBarrowSteps"]
+position = Vector2(51, 1)
+scale = Vector2(0.29968, 0.29968)
+texture = ExtResource("r11")
+centered = false
+offset = Vector2(-72.5, -107)
+
+[node name="Blade20" type="Sprite2D" parent="OuterDistricts/WestBarrowSteps"]
+position = Vector2(74, 12)
+scale = Vector2(0.29158, 0.29158)
+texture = ExtResource("r7")
+centered = false
+offset = Vector2(-48.5, -81)
+
+[node name="Litter18" type="Sprite2D" parent="OuterDistricts/WestBarrowSteps"]
+position = Vector2(101, 19)
+scale = Vector2(0.13904, 0.13904)
+texture = ExtResource("r42")
+centered = false
+offset = Vector2(-73, -124)
+
+[node name="BarrowIvy" type="Node2D" parent="OuterDistricts"]
+position = Vector2(965, 1765)
+
+[node name="Ivy13" type="Sprite2D" parent="OuterDistricts/BarrowIvy"]
+position = Vector2(-4, -15)
+scale = Vector2(0.43349, 0.43349)
+texture = ExtResource("r22")
+centered = false
+offset = Vector2(-74.5, -79)
+flip_h = true
+
+[node name="HoneyCap4" type="Sprite2D" parent="OuterDistricts/BarrowIvy"]
+position = Vector2(20, -6)
+scale = Vector2(0.2584, 0.2584)
+texture = ExtResource("r43")
+centered = false
+offset = Vector2(-68.5, -99)
+
+[node name="Basalt18" type="Sprite2D" parent="OuterDistricts/BarrowIvy"]
+position = Vector2(-11, 2)
+scale = Vector2(0.4183, 0.4183)
+texture = ExtResource("r2")
+centered = false
+offset = Vector2(-72, -104)
+
+[node name="Blade21" type="Sprite2D" parent="OuterDistricts/BarrowIvy"]
+position = Vector2(-37, 3)
+scale = Vector2(0.38981, 0.38981)
+texture = ExtResource("r7")
+centered = false
+offset = Vector2(-48.5, -81)
+flip_h = true
+
+[node name="Scree6" type="Sprite2D" parent="OuterDistricts/BarrowIvy"]
+position = Vector2(-49, 17)
+scale = Vector2(0.23764, 0.23764)
+texture = ExtResource("r48")
+centered = false
+offset = Vector2(-69.5, -93)
+flip_h = true
+
+[node name="Shingle15" type="Sprite2D" parent="OuterDistricts/BarrowIvy"]
+position = Vector2(34, 17)
+scale = Vector2(0.20125, 0.20125)
+texture = ExtResource("r3")
+centered = false
+offset = Vector2(-71, -104)
+
+[node name="Sedge7" type="Sprite2D" parent="OuterDistricts/BarrowIvy"]
+position = Vector2(-72, 24)
+scale = Vector2(0.12358, 0.12358)
+texture = ExtResource("r15")
+centered = false
+offset = Vector2(-79, -110)
+
+[node name="ThornGardenFoot" type="Node2D" parent="OuterDistricts"]
+position = Vector2(2068, 875)
+
+[node name="Litter19" type="Sprite2D" parent="OuterDistricts/ThornGardenFoot"]
+position = Vector2(97, -22)
+scale = Vector2(0.12228, 0.12228)
+texture = ExtResource("r16")
+centered = false
+offset = Vector2(-76.5, -120)
+
+[node name="Blade22" type="Sprite2D" parent="OuterDistricts/ThornGardenFoot"]
+position = Vector2(78, -17)
+scale = Vector2(0.27569, 0.27569)
+texture = ExtResource("r47")
+centered = false
+offset = Vector2(-58.5, -91)
+flip_h = true
+
+[node name="Shingle16" type="Sprite2D" parent="OuterDistricts/ThornGardenFoot"]
+position = Vector2(49, -11)
+scale = Vector2(0.35467, 0.35467)
+texture = ExtResource("r14")
+centered = false
+offset = Vector2(-61.5, -79)
+
+[node name="Drift2" type="Sprite2D" parent="OuterDistricts/ThornGardenFoot"]
+position = Vector2(30, -3)
+scale = Vector2(0.21082, 0.21082)
+texture = ExtResource("r49")
+centered = false
+offset = Vector2(-76, -125)
+flip_h = true
+
+[node name="Thorn" type="Sprite2D" parent="OuterDistricts/ThornGardenFoot"]
+position = Vector2(-48, 2)
+scale = Vector2(0.28058, 0.28058)
+texture = ExtResource("r50")
+centered = false
+offset = Vector2(-84, -123)
+
+[node name="Basalt19" type="Sprite2D" parent="OuterDistricts/ThornGardenFoot"]
+position = Vector2(-21, 2)
+scale = Vector2(0.26597, 0.26597)
+texture = ExtResource("r36")
+centered = false
+offset = Vector2(-107, -152)
+
+[node name="Sedge8" type="Sprite2D" parent="OuterDistricts/ThornGardenFoot"]
+position = Vector2(-1, 6)
+scale = Vector2(0.39759, 0.39759)
+texture = ExtResource("r15")
+centered = false
+offset = Vector2(-79, -110)
+
+[node name="Shingle17" type="Sprite2D" parent="OuterDistricts/ThornGardenFoot"]
+position = Vector2(-75, 14)
+scale = Vector2(0.29464, 0.29464)
+texture = ExtResource("r14")
+centered = false
+offset = Vector2(-61.5, -79)
+
+[node name="Ivy14" type="Sprite2D" parent="OuterDistricts/ThornGardenFoot"]
+position = Vector2(-93, 27)
+scale = Vector2(0.2349, 0.2349)
+texture = ExtResource("r8")
+centered = false
+offset = Vector2(-70.5, -76)
+flip_h = true
+
+[node name="DryGarden" type="Node2D" parent="OuterDistricts"]
+position = Vector2(2285, 684)
+
+[node name="Blade23" type="Sprite2D" parent="OuterDistricts/DryGarden"]
+position = Vector2(47, -9)
+scale = Vector2(0.25152, 0.25152)
+texture = ExtResource("r7")
+centered = false
+offset = Vector2(-48.5, -81)
+
+[node name="Scarlet3" type="Sprite2D" parent="OuterDistricts/DryGarden"]
+position = Vector2(1, 1)
+scale = Vector2(0.33764, 0.33764)
+texture = ExtResource("r40")
+centered = false
+offset = Vector2(-78.5, -120)
+
+[node name="Ochre7" type="Sprite2D" parent="OuterDistricts/DryGarden"]
+position = Vector2(29, 3)
+scale = Vector2(0.28153, 0.28153)
+texture = ExtResource("r1")
+centered = false
+offset = Vector2(-84.5, -128)
+
+[node name="Basalt20" type="Sprite2D" parent="OuterDistricts/DryGarden"]
+position = Vector2(-23, 5)
+scale = Vector2(0.27248, 0.27248)
+texture = ExtResource("r21")
+centered = false
+offset = Vector2(-63.5, -87)
+flip_h = true
+
+[node name="Drift3" type="Sprite2D" parent="OuterDistricts/DryGarden"]
+position = Vector2(-43, 18)
+scale = Vector2(0.16591, 0.16591)
+texture = ExtResource("r31")
+centered = false
+offset = Vector2(-84, -101)
+flip_h = true
+
+[node name="PilgrimFork" type="Node2D" parent="OuterDistricts"]
+position = Vector2(2724, 1421)
+
+[node name="Daisy5" type="Sprite2D" parent="OuterDistricts/PilgrimFork"]
+position = Vector2(-3, -4)
+scale = Vector2(0.33342, 0.33342)
+texture = ExtResource("r17")
+centered = false
+offset = Vector2(-78.5, -126)
+flip_h = true
+
+[node name="Basalt21" type="Sprite2D" parent="OuterDistricts/PilgrimFork"]
+position = Vector2(29, 10)
+scale = Vector2(0.24346, 0.24346)
+texture = ExtResource("r9")
+centered = false
+offset = Vector2(-74.5, -97)
+
+[node name="Sedge9" type="Sprite2D" parent="OuterDistricts/PilgrimFork"]
+position = Vector2(44, 18)
+scale = Vector2(0.17592, 0.17592)
+texture = ExtResource("r26")
+centered = false
+offset = Vector2(-70.5, -108)
+
+[node name="EastBarrowDoor" type="Node2D" parent="OuterDistricts"]
+position = Vector2(4172, 1746)
+
+[node name="InkCap2" type="Sprite2D" parent="OuterDistricts/EastBarrowDoor"]
+position = Vector2(2, -18)
+scale = Vector2(0.32216, 0.32216)
+texture = ExtResource("r24")
+centered = false
+offset = Vector2(-71.5, -115)
+
+[node name="Scree7" type="Sprite2D" parent="OuterDistricts/EastBarrowDoor"]
+position = Vector2(-44, -9)
+scale = Vector2(0.27797, 0.27797)
+texture = ExtResource("r23")
+centered = false
+offset = Vector2(-68.5, -91)
+
+[node name="Blade24" type="Sprite2D" parent="OuterDistricts/EastBarrowDoor"]
+position = Vector2(-59, -6)
+scale = Vector2(0.2063, 0.2063)
+texture = ExtResource("r47")
+centered = false
+offset = Vector2(-58.5, -91)
+flip_h = true
+
+[node name="Heather10" type="Sprite2D" parent="OuterDistricts/EastBarrowDoor"]
+position = Vector2(-1, 3)
+scale = Vector2(0.34917, 0.34917)
+texture = ExtResource("r6")
+centered = false
+offset = Vector2(-66, -126)
+flip_h = true
+
+[node name="Sedge10" type="Sprite2D" parent="OuterDistricts/EastBarrowDoor"]
+position = Vector2(-27, 4)
+scale = Vector2(0.30482, 0.30482)
+texture = ExtResource("r26")
+centered = false
+offset = Vector2(-70.5, -108)
+flip_h = true
+
+[node name="Shingle18" type="Sprite2D" parent="OuterDistricts/EastBarrowDoor"]
+position = Vector2(46, 6)
+scale = Vector2(0.31326, 0.31326)
+texture = ExtResource("r14")
+centered = false
+offset = Vector2(-61.5, -79)
+flip_h = true
+
+[node name="Litter20" type="Sprite2D" parent="OuterDistricts/EastBarrowDoor"]
+position = Vector2(62, 12)
+scale = Vector2(0.15897, 0.15897)
+texture = ExtResource("r42")
+centered = false
+offset = Vector2(-73, -124)
+
+[node name="EastReeds" type="Node2D" parent="OuterDistricts"]
+position = Vector2(3878, 1611)
+
+[node name="Fern8" type="Sprite2D" parent="OuterDistricts/EastReeds"]
+position = Vector2(-21, -3)
+scale = Vector2(0.43226, 0.43226)
+texture = ExtResource("r39")
+centered = false
+offset = Vector2(-75, -67)
+flip_h = true
+
+[node name="Basalt22" type="Sprite2D" parent="OuterDistricts/EastReeds"]
+position = Vector2(-36, -1)
+scale = Vector2(0.296, 0.296)
+texture = ExtResource("r9")
+centered = false
+offset = Vector2(-74.5, -97)
+
+[node name="Gold6" type="Sprite2D" parent="OuterDistricts/EastReeds"]
+position = Vector2(-60, 7)
+scale = Vector2(0.1996, 0.1996)
+texture = ExtResource("r38")
+centered = false
+offset = Vector2(-71, -92)
+
+[node name="Sedge11" type="Sprite2D" parent="OuterDistricts/EastReeds"]
+position = Vector2(27, 13)
+scale = Vector2(0.21297, 0.21297)
+texture = ExtResource("r26")
+centered = false
+offset = Vector2(-70.5, -108)
+
+[node name="Blade25" type="Sprite2D" parent="OuterDistricts/EastReeds"]
+position = Vector2(-84, 14)
+scale = Vector2(0.13051, 0.13051)
+texture = ExtResource("r20")
+centered = false
+offset = Vector2(-81, -125)
+
+[node name="Shingle19" type="Sprite2D" parent="OuterDistricts/EastReeds"]
+position = Vector2(44, 17)
+scale = Vector2(0.23054, 0.23054)
+texture = ExtResource("r14")
+centered = false
+offset = Vector2(-61.5, -79)
+
+[node name="EastWatch" type="Node2D" parent="OuterDistricts"]
+position = Vector2(4400, 1860)
+
+[node name="Heather11" type="Sprite2D" parent="OuterDistricts/EastWatch"]
+position = Vector2(0, -9)
+scale = Vector2(0.38159, 0.38159)
+texture = ExtResource("r27")
+centered = false
+offset = Vector2(-54.5, -114)
+
+[node name="Ivy15" type="Sprite2D" parent="OuterDistricts/EastWatch"]
+position = Vector2(24, -6)
+scale = Vector2(0.36437, 0.36437)
+texture = ExtResource("r8")
+centered = false
+offset = Vector2(-70.5, -76)
+
+[node name="Basalt23" type="Sprite2D" parent="OuterDistricts/EastWatch"]
+position = Vector2(-8, 1)
+scale = Vector2(0.43751, 0.43751)
+texture = ExtResource("r18")
+centered = false
+offset = Vector2(-69.5, -97)
+flip_h = true
+
+[node name="Shingle20" type="Sprite2D" parent="OuterDistricts/EastWatch"]
+position = Vector2(36, 6)
+scale = Vector2(0.26939, 0.26939)
+texture = ExtResource("r14")
+centered = false
+offset = Vector2(-61.5, -79)
+flip_h = true
+
+[node name="Heather12" type="Sprite2D" parent="OuterDistricts/EastWatch"]
+position = Vector2(-36, 13)
+scale = Vector2(0.29773, 0.29773)
+texture = ExtResource("r27")
+centered = false
+offset = Vector2(-54.5, -114)
+
+[node name="Blade26" type="Sprite2D" parent="OuterDistricts/EastWatch"]
+position = Vector2(-52, 23)
+scale = Vector2(0.16245, 0.16245)
+texture = ExtResource("r20")
+centered = false
+offset = Vector2(-81, -125)
+
+[node name="Gold7" type="Sprite2D" parent="OuterDistricts/EastWatch"]
+position = Vector2(-71, 31)
+scale = Vector2(0.15349, 0.15349)
+texture = ExtResource("r10")
+centered = false
+offset = Vector2(-62, -111)
+
+[node name="EastDecline" type="Node2D" parent="OuterDistricts"]
+position = Vector2(4040, 2224)
+
+[node name="Shingle21" type="Sprite2D" parent="OuterDistricts/EastDecline"]
+position = Vector2(-46, -8)
+scale = Vector2(0.21903, 0.21903)
+texture = ExtResource("r14")
+centered = false
+offset = Vector2(-61.5, -79)
+
+[node name="Thorn2" type="Sprite2D" parent="OuterDistricts/EastDecline"]
+position = Vector2(1, -2)
+scale = Vector2(0.29351, 0.29351)
+texture = ExtResource("r50")
+centered = false
+offset = Vector2(-84, -123)
+flip_h = true
+
+[node name="Basalt24" type="Sprite2D" parent="OuterDistricts/EastDecline"]
+position = Vector2(-30, 2)
+scale = Vector2(0.26998, 0.26998)
+texture = ExtResource("r2")
+centered = false
+offset = Vector2(-72, -104)
+flip_h = true
+
+[node name="Sedge12" type="Sprite2D" parent="OuterDistricts/EastDecline"]
+position = Vector2(23, 4)
+scale = Vector2(0.21564, 0.21564)
+texture = ExtResource("r15")
+centered = false
+offset = Vector2(-79, -110)
+
+[node name="Drift4" type="Sprite2D" parent="OuterDistricts/EastDecline"]
+position = Vector2(44, 17)
+scale = Vector2(0.13186, 0.13186)
+texture = ExtResource("r49")
+centered = false
+offset = Vector2(-76, -125)
+flip_h = true
+
+[node name="QuarryFace" type="Node2D" parent="OuterDistricts"]
+position = Vector2(2967, 2380)
+
+[node name="Basalt25" type="Sprite2D" parent="OuterDistricts/QuarryFace"]
+position = Vector2(-47, -8)
+scale = Vector2(0.37239, 0.37239)
+texture = ExtResource("r18")
+centered = false
+offset = Vector2(-69.5, -97)
+
+[node name="Blade27" type="Sprite2D" parent="OuterDistricts/QuarryFace"]
+position = Vector2(-24, 0)
+scale = Vector2(0.33545, 0.33545)
+texture = ExtResource("r20")
+centered = false
+offset = Vector2(-81, -125)
+flip_h = true
+
+[node name="Sedge13" type="Sprite2D" parent="OuterDistricts/QuarryFace"]
+position = Vector2(-80, 1)
+scale = Vector2(0.22621, 0.22621)
+texture = ExtResource("r26")
+centered = false
+offset = Vector2(-70.5, -108)
+flip_h = true
+
+[node name="Blade28" type="Sprite2D" parent="OuterDistricts/QuarryFace"]
+position = Vector2(-103, 8)
+scale = Vector2(0.14663, 0.14663)
+texture = ExtResource("r20")
+centered = false
+offset = Vector2(-81, -125)
+flip_h = true
+
+[node name="QuarryShade" type="Node2D" parent="OuterDistricts"]
+position = Vector2(2881, 2246)
+
+[node name="InkCap3" type="Sprite2D" parent="OuterDistricts/QuarryShade"]
+position = Vector2(-3, -13)
+scale = Vector2(0.37633, 0.37633)
+texture = ExtResource("r24")
+centered = false
+offset = Vector2(-71.5, -115)
+flip_h = true
+
+[node name="Ivy16" type="Sprite2D" parent="OuterDistricts/QuarryShade"]
+position = Vector2(-22, -5)
+scale = Vector2(0.27216, 0.27216)
+texture = ExtResource("r13")
+centered = false
+offset = Vector2(-79.5, -99)
+flip_h = true
+
+[node name="Sedge14" type="Sprite2D" parent="OuterDistricts/QuarryShade"]
+position = Vector2(34, 6)
+scale = Vector2(0.31563, 0.31563)
+texture = ExtResource("r19")
+centered = false
+offset = Vector2(-64, -101)
+
+[node name="Heather13" type="Sprite2D" parent="OuterDistricts/QuarryShade"]
+position = Vector2(11, 7)
+scale = Vector2(0.31117, 0.31117)
+texture = ExtResource("r6")
+centered = false
+offset = Vector2(-66, -126)
+flip_h = true
+
+[node name="Blade29" type="Sprite2D" parent="OuterDistricts/QuarryShade"]
+position = Vector2(-30, 9)
+scale = Vector2(0.17172, 0.17172)
+texture = ExtResource("r20")
+centered = false
+offset = Vector2(-81, -125)
+
+[node name="Scree8" type="Sprite2D" parent="OuterDistricts/QuarryShade"]
+position = Vector2(51, 24)
+scale = Vector2(0.25569, 0.25569)
+texture = ExtResource("r23")
+centered = false
+offset = Vector2(-68.5, -91)
+
+[node name="Shingle22" type="Sprite2D" parent="OuterDistricts/QuarryShade"]
+position = Vector2(68, 24)
+scale = Vector2(0.19814, 0.19814)
+texture = ExtResource("r14")
+centered = false
+offset = Vector2(-61.5, -79)
+
+[node name="PilgrimApron" type="Node2D" parent="OuterDistricts"]
+position = Vector2(3315, 2654)
+
+[node name="Fern9" type="Sprite2D" parent="OuterDistricts/PilgrimApron"]
+position = Vector2(12, -8)
+scale = Vector2(0.60619, 0.60619)
+texture = ExtResource("r39")
+centered = false
+offset = Vector2(-75, -67)
+
+[node name="Ochre8" type="Sprite2D" parent="OuterDistricts/PilgrimApron"]
+position = Vector2(-41, -6)
+scale = Vector2(0.26699, 0.26699)
+texture = ExtResource("r1")
+centered = false
+offset = Vector2(-84.5, -128)
+
+[node name="Basalt26" type="Sprite2D" parent="OuterDistricts/PilgrimApron"]
+position = Vector2(-15, -2)
+scale = Vector2(0.2045, 0.2045)
+texture = ExtResource("r36")
+centered = false
+offset = Vector2(-107, -152)
+flip_h = true
+
+[node name="Yellow4" type="Sprite2D" parent="OuterDistricts/PilgrimApron"]
+position = Vector2(28, 6)
+scale = Vector2(0.23074, 0.23074)
+texture = ExtResource("r5")
+centered = false
+offset = Vector2(-80.5, -128)
+flip_h = true
+
+[node name="Litter21" type="Sprite2D" parent="OuterDistricts/PilgrimApron"]
+position = Vector2(59, 6)
+scale = Vector2(0.17374, 0.17374)
+texture = ExtResource("r16")
+centered = false
+offset = Vector2(-76.5, -120)
+
+[node name="Shingle23" type="Sprite2D" parent="OuterDistricts/PilgrimApron"]
+position = Vector2(-59, 13)
+scale = Vector2(0.1646, 0.1646)
+texture = ExtResource("r3")
+centered = false
+offset = Vector2(-71, -104)
+flip_h = true
+
+[node name="Litter22" type="Sprite2D" parent="OuterDistricts/PilgrimApron"]
+position = Vector2(-84, 21)
+scale = Vector2(0.15626, 0.15626)
+texture = ExtResource("r28")
+centered = false
+offset = Vector2(-71, -109)
+flip_h = true
+
+[node name="Blade30" type="Sprite2D" parent="OuterDistricts/PilgrimApron"]
+position = Vector2(72, 21)
+scale = Vector2(0.20196, 0.20196)
+texture = ExtResource("r47")
+centered = false
+offset = Vector2(-58.5, -91)
+
+[node name="PilgrimSouth" type="Node2D" parent="OuterDistricts"]
+position = Vector2(3144, 2784)
+
+[node name="Thorn3" type="Sprite2D" parent="OuterDistricts/PilgrimSouth"]
+position = Vector2(-1, -13)
+scale = Vector2(0.27542, 0.27542)
+texture = ExtResource("r50")
+centered = false
+offset = Vector2(-84, -123)
+flip_h = true
+
+[node name="Basalt27" type="Sprite2D" parent="OuterDistricts/PilgrimSouth"]
+position = Vector2(-18, -7)
+scale = Vector2(0.27028, 0.27028)
+texture = ExtResource("r18")
+centered = false
+offset = Vector2(-69.5, -97)
+
+[node name="Sedge15" type="Sprite2D" parent="OuterDistricts/PilgrimSouth"]
+position = Vector2(8, 1)
+scale = Vector2(0.35742, 0.35742)
+texture = ExtResource("r26")
+centered = false
+offset = Vector2(-70.5, -108)
+flip_h = true
+
+[node name="Blade31" type="Sprite2D" parent="OuterDistricts/PilgrimSouth"]
+position = Vector2(-35, 7)
+scale = Vector2(0.23277, 0.23277)
+texture = ExtResource("r7")
+centered = false
+offset = Vector2(-48.5, -81)
+flip_h = true
+
+[node name="Drift5" type="Sprite2D" parent="OuterDistricts/PilgrimSouth"]
+position = Vector2(31, 8)
+scale = Vector2(0.24613, 0.24613)
+texture = ExtResource("r49")
+centered = false
+offset = Vector2(-76, -125)
+flip_h = true
+
+[node name="Shingle24" type="Sprite2D" parent="OuterDistricts/PilgrimSouth"]
+position = Vector2(51, 23)
+scale = Vector2(0.20734, 0.20734)
+texture = ExtResource("r3")
+centered = false
+offset = Vector2(-71, -104)
+flip_h = true
+
+[node name="Litter23" type="Sprite2D" parent="OuterDistricts/PilgrimSouth"]
+position = Vector2(67, 31)
+scale = Vector2(0.16421, 0.16421)
+texture = ExtResource("r4")
+centered = false
+offset = Vector2(-64.5, -98)
+flip_h = true
+
+[node name="LandingReeds" type="Node2D" parent="OuterDistricts"]
+position = Vector2(2217, 2829)
+
+[node name="Blade32" type="Sprite2D" parent="OuterDistricts/LandingReeds"]
+position = Vector2(89, -28)
+scale = Vector2(0.18172, 0.18172)
+texture = ExtResource("r7")
+centered = false
+offset = Vector2(-48.5, -81)
+
+[node name="Shingle25" type="Sprite2D" parent="OuterDistricts/LandingReeds"]
+position = Vector2(66, -18)
+scale = Vector2(0.22902, 0.22902)
+texture = ExtResource("r3")
+centered = false
+offset = Vector2(-71, -104)
+
+[node name="Gold8" type="Sprite2D" parent="OuterDistricts/LandingReeds"]
+position = Vector2(41, -11)
+scale = Vector2(0.23851, 0.23851)
+texture = ExtResource("r10")
+centered = false
+offset = Vector2(-62, -111)
+flip_h = true
+
+[node name="Sedge16" type="Sprite2D" parent="OuterDistricts/LandingReeds"]
+position = Vector2(25, -4)
+scale = Vector2(0.27527, 0.27527)
+texture = ExtResource("r19")
+centered = false
+offset = Vector2(-64, -101)
+
+[node name="Daisy6" type="Sprite2D" parent="OuterDistricts/LandingReeds"]
+position = Vector2(-42, -3)
+scale = Vector2(0.31274, 0.31274)
+texture = ExtResource("r37")
+centered = false
+offset = Vector2(-72, -102)
+
+[node name="Fern10" type="Sprite2D" parent="OuterDistricts/LandingReeds"]
+position = Vector2(-19, 1)
+scale = Vector2(0.7407, 0.7407)
+texture = ExtResource("r44")
+centered = false
+offset = Vector2(-41, -53)
+
+[node name="Basalt28" type="Sprite2D" parent="OuterDistricts/LandingReeds"]
+position = Vector2(2, 2)
+scale = Vector2(0.46365, 0.46365)
+texture = ExtResource("r18")
+centered = false
+offset = Vector2(-69.5, -97)
+
+[node name="Litter24" type="Sprite2D" parent="OuterDistricts/LandingReeds"]
+position = Vector2(-65, 13)
+scale = Vector2(0.21713, 0.21713)
+texture = ExtResource("r28")
+centered = false
+offset = Vector2(-71, -109)
+flip_h = true
+
+[node name="Shingle26" type="Sprite2D" parent="OuterDistricts/LandingReeds"]
+position = Vector2(-89, 30)
+scale = Vector2(0.19258, 0.19258)
+texture = ExtResource("r14")
+centered = false
+offset = Vector2(-61.5, -79)
+
+[node name="LandingShale" type="Node2D" parent="OuterDistricts"]
+position = Vector2(2452, 2555)
+
+[node name="Blade33" type="Sprite2D" parent="OuterDistricts/LandingShale"]
+position = Vector2(14, -10)
+scale = Vector2(0.37301, 0.37301)
+texture = ExtResource("r7")
+centered = false
+offset = Vector2(-48.5, -81)
+
+[node name="Basalt29" type="Sprite2D" parent="OuterDistricts/LandingShale"]
+position = Vector2(-13, -9)
+scale = Vector2(0.35902, 0.35902)
+texture = ExtResource("r9")
+centered = false
+offset = Vector2(-74.5, -97)
+flip_h = true
+
+[node name="Scree9" type="Sprite2D" parent="OuterDistricts/LandingShale"]
+position = Vector2(-27, 7)
+scale = Vector2(0.18708, 0.18708)
+texture = ExtResource("r25")
+centered = false
+offset = Vector2(-73.5, -105)
+flip_h = true
+
+[node name="Litter25" type="Sprite2D" parent="OuterDistricts/LandingShale"]
+position = Vector2(-44, 13)
+scale = Vector2(0.14688, 0.14688)
+texture = ExtResource("r42")
+centered = false
+offset = Vector2(-73, -124)
+flip_h = true
+
+[node name="OrchardFoot" type="Node2D" parent="OuterDistricts"]
+position = Vector2(1379, 2453)
+
+[node name="Scarlet4" type="Sprite2D" parent="OuterDistricts/OrchardFoot"]
+position = Vector2(0, -14)
+scale = Vector2(0.26333, 0.26333)
+texture = ExtResource("r29")
+centered = false
+offset = Vector2(-89.5, -139)
+flip_h = true
+
+[node name="Ochre9" type="Sprite2D" parent="OuterDistricts/OrchardFoot"]
+position = Vector2(27, -5)
+scale = Vector2(0.25838, 0.25838)
+texture = ExtResource("r1")
+centered = false
+offset = Vector2(-84.5, -128)
+flip_h = true
+
+[node name="Litter26" type="Sprite2D" parent="OuterDistricts/OrchardFoot"]
+position = Vector2(34, 12)
+scale = Vector2(0.21499, 0.21499)
+texture = ExtResource("r28")
+centered = false
+offset = Vector2(-71, -109)
+
+[node name="OrchardShadow" type="Node2D" parent="OuterDistricts"]
+position = Vector2(1186, 2337)
+
+[node name="Shingle27" type="Sprite2D" parent="OuterDistricts/OrchardShadow"]
+position = Vector2(-61, -20)
+scale = Vector2(0.24206, 0.24206)
+texture = ExtResource("r14")
+centered = false
+offset = Vector2(-61.5, -79)
+flip_h = true
+
+[node name="RubyCap8" type="Sprite2D" parent="OuterDistricts/OrchardShadow"]
+position = Vector2(7, -11)
+scale = Vector2(0.37638, 0.37638)
+texture = ExtResource("r11")
+centered = false
+offset = Vector2(-72.5, -107)
+
+[node name="Sedge17" type="Sprite2D" parent="OuterDistricts/OrchardShadow"]
+position = Vector2(-47, -7)
+scale = Vector2(0.18694, 0.18694)
+texture = ExtResource("r15")
+centered = false
+offset = Vector2(-79, -110)
+
+[node name="HoneyCap5" type="Sprite2D" parent="OuterDistricts/OrchardShadow"]
+position = Vector2(-33, -4)
+scale = Vector2(0.23806, 0.23806)
+texture = ExtResource("r12")
+centered = false
+offset = Vector2(-79, -120)
+
+[node name="Basalt30" type="Sprite2D" parent="OuterDistricts/OrchardShadow"]
+position = Vector2(29, -4)
+scale = Vector2(0.24198, 0.24198)
+texture = ExtResource("r36")
+centered = false
+offset = Vector2(-107, -152)
+
+[node name="Ivy17" type="Sprite2D" parent="OuterDistricts/OrchardShadow"]
+position = Vector2(-6, 4)
+scale = Vector2(0.52826, 0.52826)
+texture = ExtResource("r22")
+centered = false
+offset = Vector2(-74.5, -79)
+
+[node name="Litter27" type="Sprite2D" parent="OuterDistricts/OrchardShadow"]
+position = Vector2(48, 13)
+scale = Vector2(0.19347, 0.19347)
+texture = ExtResource("r42")
+centered = false
+offset = Vector2(-73, -124)
+flip_h = true
+
+[node name="Blade34" type="Sprite2D" parent="OuterDistricts/OrchardShadow"]
+position = Vector2(65, 24)
+scale = Vector2(0.19159, 0.19159)
+texture = ExtResource("r47")
+centered = false
+offset = Vector2(-58.5, -91)
+flip_h = true
+
+[node name="SouthBend" type="Node2D" parent="OuterDistricts"]
+position = Vector2(1762, 2567)
+
+[node name="HoneyCap6" type="Sprite2D" parent="OuterDistricts/SouthBend"]
+position = Vector2(26, -9)
+scale = Vector2(0.28383, 0.28383)
+texture = ExtResource("r51")
+centered = false
+offset = Vector2(-69, -97)
+flip_h = true
+
+[node name="Basalt31" type="Sprite2D" parent="OuterDistricts/SouthBend"]
+position = Vector2(-6, 8)
+scale = Vector2(0.33228, 0.33228)
+texture = ExtResource("r2")
+centered = false
+offset = Vector2(-72, -104)
+
+[node name="Shingle28" type="Sprite2D" parent="OuterDistricts/SouthBend"]
+position = Vector2(33, 11)
+scale = Vector2(0.18241, 0.18241)
+texture = ExtResource("r3")
+centered = false
+offset = Vector2(-71, -104)
+flip_h = true
+
+[node name="Sedge18" type="Sprite2D" parent="OuterDistricts/SouthBend"]
+position = Vector2(-71, 33)
+scale = Vector2(0.13282, 0.13282)
+texture = ExtResource("r26")
+centered = false
+offset = Vector2(-70.5, -108)
+
+[node name="WesternRail" type="Node2D" parent="OuterDistricts"]
+position = Vector2(582, 2017)
+
+[node name="Shingle29" type="Sprite2D" parent="OuterDistricts/WesternRail"]
+position = Vector2(-53, -16)
+scale = Vector2(0.23498, 0.23498)
+texture = ExtResource("r14")
+centered = false
+offset = Vector2(-61.5, -79)
+flip_h = true
+
+[node name="Thorn4" type="Sprite2D" parent="OuterDistricts/WesternRail"]
+position = Vector2(-3, -5)
+scale = Vector2(0.33902, 0.33902)
+texture = ExtResource("r50")
+centered = false
+offset = Vector2(-84, -123)
+flip_h = true
+
+[node name="Basalt32" type="Sprite2D" parent="OuterDistricts/WesternRail"]
+position = Vector2(-28, 0)
+scale = Vector2(0.36967, 0.36967)
+texture = ExtResource("r2")
+centered = false
+offset = Vector2(-72, -104)
+
+[node name="Sedge19" type="Sprite2D" parent="OuterDistricts/WesternRail"]
+position = Vector2(25, 8)
+scale = Vector2(0.27201, 0.27201)
+texture = ExtResource("r26")
+centered = false
+offset = Vector2(-70.5, -108)
+
+[node name="Drift6" type="Sprite2D" parent="OuterDistricts/WesternRail"]
+position = Vector2(39, 23)
+scale = Vector2(0.15493, 0.15493)
+texture = ExtResource("r49")
+centered = false
+offset = Vector2(-76, -125)
+flip_h = true
+
+[node name="NorthwestRail" type="Node2D" parent="OuterDistricts"]
+position = Vector2(1127, 533)
+
+[node name="Fern11" type="Sprite2D" parent="OuterDistricts/NorthwestRail"]
+position = Vector2(-101, -11)
+scale = Vector2(0.17367, 0.17367)
+texture = ExtResource("r13")
+centered = false
+offset = Vector2(-79.5, -99)
+
+[node name="Scarlet5" type="Sprite2D" parent="OuterDistricts/NorthwestRail"]
+position = Vector2(50, -10)
+scale = Vector2(0.24991, 0.24991)
+texture = ExtResource("r40")
+centered = false
+offset = Vector2(-78.5, -120)
+flip_h = true
+
+[node name="Litter28" type="Sprite2D" parent="OuterDistricts/NorthwestRail"]
+position = Vector2(-78, -6)
+scale = Vector2(0.2002, 0.2002)
+texture = ExtResource("r42")
+centered = false
+offset = Vector2(-73, -124)
+
+[node name="Blade35" type="Sprite2D" parent="OuterDistricts/NorthwestRail"]
+position = Vector2(-50, -1)
+scale = Vector2(0.21339, 0.21339)
+texture = ExtResource("r20")
+centered = false
+offset = Vector2(-81, -125)
+
+[node name="Basalt33" type="Sprite2D" parent="OuterDistricts/NorthwestRail"]
+position = Vector2(3, 1)
+scale = Vector2(0.27765, 0.27765)
+texture = ExtResource("r36")
+centered = false
+offset = Vector2(-107, -152)
+flip_h = true
+
+[node name="Ochre10" type="Sprite2D" parent="OuterDistricts/NorthwestRail"]
+position = Vector2(23, 1)
+scale = Vector2(0.28711, 0.28711)
+texture = ExtResource("r1")
+centered = false
+offset = Vector2(-84.5, -128)
+
+[node name="Litter29" type="Sprite2D" parent="OuterDistricts/NorthwestRail"]
+position = Vector2(69, 4)
+scale = Vector2(0.16192, 0.16192)
+texture = ExtResource("r42")
+centered = false
+offset = Vector2(-73, -124)
+
+[node name="Drift7" type="Sprite2D" parent="OuterDistricts/NorthwestRail"]
+position = Vector2(-28, 7)
+scale = Vector2(0.23751, 0.23751)
+texture = ExtResource("r49")
+centered = false
+offset = Vector2(-76, -125)
+flip_h = true
+
+[node name="Shingle30" type="Sprite2D" parent="OuterDistricts/NorthwestRail"]
+position = Vector2(92, 11)
+scale = Vector2(0.23107, 0.23107)
+texture = ExtResource("r14")
+centered = false
+offset = Vector2(-61.5, -79)
+flip_h = true
+
+[node name="NorthRail" type="Node2D" parent="OuterDistricts"]
+position = Vector2(2463, 516)
+
+[node name="Shingle31" type="Sprite2D" parent="OuterDistricts/NorthRail"]
+position = Vector2(68, -21)
+scale = Vector2(0.20191, 0.20191)
+texture = ExtResource("r14")
+centered = false
+offset = Vector2(-61.5, -79)
+
+[node name="Heather14" type="Sprite2D" parent="OuterDistricts/NorthRail"]
+position = Vector2(-2, -18)
+scale = Vector2(0.33984, 0.33984)
+texture = ExtResource("r35")
+centered = false
+offset = Vector2(-70.5, -100)
+flip_h = true
+
+[node name="Blade36" type="Sprite2D" parent="OuterDistricts/NorthRail"]
+position = Vector2(45, -17)
+scale = Vector2(0.20395, 0.20395)
+texture = ExtResource("r47")
+centered = false
+offset = Vector2(-58.5, -91)
+
+[node name="Ivy18" type="Sprite2D" parent="OuterDistricts/NorthRail"]
+position = Vector2(-29, 0)
+scale = Vector2(0.42906, 0.42906)
+texture = ExtResource("r8")
+centered = false
+offset = Vector2(-70.5, -76)
+flip_h = true
+
+[node name="Heather15" type="Sprite2D" parent="OuterDistricts/NorthRail"]
+position = Vector2(34, 0)
+scale = Vector2(0.23349, 0.23349)
+texture = ExtResource("r6")
+centered = false
+offset = Vector2(-66, -126)
+flip_h = true
+
+[node name="Basalt34" type="Sprite2D" parent="OuterDistricts/NorthRail"]
+position = Vector2(9, 7)
+scale = Vector2(0.38027, 0.38027)
+texture = ExtResource("r2")
+centered = false
+offset = Vector2(-72, -104)
+
+[node name="Gold9" type="Sprite2D" parent="OuterDistricts/NorthRail"]
+position = Vector2(-42, 19)
+scale = Vector2(0.22427, 0.22427)
+texture = ExtResource("r10")
+centered = false
+offset = Vector2(-62, -111)
+
+[node name="Litter30" type="Sprite2D" parent="OuterDistricts/NorthRail"]
+position = Vector2(-70, 22)
+scale = Vector2(0.14602, 0.14602)
+texture = ExtResource("r16")
+centered = false
+offset = Vector2(-76.5, -120)
+flip_h = true
+
+[node name="SouthRail" type="Node2D" parent="OuterDistricts"]
+position = Vector2(2575, 2928)
+
+[node name="Ivy19" type="Sprite2D" parent="OuterDistricts/SouthRail"]
+position = Vector2(-12, -9)
+scale = Vector2(0.57689, 0.57689)
+texture = ExtResource("r8")
+centered = false
+offset = Vector2(-70.5, -76)
+flip_h = true
+
+[node name="HoneyCap7" type="Sprite2D" parent="OuterDistricts/SouthRail"]
+position = Vector2(24, -9)
+scale = Vector2(0.37331, 0.37331)
+texture = ExtResource("r51")
+centered = false
+offset = Vector2(-69, -97)
+
+[node name="Basalt35" type="Sprite2D" parent="OuterDistricts/SouthRail"]
+position = Vector2(41, 8)
+scale = Vector2(0.20985, 0.20985)
+texture = ExtResource("r36")
+centered = false
+offset = Vector2(-107, -152)
+flip_h = true
+
+[node name="Shingle32" type="Sprite2D" parent="OuterDistricts/SouthRail"]
+position = Vector2(-53, 11)
+scale = Vector2(0.18355, 0.18355)
+texture = ExtResource("r3")
+centered = false
+offset = Vector2(-71, -104)
+
+[node name="Blade37" type="Sprite2D" parent="OuterDistricts/SouthRail"]
+position = Vector2(-30, 11)
+scale = Vector2(0.2018, 0.2018)
+texture = ExtResource("r20")
+centered = false
+offset = Vector2(-81, -125)
+
+[node name="Scree10" type="Sprite2D" parent="OuterDistricts/SouthRail"]
+position = Vector2(65, 16)
+scale = Vector2(0.17283, 0.17283)
+texture = ExtResource("r25")
+centered = false
+offset = Vector2(-73.5, -105)
+
+[node name="Sedge20" type="Sprite2D" parent="OuterDistricts/SouthRail"]
+position = Vector2(102, 21)
+scale = Vector2(0.17207, 0.17207)
+texture = ExtResource("r19")
+centered = false
+offset = Vector2(-64, -101)
+flip_h = true
+
+[node name="SouthwestRail" type="Node2D" parent="OuterDistricts"]
+position = Vector2(1214, 2930)
+
+[node name="Litter31" type="Sprite2D" parent="OuterDistricts/SouthwestRail"]
+position = Vector2(-48, -10)
+scale = Vector2(0.16307, 0.16307)
+texture = ExtResource("r28")
+centered = false
+offset = Vector2(-71, -109)
+
+[node name="Fallen5" type="Sprite2D" parent="OuterDistricts/SouthwestRail"]
+position = Vector2(2, -2)
+scale = Vector2(0.34547, 0.34547)
+texture = ExtResource("r33")
+centered = false
+offset = Vector2(-80.5, -120)
+
+[node name="RubyCap9" type="Sprite2D" parent="OuterDistricts/SouthwestRail"]
+position = Vector2(-29, 2)
+scale = Vector2(0.36787, 0.36787)
+texture = ExtResource("r34")
+centered = false
+offset = Vector2(-54, -97)
+
+[node name="Ochre11" type="Sprite2D" parent="OuterDistricts/SouthwestRail"]
+position = Vector2(27, 5)
+scale = Vector2(0.18355, 0.18355)
+texture = ExtResource("r1")
+centered = false
+offset = Vector2(-84.5, -128)
+flip_h = true
+
+[node name="Ivy20" type="Sprite2D" parent="OuterDistricts/SouthwestRail"]
+position = Vector2(41, 17)
+scale = Vector2(0.20978, 0.20978)
+texture = ExtResource("r8")
+centered = false
+offset = Vector2(-70.5, -76)
+
+[node name="CottageChips" type="Node2D" parent="OuterDistricts"]
+position = Vector2(1606, 1109)
+
+[node name="Basalt36" type="Sprite2D" parent="OuterDistricts/CottageChips"]
+position = Vector2(-3, -3)
+scale = Vector2(0.18566, 0.18566)
+texture = ExtResource("r2")
+centered = false
+offset = Vector2(-72, -104)
+flip_h = true
+
+[node name="Blade38" type="Sprite2D" parent="OuterDistricts/CottageChips"]
+position = Vector2(21, 8)
+scale = Vector2(0.09307, 0.09307)
+texture = ExtResource("r20")
+centered = false
+offset = Vector2(-81, -125)
+
+[node name="PilgrimFall" type="Node2D" parent="OuterDistricts"]
+position = Vector2(2837, 2681)
+
+[node name="Fallen6" type="Sprite2D" parent="OuterDistricts/PilgrimFall"]
+position = Vector2(3, 3)
+scale = Vector2(0.18025, 0.18025)
+texture = ExtResource("r33")
+centered = false
+offset = Vector2(-80.5, -120)
+flip_h = true
+
+[node name="RubyCap10" type="Sprite2D" parent="OuterDistricts/PilgrimFall"]
+position = Vector2(-26, 7)
+scale = Vector2(0.08554, 0.08554)
+texture = ExtResource("r45")
+centered = false
+offset = Vector2(-83.5, -150)
+
+[node name="CrossroadsDaisies" type="Node2D" parent="OuterDistricts"]
+position = Vector2(1950, 2072)
+
+[node name="Daisy7" type="Sprite2D" parent="OuterDistricts/CrossroadsDaisies"]
+position = Vector2(-2, -1)
+scale = Vector2(0.18944, 0.18944)
+texture = ExtResource("r37")
+centered = false
+offset = Vector2(-72, -102)
+flip_h = true
+
+[node name="Fern12" type="Sprite2D" parent="OuterDistricts/CrossroadsDaisies"]
+position = Vector2(21, 8)
+scale = Vector2(0.20497, 0.20497)
+texture = ExtResource("r39")
+centered = false
+offset = Vector2(-75, -67)
+
+[node name="QuarryShingle" type="Node2D" parent="OuterDistricts"]
+position = Vector2(3396, 2390)
+
+[node name="Basalt37" type="Sprite2D" parent="OuterDistricts/QuarryShingle"]
+position = Vector2(-2, 1)
+scale = Vector2(0.28457, 0.28457)
+texture = ExtResource("r21")
+centered = false
+offset = Vector2(-63.5, -87)
+flip_h = true
+
+[node name="Blade39" type="Sprite2D" parent="OuterDistricts/QuarryShingle"]
+position = Vector2(-21, 6)
+scale = Vector2(0.1537, 0.1537)
+texture = ExtResource("r7")
+centered = false
+offset = Vector2(-48.5, -81)
+flip_h = true
+
+[node name="WestCaps" type="Node2D" parent="OuterDistricts"]
+position = Vector2(983, 2051)
+
+[node name="Ivy21" type="Sprite2D" parent="OuterDistricts/WestCaps"]
+position = Vector2(-4, 4)
+scale = Vector2(0.27195, 0.27195)
+texture = ExtResource("r22")
+centered = false
+offset = Vector2(-74.5, -79)
+flip_h = true
+
+[node name="HoneyCap8" type="Sprite2D" parent="OuterDistricts/WestCaps"]
+position = Vector2(23, 10)
+scale = Vector2(0.13022, 0.13022)
+texture = ExtResource("r43")
+centered = false
+offset = Vector2(-68.5, -99)
+
+[node name="GardenLeaves" type="Node2D" parent="OuterDistricts"]
+position = Vector2(1739, 733)
+
+[node name="Fallen7" type="Sprite2D" parent="OuterDistricts/GardenLeaves"]
+position = Vector2(0, 1)
+scale = Vector2(0.1751, 0.1751)
+texture = ExtResource("r33")
+centered = false
+offset = Vector2(-80.5, -120)
+
+[node name="RubyCap11" type="Sprite2D" parent="OuterDistricts/GardenLeaves"]
+position = Vector2(-23, 10)
+scale = Vector2(0.13567, 0.13567)
+texture = ExtResource("r34")
+centered = false
+offset = Vector2(-54, -97)
+flip_h = true
+
+[node name="EastHeather" type="Node2D" parent="OuterDistricts"]
+position = Vector2(3672, 1914)
+
+[node name="Heather16" type="Sprite2D" parent="OuterDistricts/EastHeather"]
+position = Vector2(0, -3)
+scale = Vector2(0.18682, 0.18682)
+texture = ExtResource("r27")
+centered = false
+offset = Vector2(-54.5, -114)
+flip_h = true
+
+[node name="Ivy22" type="Sprite2D" parent="OuterDistricts/EastHeather"]
+position = Vector2(26, 8)
+scale = Vector2(0.18459, 0.18459)
+texture = ExtResource("r8")
+centered = false
+offset = Vector2(-70.5, -76)
+flip_h = true
+
+[node name="SouthLintel" type="Node2D" parent="OuterDistricts"]
+position = Vector2(3596, 2833)
+
+[node name="Basalt38" type="Sprite2D" parent="OuterDistricts/SouthLintel"]
+position = Vector2(2, 0)
+scale = Vector2(0.23598, 0.23598)
+texture = ExtResource("r18")
+centered = false
+offset = Vector2(-69.5, -97)
+flip_h = true
+
+[node name="Blade40" type="Sprite2D" parent="OuterDistricts/SouthLintel"]
+position = Vector2(23, 6)
+scale = Vector2(0.15914, 0.15914)
+texture = ExtResource("r7")
+centered = false
+offset = Vector2(-48.5, -81)
+flip_h = true

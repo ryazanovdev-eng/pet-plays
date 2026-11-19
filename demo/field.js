@@ -2,18 +2,26 @@
 const $ = id => document.getElementById(id);
 const shelves={ '01_props':'Декорации','02_wide_crypts':'Склепы','03_fences':'Ограды','04_pickups':'Находки','05_ground_overlays':'Переходы грунта','06_vegetation':'Растения','07_road_tiles_concept':'Дорожные тайлы','08_terrain':'Покрытия арены','09_hud':'HUD','10_runtime_layers':'Слои интерфейса','11_standalone_sprites':'Элементы интерфейса','12_levelup':'Повышение уровня','13_shop':'Магазин','14_defeat':'Поражение','15_portraits':'Портреты'};
 for(const [key,title] of Object.entries(shelves))$('shelf').add(new Option(`${key.slice(0,2)} · ${title}`,key));
-$('shelf').onchange=()=>{const key=$('shelf').value;$('sheet').alt=shelves[key];$('sheet-link').href=$('sheet').src=`media/${key}.webp`};
-const captions = {arena:'Центр кладбища: границы арены остаются за кадром.',arena_edge:'Край той же карты: по другую сторону ограды кладбище продолжается.',gallery:'Все двенадцать персонажей в одной сцене Godot.'};
+function showShelf(key){$('shelf').value=key;$('sheet').alt=shelves[key];$('sheet-link').href=$('sheet').src=`media/${key}.webp`}
+$('shelf').onchange=()=>{const key=$('shelf').value;showShelf(key);history.replaceState(null,'',`#sheet-${key}`)};
+const captions = {arena:'Гнилой гигант у ритуальной печати. Его портрет и шкала видны в боевом HUD.',arena_edge:'За оградой виден лес: карта продолжается, но пройти туда нельзя.',arena_wave:'Рядовая волна. Вместо шкалы босса показано, сколько врагов осталось до зачистки.',level_up:'Бой на паузе: герою доступно одно из трёх улучшений.',shop:'Перед следующей волной кости можно обменять на отвар или тотем.',gallery:'Все двенадцать персонажей в одной сцене Godot.'};
 let sceneKey='arena';
-function showScene(){const key=sceneKey;
-  $('large').href=$('scene').src=`media/${key}${$('motion').checked?'-motion':''}.webp`; $('scene').alt=$('caption').textContent=captions[key]; $('path').textContent=`game/${key}.tscn`;
+function showScene(){const key=sceneKey, paused=key==='level_up'||key==='shop';
+  $('motion').disabled=paused; $('motion-control').hidden=paused; $('pause-note').hidden=!paused;
+  $('large').href=$('scene').src=`media/${key}${!paused&&$('motion').checked?'-motion':''}.webp`; $('scene').alt=$('caption').textContent=captions[key]; $('path').textContent=`game/${key}.tscn`;
+  for(const b of $('scenes').children) b.setAttribute('aria-pressed',b.value===key);
 }
 $('motion').onchange=showScene;
 for(const button of $('scenes').children) button.onclick=()=>{
   sceneKey=button.value;
-  for(const b of $('scenes').children) b.setAttribute('aria-pressed',b===button);
+  history.replaceState(null,'',`#view-${sceneKey}`);
   showScene();
 };
+function viewFromLink(){const hash=location.hash;
+  if(hash.startsWith('#view-')&&Object.hasOwn(captions,hash.slice(6))){sceneKey=hash.slice(6);showScene()}
+  if(hash.startsWith('#sheet-')&&Object.hasOwn(shelves,hash.slice(7))){showShelf(hash.slice(7));$('cabinet-title').scrollIntoView()}
+}
+viewFromLink();window.addEventListener('hashchange',viewFromLink);
 const names={frog_knight:'Рыцарь-лягушка',ghost_blue:'Синий призрак',ghost_green:'Зелёный призрак',ghost_purple:'Фиолетовый призрак',skeleton_bone:'Костяной скелет',skeleton_lavender:'Лавандовый скелет',skeleton_turquoise:'Бирюзовый скелет',zombie_blue:'Синий зомби',zombie_green:'Зелёный зомби',zombie_pink:'Розовый зомби',boss_bone_king:'Костяной король',boss_rotten_giant:'Гнилой исполин'};
 const actions={idle:'Покой',walk:'Ходьба',attack:'Атака',attack_1:'Атака I',attack_2:'Атака II',attack1:'Атака I',attack2:'Атака II',hurt:'Получение урона',death:'Гибель',dead:'Гибель'};
 let frame=0,time=0,playing=!matchMedia('(prefers-reduced-motion: reduce)').matches,clip,loaded=[];

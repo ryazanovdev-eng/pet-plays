@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://game/arena_parts/world.tscn" id="r1"]
+[ext_resource type="PackedScene" path="res://game/arena_parts/hero_mark.tscn" id="r2"]
+
+[node name="ClearedCourt" type="Node2D"]
+
+[node name="World" parent="." instance=ExtResource("r1")]
+
+[node name="Hero" parent="." instance=ExtResource("r2")]
+position = Vector2(2320, 1768)
+
+[node name="FrogKnight" parent="Hero/DisplayScale"]
+animation = &"idle"
+frame = 0
+
+[node name="FixedCamera" type="Camera2D" parent="."]
+position = Vector2(2390, 1700)
+position_smoothing_enabled = false
